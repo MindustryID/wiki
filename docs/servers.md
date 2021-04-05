@@ -1,51 +1,51 @@
-# Servers
+# Server
 
-Servers are a large part of Mindustry in that they offer the ability to play the game with other people. There are two main types of servers; dedicated servers and local LAN servers. 
+Server adalah bagian besar dari Mindustry karena mereka menawarkan kemampuan untuk bermain game dengan orang lain. Ada dua jenis server utama; server khusus dan server LAN lokal.
 
-## Dedicated Servers
+## Server Khusus
 
-Dedicated servers are standalone, headless versions of the game that are focused only on providing a means for people to play Multiplayer. They are usually run on a computer as a separate program rather than in-game, and are operated from the terminal. These are usually stronger than a local LAN server as they have more resources available to them to support more than two or three players, and can be run 24/7. They are also more versatile and powerful in that they have many commands to provide the administrator with more control over it, and they can easily be modded to fit the administrator's needs. 
+Server khusus adalah versi game mandiri tanpa kepala yang hanya berfokus pada penyediaan sarana bagi orang-orang untuk bermain Multiplayer. Mereka biasanya dijalankan di komputer sebagai program terpisah daripada dalam game, dan dioperasikan dari terminal. Ini biasanya lebih kuat daripada server LAN lokal karena mereka memiliki lebih banyak sumber daya yang tersedia bagi mereka untuk mendukung lebih dari dua atau tiga pemain, dan dapat dijalankan 24/7. Mereka juga lebih fleksibel dan kuat karena mereka memiliki banyak perintah untuk memberikan administrator kendali lebih atasnya, dan mereka dapat dengan mudah dimodifikasi agar sesuai dengan kebutuhan administrator.
 
-You can connect to one using the "Join Game" button under the "Play" menu. Unlike local LAN servers, you will have to enter the host's IP address and port. Also unlike local LAN servers, once you add a server, it will automatically show up on your server list when you open it, and the game will automatically check the server's status.
+Anda dapat terhubung ke salah satunya menggunakan tombol "Gabung Game" di bawah menu "Mainkan". Tidak seperti server LAN lokal, Anda harus memasukkan alamat IP dan port host. Juga tidak seperti server LAN lokal, setelah Anda menambahkan server, itu akan secara otomatis muncul di daftar server Anda ketika Anda membukanya, dan permainan akan secara otomatis memeriksa status server.
 
-To establish a dedicated server, a dedicated Linux or Windows machine is **highly** recommended.
+Untuk membuat server khusus, mesin Linux atau Windows khusus ** sangat ** direkomendasikan.
 
-1. If you haven't already, install at least JRE and JDK 8.
-2. Download the desired server release from [itch.io](https://anuke.itch.io/mindustry), or compile one yourself. 
-3. Open a terminal or TTY session then change `cd` to the directory the JAR is placed in.
-4. Run `java -jar server.jar` using Command Prompt (on Windows) or your favorite terminal (on Linux and Mac). The commands are explained in the `help` command.
-5. Start hosting a map with `host <mapname> [mode]` after you configured your server.
-6. If you are using Windows to run your server, use your favorite search engine to look up how to add rules to your Windows Firewall, as it blocks that port most of the time. Make sure to allow **port 6567 TCP and UDP**.
+1. Jika Anda belum melakukannya, instal setidaknya JRE dan JDK 8.
+2. Unduh rilis server yang diinginkan dari [itch.io](https://anuke.itch.io/mindustry), atau kompilasi sendiri.
+3. Buka terminal atau sesi TTY lalu ubah `cd` ke direktori tempat JAR ditempatkan.
+4. Jalankan `java -jar server.jar` menggunakan Command Prompt (di Windows) atau terminal favorit Anda (di Linux dan Mac). Perintah tersebut dijelaskan dalam perintah `help`.
+5. Mulai hosting peta dengan `host <mapname> [mode]` setelah Anda mengkonfigurasi server.
+6. Jika Anda menggunakan Windows untuk menjalankan server Anda, gunakan mesin pencari favorit Anda untuk mencari cara menambahkan aturan ke Windows Firewall Anda, karena sebagian besar waktu memblokir port tersebut. Pastikan untuk mengizinkan ** port 6567 TCP dan UDP **.
 
-Unless you have already enabled port forwarding, your dedicated server can only be connected to by clients within your local network. If you want to make your server globally available, read below.
+Kecuali Anda telah mengaktifkan penerusan port, server khusus Anda hanya dapat dihubungkan oleh klien dalam jaringan lokal Anda. Jika Anda ingin membuat server Anda tersedia secara global, baca di bawah.
 
-### What is an IP and how do I find out what mine is?
+### Apa itu IP dan bagaimana cara mengetahui apa milik saya?
 
-In simplified terms, an IP address is a number that identifies your computer on the internet. You can connect to someone's Mindustry server if you know their IP address. There are two types; a **public** and a **local** address.
+Dalam istilah yang disederhanakan, alamat IP adalah angka yang mengidentifikasi komputer Anda di internet. Anda dapat terhubung ke server Mindustry seseorang jika Anda mengetahui alamat IP mereka. Ada dua jenis; alamat ** publik ** dan ** lokal **.
 
-- For a **local IP**, when for example you would like to play with a friend on the same network as yours, each device has its own way of showing it. You can Google how to do it for your device, e.g. "find local ip on Mac".
-- For a **public IP**, you can simply Google "what is my ip".
+- Untuk ** IP lokal **, ketika misalnya Anda ingin bermain dengan teman di jaringan yang sama seperti milik Anda, setiap perangkat memiliki caranya sendiri untuk menampilkannya. Anda dapat Google cara melakukannya untuk perangkat Anda, mis. "temukan ip lokal di Mac".
+- Untuk ** IP publik **, cukup Google "what is my ip".
 
-### Running A Dedicated Server At Home
+### Menjalankan Server Khusus di Rumah
 
-Most of the time, this is what you should remember; **never share your public IP with the public if you're hosting from your home, unless you acknowledge the implications of doing so!** Your public IP is tied to your household, and if it falls into the wrong hands, and when put into the wrong hands, can open up your network to vulnerabilities and dangers. **Exercise caution, do your research, and use a VPN or webhost if possible.**
+Seringkali, inilah yang harus Anda ingat; ** jangan pernah membagikan IP publik Anda dengan publik jika Anda menghosting dari rumah, kecuali Anda mengetahui implikasinya! ** IP publik Anda terikat dengan rumah tangga Anda, dan jika jatuh ke tangan yang salah, dan kapan diletakkan di tangan yang salah, dapat membuka jaringan Anda terhadap kerentanan dan bahaya. ** Berhati-hatilah, lakukan riset, dan gunakan VPN atau host web jika memungkinkan. **
 
-It is also recommended and that you use a domain name or DNS service to mask your IP for public servers for ease of use, or even better, use a cloud service e.g. Amazon AWS or a dedicated server/VM from a hosting provider such as Linode or DigitalOcean, which is much safer. **Do your research**, and determine which option best fits your needs.
+Juga direkomendasikan dan Anda menggunakan nama domain atau layanan DNS untuk menutupi IP Anda untuk server publik untuk kemudahan penggunaan, atau bahkan lebih baik, menggunakan layanan cloud, mis. Amazon AWS atau server / VM khusus dari penyedia hosting seperti Linode atau DigitalOcean, yang jauh lebih aman. ** Lakukan riset **, dan tentukan opsi mana yang paling sesuai dengan kebutuhan Anda.
 
-1. Find the make/model of your router. This is usually on a sticker on the bottom or back of the router.
-2. Use your favorite search engine to search "port forward ASUS RT-ACRH17" and use the guide to foward **port 6567 TCP and UDP**. These instructions are different for every router, so be sure to read your guide thoroughly!
-3. You can use a service such as [You Get Signal](https://www.yougetsignal.com/tools/open-ports/) to check if you have done your portforwarding correctly. 
+1. Temukan merek / model router Anda. Ini biasanya terdapat pada stiker di bagian bawah atau belakang router.
+2. Gunakan mesin pencari favorit Anda untuk mencari "port forward ASUS RT-ACRH17" dan gunakan panduan untuk mengikuti ** port 6567 TCP dan UDP **. Petunjuk ini berbeda untuk setiap router, jadi pastikan untuk membaca panduan Anda secara menyeluruh!
+3. Anda dapat menggunakan layanan seperti [You Get Signal](https://www.yougetsignal.com/tools/open-ports/) untuk memeriksa apakah Anda telah melakukan portforwarding dengan benar.
 
-## Local LAN & Steam Servers
+## Server LAN & Uap Lokal
 
-A local LAN or Steam server is a server that is built into the game, and can be started using the "Host Multiplayer Game" button in the in-game menu. It is meant to be simple and straightforward, for sessions between a few players under a LAN network (aka in your household's WiFi network). It is not really meant for several players, as it takes more and more resources from your device to be able to use it that way; for that you will need a dedicated server mentioned above. It can only run when the game is open, and is immediately terminated when it is closed.
+Server LAN atau Steam lokal adalah server yang dibangun di dalam game, dan dapat dimulai menggunakan tombol "Host Multiplayer Game" di menu dalam game. Ini dimaksudkan agar sederhana dan lugas, untuk sesi antara beberapa pemain di bawah jaringan LAN (alias di jaringan WiFi rumah tangga Anda). Ini tidak benar-benar dimaksudkan untuk beberapa pemain, karena dibutuhkan lebih banyak sumber daya dari perangkat Anda untuk dapat menggunakannya dengan cara itu; untuk itu Anda memerlukan server khusus yang disebutkan di atas. Itu hanya bisa berjalan saat permainan terbuka, dan segera dihentikan saat ditutup.
 
-You can connect to one using the "Join Game" button under the "Play" menu. Unlike dedicated servers, your device will automatically find the host device and it will ususally appear in the server list without you having to enter the host's IP address in.
+Anda dapat terhubung ke salah satunya menggunakan tombol "Gabung Game" di bawah menu "Mainkan". Tidak seperti server khusus, perangkat Anda akan secara otomatis menemukan perangkat host dan biasanya akan muncul di daftar server tanpa Anda harus memasukkan alamat IP host di.
 
-## Dedicated Server Commands
+## Perintah Server Khusus
 
 $serverCommands
 
-## Dedicated Server Configuration Options
+## Opsi Konfigurasi Server Khusus
 
 $serverConfigs
