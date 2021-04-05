@@ -78,9 +78,7 @@ Mereka adalah orang yang sama. Anuke (n) menggunakan "Anuken" saat "Anuke" diamb
 
 > Saya biasanya menggunakan Anuken saat Anuke diambil sebagai nama pengguna. -Anuken
 
-## Mengapa Anda menagih untuk game di Steam dan iOS saat tersedia untuk
-
-Gratis?
+## Mengapa Anda menagih untuk game di Steam dan iOS saat tersedia untuk Gratis?
 
 Gim ini dikenai biaya di Steam dan iOS karena ini adalah salah satu cara untuk mendukung Anuke, dan memiliki fitur yang tidak tersedia di versi gratis, seperti:
 
