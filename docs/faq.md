@@ -12,13 +12,13 @@ Jika Anda menggunakan hotspot wifi dan masih tidak dapat menemukan game teman, A
 
 ## Bagaimana saya bisa bermain dengan seseorang di seluruh jaringan?
 
-Anda perlu melakukan port forward dan membagikan IP Anda dengan pemain lain. Lihat panduannya [di sini.] (Https://mindustrygame.github.io/wiki/servers/)
+Anda perlu melakukan port forward dan membagikan IP Anda dengan pemain lain. Lihat panduannya [di sini.](Https://mindustrygame.github.io/wiki/servers/)
 
 Pertimbangkan untuk menggunakan server publik, seperti yang sudah ada di dalam game.
 
 ## Bagaimana cara menyiapkan server khusus? / Bagaimana cara saya melakukan port forward?
 
-Lihat [panduan ini.] (Https://mindustrygame.github.io/wiki/servers/)
+Lihat [panduan ini.](Https://mindustrygame.github.io/wiki/servers/)
 
 ## Bisakah pemain PC bermain dengan pemain iOS / Android?
 
