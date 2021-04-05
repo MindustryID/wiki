@@ -6,7 +6,7 @@ Ini adalah panduan dan referensi untuk Mindustry Logic. Ini berisi informasi das
 
 ## Apa itu Mindustry Logic?
 
-Mindustry Logic * (mlog) * adalah bahasa skrip yang ditambahkan di v6 untuk tujuan memperkenalkan otomatisasi dan strategi yang lebih canggih ke dalam game. Ini sangat terinspirasi oleh bahasa Assembly, di mana hanya ada satu instruksi atau operasi pada satu waktu. Ini tidak seperti bahasa yang lebih populer seperti Python, Java, atau C ++, di mana Anda memiliki cara mudah untuk membuat satu baris, fungsi, pernyataan bersyarat, loop, dan kelas.
+Mindustry Logic *(mlog)* adalah bahasa skrip yang ditambahkan di v6 untuk tujuan memperkenalkan otomatisasi dan strategi yang lebih canggih ke dalam game. Ini sangat terinspirasi oleh bahasa Assembly, di mana hanya ada satu instruksi atau operasi pada satu waktu. Ini tidak seperti bahasa yang lebih populer seperti Python, Java, atau C++, di mana Anda memiliki cara mudah untuk membuat satu baris, fungsi, pernyataan bersyarat, loop, dan kelas.
 
 Kemampuan bahasa saat ini adalah:
 
