@@ -22,7 +22,7 @@ Kemampuan bahasa saat ini adalah:
   
 ## Apa yang saya butuhkan sebelum saya masuk ke Mindustry Logic?
 
-Hal yang baik untuk dimiliki sebelumnya adalah beberapa pengalaman pemrograman, setidaknya dalam hal konsep dan teori. Ini dapat membantu memahami beberapa teknik dan konsep bahasa ini. Tetapi yang paling penting, Anda membutuhkan * kesabaran dan pikiran terbuka *, karena banyak hal yang dapat berubah di antara pembaruan dan banyak hal mungkin tampak menakutkan dan rumit sampai Anda mencobanya.
+Hal yang baik untuk dimiliki sebelumnya adalah beberapa pengalaman pemrograman, setidaknya dalam hal konsep dan teori. Ini dapat membantu memahami beberapa teknik dan konsep bahasa ini. Tetapi yang paling penting, Anda membutuhkan *kesabaran dan pikiran terbuka*, karena banyak hal yang dapat berubah di antara pembaruan dan banyak hal mungkin tampak menakutkan dan rumit sampai Anda mencobanya.
 
 Anda mungkin juga ingin memiliki Google jika Anda tidak memahami istilah pemrograman khusus yang digunakan di sini.
 
