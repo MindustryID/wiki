@@ -1,0 +1,10514 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://mindustrygame.github.io/wiki/modding/5-types/">
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Types - Mindustry Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/style.css">
+    
+    
+      
+    
+    
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#types" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Mindustry Wiki" class="md-header__button md-logo" aria-label="Mindustry Wiki" data-md-component="logo">
+      
+  <img src="../../images/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mindustry Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Types
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/MindustryGame/wiki/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mindustry Wiki" class="md-nav__button md-logo" aria-label="Mindustry Wiki" data-md-component="logo">
+      
+  <img src="../../images/favicon.png" alt="logo">
+
+    </a>
+    Mindustry Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/MindustryGame/wiki/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Selamat datang di Mindustry Wiki
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        Pertanyaan yang Sering Diajukan
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../servers/" class="md-nav__link">
+        Servers
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Blocks
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Blocks" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Blocks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/100-blast-mixer/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-blast-mixer-large.png"></img> Blast Mixer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/101-melter/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-melter-large.png"></img> Melter
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/102-separator/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-separator-large.png"></img> Separator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/103-disassembler/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-disassembler-large.png"></img> Disassembler
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/104-spore-press/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-spore-press-large.png"></img> Spore Press
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/105-pulverizer/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-pulverizer-large.png"></img> Pulverizer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/106-coal-centrifuge/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-coal-centrifuge-large.png"></img> Coal Centrifuge
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/107-incinerator/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-incinerator-large.png"></img> Incinerator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/108-copper-wall/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-copper-wall-large.png"></img> Copper Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/109-copper-wall-large/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-copper-wall-large-large.png"></img> Large Copper Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/110-titanium-wall/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-titanium-wall-large.png"></img> Titanium Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/111-titanium-wall-large/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-titanium-wall-large-large.png"></img> Large Titanium Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/112-plastanium-wall/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-plastanium-wall-large.png"></img> Plastanium Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/113-plastanium-wall-large/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-plastanium-wall-large-large.png"></img> Large Plastanium Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/114-thorium-wall/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-thorium-wall-large.png"></img> Thorium Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/115-thorium-wall-large/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-thorium-wall-large-large.png"></img> Large Thorium Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/116-phase-wall/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-phase-wall-large.png"></img> Phase Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/117-phase-wall-large/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-phase-wall-large-large.png"></img> Large Phase Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/118-surge-wall/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-surge-wall-large.png"></img> Surge Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/119-surge-wall-large/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-surge-wall-large-large.png"></img> Large Surge Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/120-door/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-door-large.png"></img> Door
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/121-door-large/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-door-large-large.png"></img> Large Door
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/122-scrap-wall/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-scrap-wall-large.png"></img> Scrap Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/123-scrap-wall-large/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-scrap-wall-large-large.png"></img> Large Scrap Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/124-scrap-wall-huge/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-scrap-wall-huge-large.png"></img> Huge Scrap Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/125-scrap-wall-gigantic/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-scrap-wall-gigantic-large.png"></img> Gigantic Scrap Wall
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/127-mender/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-mender-large.png"></img> Mender
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/128-mend-projector/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-mend-projector-large.png"></img> Mend Projector
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/129-overdrive-projector/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-overdrive-projector-large.png"></img> Overdrive Projector
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/130-overdrive-dome/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-overdrive-dome-large.png"></img> Overdrive Dome
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/131-force-projector/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-force-projector-large.png"></img> Force Projector
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/132-shock-mine/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-shock-mine-large.png"></img> Shock Mine
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/133-conveyor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-conveyor-large.png"></img> Conveyor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/134-titanium-conveyor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-titanium-conveyor-large.png"></img> Titanium Conveyor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/135-plastanium-conveyor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-plastanium-conveyor-large.png"></img> Plastanium Conveyor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/136-armored-conveyor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-armored-conveyor-large.png"></img> Armored Conveyor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/137-junction/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-junction-large.png"></img> Junction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/138-bridge-conveyor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-bridge-conveyor-large.png"></img> Bridge Conveyor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/139-phase-conveyor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-phase-conveyor-large.png"></img> Phase Conveyor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/140-sorter/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-sorter-large.png"></img> Sorter
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/141-inverted-sorter/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-inverted-sorter-large.png"></img> Inverted Sorter
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/142-router/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-router-large.png"></img> Router
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/143-distributor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-distributor-large.png"></img> Distributor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/144-overflow-gate/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-overflow-gate-large.png"></img> Overflow Gate
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/145-underflow-gate/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-underflow-gate-large.png"></img> Underflow Gate
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/146-mass-driver/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-mass-driver-large.png"></img> Mass Driver
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/147-payload-conveyor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-payload-conveyor-large.png"></img> Payload Conveyor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/148-payload-router/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-payload-router-large.png"></img> Payload Router
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/149-mechanical-pump/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-mechanical-pump-large.png"></img> Mechanical Pump
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/150-rotary-pump/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-rotary-pump-large.png"></img> Rotary Pump
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/151-thermal-pump/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-thermal-pump-large.png"></img> Thermal Pump
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/152-conduit/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-conduit-large.png"></img> Conduit
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/153-pulse-conduit/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-pulse-conduit-large.png"></img> Pulse Conduit
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/154-plated-conduit/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-plated-conduit-large.png"></img> Plated Conduit
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/155-liquid-router/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-liquid-router-large.png"></img> Liquid Router
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/156-liquid-tank/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-liquid-tank-large.png"></img> Liquid Tank
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/157-liquid-junction/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-liquid-junction-large.png"></img> Liquid Junction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/158-bridge-conduit/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-bridge-conduit-large.png"></img> Bridge Conduit
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/159-phase-conduit/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-phase-conduit-large.png"></img> Phase Conduit
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/160-power-node/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-power-node-large.png"></img> Power Node
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/161-power-node-large/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-power-node-large-large.png"></img> Large Power Node
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/162-surge-tower/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-surge-tower-large.png"></img> Surge Tower
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/163-diode/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-diode-large.png"></img> Battery Diode
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/164-battery/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-battery-large.png"></img> Battery
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/165-battery-large/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-battery-large-large.png"></img> Large Battery
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/166-combustion-generator/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-combustion-generator-large.png"></img> Combustion Generator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/167-thermal-generator/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-thermal-generator-large.png"></img> Thermal Generator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/168-steam-generator/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-steam-generator-large.png"></img> Steam Generator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/169-differential-generator/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-differential-generator-large.png"></img> Differential Generator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/170-rtg-generator/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-rtg-generator-large.png"></img> RTG Generator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/171-solar-panel/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-solar-panel-large.png"></img> Solar Panel
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/172-solar-panel-large/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-solar-panel-large-large.png"></img> Large Solar Panel
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/173-thorium-reactor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-thorium-reactor-large.png"></img> Thorium Reactor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/174-impact-reactor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-impact-reactor-large.png"></img> Impact Reactor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/175-mechanical-drill/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-mechanical-drill-large.png"></img> Mechanical Drill
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/176-pneumatic-drill/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-pneumatic-drill-large.png"></img> Pneumatic Drill
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/177-laser-drill/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-laser-drill-large.png"></img> Laser Drill
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/178-blast-drill/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-blast-drill-large.png"></img> Airblast Drill
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/179-water-extractor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-water-extractor-large.png"></img> Water Extractor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/180-cultivator/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-cultivator-large.png"></img> Cultivator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/181-oil-extractor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-oil-extractor-large.png"></img> Oil Extractor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/182-core-shard/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-core-shard-large.png"></img> Core: Shard
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/183-core-foundation/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-core-foundation-large.png"></img> Core: Foundation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/184-core-nucleus/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-core-nucleus-large.png"></img> Core: Nucleus
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/185-vault/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-vault-large.png"></img> Vault
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/186-container/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-container-large.png"></img> Container
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/187-unloader/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-unloader-large.png"></img> Unloader
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/188-duo/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-duo-large.png"></img> Duo
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/189-scatter/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-scatter-large.png"></img> Scatter
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/190-scorch/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-scorch-large.png"></img> Scorch
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/191-hail/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-hail-large.png"></img> Hail
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/192-wave/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-wave-large.png"></img> Wave
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/193-lancer/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-lancer-large.png"></img> Lancer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/194-arc/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-arc-large.png"></img> Arc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/195-parallax/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-parallax-large.png"></img> Parallax
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/196-swarmer/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-swarmer-large.png"></img> Swarmer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/197-salvo/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-salvo-large.png"></img> Salvo
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/198-segment/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-segment-large.png"></img> Segment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/199-tsunami/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-tsunami-large.png"></img> Tsunami
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/200-fuse/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-fuse-large.png"></img> Fuse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/201-ripple/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-ripple-large.png"></img> Ripple
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/202-cyclone/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-cyclone-large.png"></img> Cyclone
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/203-foreshadow/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-foreshadow-large.png"></img> Foreshadow
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/204-spectre/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-spectre-large.png"></img> Spectre
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/205-meltdown/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-meltdown-large.png"></img> Meltdown
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/206-command-center/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-command-center-large.png"></img> Command Center
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/207-ground-factory/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-ground-factory-large.png"></img> Ground Factory
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/208-air-factory/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-air-factory-large.png"></img> Air Factory
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/209-naval-factory/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-naval-factory-large.png"></img> Naval Factory
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/210-additive-reconstructor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-additive-reconstructor-large.png"></img> Additive Reconstructor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/211-multiplicative-reconstructor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-multiplicative-reconstructor-large.png"></img> Multiplicative Reconstructor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/212-exponential-reconstructor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-exponential-reconstructor-large.png"></img> Exponential Reconstructor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/213-tetrative-reconstructor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-tetrative-reconstructor-large.png"></img> Tetrative Reconstructor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/214-repair-point/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-repair-point-large.png"></img> Repair Point
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/215-resupply-point/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-resupply-point-large.png"></img> Resupply Point
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/216-power-source/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-power-source-large.png"></img> Power Source
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/217-power-void/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-power-void-large.png"></img> Power Void
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/218-item-source/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-item-source-large.png"></img> Item Source
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/219-item-void/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-item-void-large.png"></img> Item Void
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/220-liquid-source/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-liquid-source-large.png"></img> Liquid Source
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/221-liquid-void/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-liquid-void-large.png"></img> Liquid Void
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/222-illuminator/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-illuminator-large.png"></img> Illuminator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/227-launch-pad/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-launch-pad-large.png"></img> Launch Pad
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/228-launch-pad-large/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-launch-pad-large-large.png"></img> Large Launch Pad
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/229-interplanetary-accelerator/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-interplanetary-accelerator-large.png"></img> Interplanetary Accelerator
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/230-message/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-message-large.png"></img> Message
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/231-switch/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-switch-large.png"></img> Switch
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/232-micro-processor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-micro-processor-large.png"></img> Micro Processor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/233-logic-processor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-logic-processor-large.png"></img> Logic Processor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/234-hyper-processor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-hyper-processor-large.png"></img> Hyper Processor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/235-memory-cell/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-memory-cell-large.png"></img> Memory Cell
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/236-memory-bank/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-memory-bank-large.png"></img> Memory Bank
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/237-logic-display/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-logic-display-large.png"></img> Logic Display
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/238-large-logic-display/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-large-logic-display-large.png"></img> Large Logic Display
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/239-block-forge/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-block-forge-large.png"></img> Block Forge
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/240-block-loader/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-block-loader-large.png"></img> Block Loader
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/241-block-unloader/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-block-unloader-large.png"></img> Block Unloader
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/90-graphite-press/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-graphite-press-large.png"></img> Graphite Press
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/91-multi-press/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-multi-press-large.png"></img> Multi-Press
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/92-silicon-smelter/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-silicon-smelter-large.png"></img> Silicon Smelter
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/93-silicon-crucible/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-silicon-crucible-large.png"></img> Silicon Crucible
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/94-kiln/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-kiln-large.png"></img> Kiln
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/95-plastanium-compressor/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-plastanium-compressor-large.png"></img> Plastanium Compressor
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/96-phase-weaver/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-phase-weaver-large.png"></img> Phase Weaver
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/97-alloy-smelter/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-alloy-smelter-large.png"></img> Alloy Smelter
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/98-cryofluid-mixer/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-cryofluid-mixer-large.png"></img> Cryofluid Mixer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blocks/99-pyratite-mixer/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/block-pyratite-mixer-large.png"></img> Pyratite Mixer
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Items
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Items" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Items
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/0-copper/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-copper.png"></img> Copper
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/1-lead/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-lead.png"></img> Lead
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/10-plastanium/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-plastanium.png"></img> Plastanium
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/11-phase-fabric/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-phase-fabric.png"></img> Phase Fabric
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/12-surge-alloy/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-surge-alloy.png"></img> Surge Alloy
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/13-spore-pod/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-spore-pod.png"></img> Spore Pod
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/14-blast-compound/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-blast-compound.png"></img> Blast Compound
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/15-pyratite/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-pyratite.png"></img> Pyratite
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/2-metaglass/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-metaglass.png"></img> Metaglass
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/3-graphite/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-graphite.png"></img> Graphite
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/4-sand/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-sand.png"></img> Sand
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/5-coal/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-coal.png"></img> Coal
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/6-titanium/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-titanium.png"></img> Titanium
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/7-thorium/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-thorium.png"></img> Thorium
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/8-scrap/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-scrap.png"></img> Scrap
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../items/9-silicon/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/item-silicon.png"></img> Silicon
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Liquids
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Liquids" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Liquids
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../liquids/0-water/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/liquid-water.png"></img> Water
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../liquids/1-slag/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/liquid-slag.png"></img> Slag
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../liquids/2-oil/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/liquid-oil.png"></img> Oil
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../liquids/3-cryofluid/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/liquid-cryofluid.png"></img> Cryofluid
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        Logic
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Logic" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Logic
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logic/0-introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logic/1-glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logic/2-editing/" class="md-nav__link">
+        Writing and Editing Code
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logic/3-variables/" class="md-nav__link">
+        Variables and Constants
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+      
+      <label class="md-nav__link" for="__nav_8">
+        Modding
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Modding" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Modding
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-modding/" class="md-nav__link">
+        Modding Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-plugins/" class="md-nav__link">
+        Plugins & JVM Mods
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-scripting/" class="md-nav__link">
+        Scripting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4-spriting/" class="md-nav__link">
+        Spriting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-markup/" class="md-nav__link">
+        Markup
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Types
+      </a>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-migrationv6/" class="md-nav__link">
+        6.0 Migration Guide
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      <label class="md-nav__link" for="__nav_9">
+        Units
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Units" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Units
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/0-dagger/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-dagger-xlarge.png"></img> Dagger
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/1-mace/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-mace-xlarge.png"></img> Mace
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/10-crawler/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-crawler-xlarge.png"></img> Crawler
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/11-atrax/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-atrax-xlarge.png"></img> Atrax
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/12-spiroct/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-spiroct-xlarge.png"></img> Spiroct
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/13-arkyid/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-arkyid-xlarge.png"></img> Arkyid
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/14-toxopid/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-toxopid-xlarge.png"></img> Toxopid
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/15-flare/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-flare-xlarge.png"></img> Flare
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/16-horizon/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-horizon-xlarge.png"></img> Horizon
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/17-zenith/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-zenith-xlarge.png"></img> Zenith
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/18-antumbra/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-antumbra-xlarge.png"></img> Antumbra
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/19-eclipse/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-eclipse-xlarge.png"></img> Eclipse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/2-fortress/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-fortress-xlarge.png"></img> Fortress
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/20-mono/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-mono-xlarge.png"></img> Mono
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/21-poly/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-poly-xlarge.png"></img> Poly
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/22-mega/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-mega-xlarge.png"></img> Mega
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/23-quad/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-quad-xlarge.png"></img> Quad
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/24-oct/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-oct-xlarge.png"></img> Oct
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/25-risso/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-risso-xlarge.png"></img> Risso
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/26-minke/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-minke-xlarge.png"></img> Minke
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/27-bryde/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-bryde-xlarge.png"></img> Bryde
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/28-sei/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-sei-xlarge.png"></img> Sei
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/29-omura/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-omura-xlarge.png"></img> Omura
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/3-scepter/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-scepter-xlarge.png"></img> Scepter
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/30-alpha/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-alpha-xlarge.png"></img> Alpha
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/31-beta/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-beta-xlarge.png"></img> Beta
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/32-gamma/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-gamma-xlarge.png"></img> Gamma
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/4-reign/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-reign-xlarge.png"></img> Reign
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/5-nova/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-nova-xlarge.png"></img> Nova
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/6-pulsar/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-pulsar-xlarge.png"></img> Pulsar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/7-quasar/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-quasar-xlarge.png"></img> Quasar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/8-vela/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-vela-xlarge.png"></img> Vela
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../units/9-corvus/" class="md-nav__link">
+        <img id="spr" src="/wiki/images/unit-corvus-xlarge.png"></img> Corvus
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/MindustryGame/wiki/edit/master/docs/modding/5-types.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="types">Types</h1>
+<h1 id="block">Block</h1>
+<h2 id="block_1">Block</h2>
+<p><em>extends <a href="#unlockablecontent">UnlockableContent</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hasItems</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>hasLiquids</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>hasPower</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>outputsLiquid</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>consumesPower</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>outputsPower</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>outputsPayload</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>outputFacing</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>acceptsItems</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>itemCapacity</td>
+<td>int</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td>liquidCapacity</td>
+<td>float</td>
+<td>10.0</td>
+<td></td>
+</tr>
+<tr>
+<td>liquidPressure</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>bars</td>
+<td>BlockBars</td>
+<td>new BlockBars()</td>
+<td></td>
+</tr>
+<tr>
+<td>consumes</td>
+<td>Consumers</td>
+<td>new Consumers()</td>
+<td></td>
+</tr>
+<tr>
+<td>displayFlow</td>
+<td>boolean</td>
+<td>true</td>
+<td>whether to display flow rate</td>
+</tr>
+<tr>
+<td>inEditor</td>
+<td>boolean</td>
+<td>true</td>
+<td>whether this block is visible in the editor</td>
+</tr>
+<tr>
+<td>lastConfig</td>
+<td>Object</td>
+<td>null</td>
+<td>the last configuration value applied to this block.</td>
+</tr>
+<tr>
+<td>saveConfig</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether to save the last config and apply it to newly placed blocks</td>
+</tr>
+<tr>
+<td>copyConfig</td>
+<td>boolean</td>
+<td>true</td>
+<td>whether to allow copying the config through middle click</td>
+</tr>
+<tr>
+<td>update</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether this block has a tile entity that updates</td>
+</tr>
+<tr>
+<td>destructible</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether this block has health and can be destroyed</td>
+</tr>
+<tr>
+<td>unloadable</td>
+<td>boolean</td>
+<td>true</td>
+<td>whether unloaders work on this block</td>
+</tr>
+<tr>
+<td>solid</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether this is solid</td>
+</tr>
+<tr>
+<td>solidifes</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether this block CAN be solid.</td>
+</tr>
+<tr>
+<td>rotate</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether this is rotateable</td>
+</tr>
+<tr>
+<td>saveData</td>
+<td>boolean</td>
+<td>false</td>
+<td>for static blocks only: if true, tile data() is saved in world data.</td>
+</tr>
+<tr>
+<td>breakable</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether you can break this with rightclick</td>
+</tr>
+<tr>
+<td>rebuildable</td>
+<td>boolean</td>
+<td>true</td>
+<td>whether to add this block to brokenblocks</td>
+</tr>
+<tr>
+<td>requiresWater</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether this block can only be placed on water</td>
+</tr>
+<tr>
+<td>placeableLiquid</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether this block can be placed on any liquids, anywhere</td>
+</tr>
+<tr>
+<td>placeableOn</td>
+<td>boolean</td>
+<td>true</td>
+<td>whether this floor can be placed on.</td>
+</tr>
+<tr>
+<td>insulated</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether this block has insulating properties.</td>
+</tr>
+<tr>
+<td>squareSprite</td>
+<td>boolean</td>
+<td>true</td>
+<td>whether the sprite is a full square.</td>
+</tr>
+<tr>
+<td>absorbLasers</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether this block absorbs laser attacks.</td>
+</tr>
+<tr>
+<td>enableDrawStatus</td>
+<td>boolean</td>
+<td>true</td>
+<td>if false, the status is never drawn</td>
+</tr>
+<tr>
+<td>drawDisabled</td>
+<td>boolean</td>
+<td>true</td>
+<td>whether to draw disabled status</td>
+</tr>
+<tr>
+<td>autoResetEnabled</td>
+<td>boolean</td>
+<td>true</td>
+<td>whether to automatically reset enabled status after a logic block has not interacted for a while.</td>
+</tr>
+<tr>
+<td>noUpdateDisabled</td>
+<td>boolean</td>
+<td>false</td>
+<td>if true, the block stops updating when disabled</td>
+</tr>
+<tr>
+<td>useColor</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether to use this block's color in the minimap. Only used for overlays.</td>
+</tr>
+<tr>
+<td>health</td>
+<td>int</td>
+<td>-1</td>
+<td>tile entity health</td>
+</tr>
+<tr>
+<td>baseExplosiveness</td>
+<td>float</td>
+<td>0.0</td>
+<td>base block explosiveness</td>
+</tr>
+<tr>
+<td>floating</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether this block can be placed on edges of liquids.</td>
+</tr>
+<tr>
+<td>size</td>
+<td>int</td>
+<td>1</td>
+<td>multiblock size</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>float</td>
+<td>0.0</td>
+<td>multiblock offset</td>
+</tr>
+<tr>
+<td>expanded</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether to draw this block in the expanded draw range.</td>
+</tr>
+<tr>
+<td>timers</td>
+<td>int</td>
+<td>1</td>
+<td>Max of timers used.</td>
+</tr>
+<tr>
+<td>cacheLayer</td>
+<td>CacheLayer</td>
+<td>normal</td>
+<td>Cache layer. Only used for 'cached' rendering.</td>
+</tr>
+<tr>
+<td>fillsTile</td>
+<td>boolean</td>
+<td>true</td>
+<td>Special flag; if false, floor will be drawn under this block even if it is cached.</td>
+</tr>
+<tr>
+<td>alwaysReplace</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether this block can be replaced in all cases</td>
+</tr>
+<tr>
+<td>replaceable</td>
+<td>boolean</td>
+<td>true</td>
+<td>if false, this block can never be replaced.</td>
+</tr>
+<tr>
+<td>group</td>
+<td>BlockGroup</td>
+<td>none</td>
+<td>The block group. Unless {@link #canReplace} is overriden, blocks in the same group can replace each other.</td>
+</tr>
+<tr>
+<td>flags</td>
+<td>EnumSet<BlockFlag></td>
+<td>of()</td>
+<td>List of block flags. Used for AI indexing.</td>
+</tr>
+<tr>
+<td>priority</td>
+<td>TargetPriority</td>
+<td>base</td>
+<td>Targeting priority of this block, as seen by enemies .</td>
+</tr>
+<tr>
+<td>unitCapModifier</td>
+<td>int</td>
+<td>0</td>
+<td>How much this block affects the unit cap by. The block flags must contain unitModifier in order for this to work.</td>
+</tr>
+<tr>
+<td>configurable</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether the block can be tapped and selected to configure.</td>
+</tr>
+<tr>
+<td>logicConfigurable</td>
+<td>boolean</td>
+<td>false</td>
+<td>If true, this block can be configured by logic.</td>
+</tr>
+<tr>
+<td>consumesTap</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether this block consumes touchDown events when tapped.</td>
+</tr>
+<tr>
+<td>drawLiquidLight</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether to draw the glow of the liquid for this block, if it has one.</td>
+</tr>
+<tr>
+<td>sync</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether to periodically sync this block across the network.</td>
+</tr>
+<tr>
+<td>conveyorPlacement</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether this block uses conveyor-type placement mode.</td>
+</tr>
+<tr>
+<td>swapDiagonalPlacement</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether to swap the diagonal placement modes.</td>
+</tr>
+<tr>
+<td>schematicPriority</td>
+<td>int</td>
+<td>0</td>
+<td>Build queue priority in schematics.</td>
+</tr>
+<tr>
+<td>mapColor</td>
+<td>Color</td>
+<td>000000ff</td>
+<td>The color of this block when displayed on the minimap or map preview. Do not set manually! This is overridden when loading for most blocks.</td>
+</tr>
+<tr>
+<td>hasColor</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether this block has a minimap color.</td>
+</tr>
+<tr>
+<td>targetable</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether units target this block.</td>
+</tr>
+<tr>
+<td>canOverdrive</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether the overdrive core has any effect on this block.</td>
+</tr>
+<tr>
+<td>outlineColor</td>
+<td>Color</td>
+<td>404049ff</td>
+<td>Outlined icon color.</td>
+</tr>
+<tr>
+<td>outlineIcon</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether any icon region has an outline added.</td>
+</tr>
+<tr>
+<td>outlinedIcon</td>
+<td>int</td>
+<td>-1</td>
+<td>Which of the icon regions gets the outline added.</td>
+</tr>
+<tr>
+<td>hasShadow</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether this block has a shadow under it.</td>
+</tr>
+<tr>
+<td>breakSound</td>
+<td>Sound</td>
+<td>boom</td>
+<td>Sounds made when this block breaks.</td>
+</tr>
+<tr>
+<td>albedo</td>
+<td>float</td>
+<td>0.0</td>
+<td>How reflective this block is.</td>
+</tr>
+<tr>
+<td>lightColor</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td>Environmental passive light color.</td>
+</tr>
+<tr>
+<td>emitLight</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether this environmental block passively emits light. Not valid for non-environmental blocks.</td>
+</tr>
+<tr>
+<td>lightRadius</td>
+<td>float</td>
+<td>60.0</td>
+<td>Radius of the light emitted by this block.</td>
+</tr>
+<tr>
+<td>loopSound</td>
+<td>Sound</td>
+<td>none</td>
+<td>The sound that this block makes while active. One sound loop. Do not overuse.</td>
+</tr>
+<tr>
+<td>loopSoundVolume</td>
+<td>float</td>
+<td>0.5</td>
+<td>Active sound base volume.</td>
+</tr>
+<tr>
+<td>ambientSound</td>
+<td>Sound</td>
+<td>none</td>
+<td>The sound that this block makes while idle. Uses one sound loop for all blocks.</td>
+</tr>
+<tr>
+<td>ambientSoundVolume</td>
+<td>float</td>
+<td>0.05</td>
+<td>Idle sound base volume.</td>
+</tr>
+<tr>
+<td>requirements</td>
+<td>ItemStack[]</td>
+<td>[]</td>
+<td>Cost of constructing this block.</td>
+</tr>
+<tr>
+<td>category</td>
+<td>Category</td>
+<td>distribution</td>
+<td>Category in place menu.</td>
+</tr>
+<tr>
+<td>buildCost</td>
+<td>float</td>
+<td>0.0</td>
+<td>Cost of building this block; do not modify directly!</td>
+</tr>
+<tr>
+<td>buildVisibility</td>
+<td>BuildVisibility</td>
+<td>hidden</td>
+<td>Whether this block is visible and can currently be built.</td>
+</tr>
+<tr>
+<td>buildCostMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td>Multiplier for speed of building this block.</td>
+</tr>
+<tr>
+<td>deconstructThreshold</td>
+<td>float</td>
+<td>0.0</td>
+<td>Build completion at which deconstruction finishes.</td>
+</tr>
+<tr>
+<td>researchCostMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td>Multiplier for cost of research in tech tree.</td>
+</tr>
+<tr>
+<td>instantTransfer</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether this block has instant transfer.</td>
+</tr>
+<tr>
+<td>quickRotate</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether you can rotate this block with Keybind rotateplaced + Scroll Wheel.</td>
+</tr>
+<tr>
+<td>subclass</td>
+<td>Class&lt;?&gt;</td>
+<td>class mindustry.world.Block</td>
+<td>Main subclass. Non-anonymous.</td>
+</tr>
+<tr>
+<td>buildType</td>
+<td>Prov<Building></td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>configurations</td>
+<td>ObjectMap&lt;Class&lt;?&gt;,Cons2&gt;</td>
+<td>new ObjectMap&lt;&gt;()</td>
+<td></td>
+</tr>
+<tr>
+<td>region</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>editorIcon</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>teamRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>teamRegions</td>
+<td>TextureRegion[]</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="accelerator">Accelerator</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arrowRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>launching</td>
+<td>Block</td>
+<td>coreNucleus</td>
+<td></td>
+</tr>
+<tr>
+<td>capacities</td>
+<td>int[]</td>
+<td>[]</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="airblock">AirBlock</h2>
+<p><em>extends <a href="#floor">Floor</a></em></p>
+<h2 id="armoredconduit">ArmoredConduit</h2>
+<p><em>extends <a href="#conduit">Conduit</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>capRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="armoredconveyor">ArmoredConveyor</h2>
+<p><em>extends <a href="#conveyor">Conveyor</a></em></p>
+<h2 id="attributesmelter">AttributeSmelter</h2>
+<p><em>extends <a href="#genericsmelter">GenericSmelter</a></em></p>
+<p>A smelter that gains efficiency from attribute tiles.</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>attribute</td>
+<td>Attribute</td>
+<td>heat</td>
+<td></td>
+</tr>
+<tr>
+<td>baseEfficiency</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>boostScale</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>maxHeatBoost</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="baseturret">BaseTurret</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>range</td>
+<td>float</td>
+<td>80.0</td>
+<td></td>
+</tr>
+<tr>
+<td>rotateSpeed</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>acceptCoolant</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>coolEffect</td>
+<td>Effect</td>
+<td>fuelburn</td>
+<td>Effect displayed when coolant is used.</td>
+</tr>
+<tr>
+<td>coolantMultiplier</td>
+<td>float</td>
+<td>5.0</td>
+<td>How much reload is lowered by for each unit of liquid of heat capacity.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="battery">Battery</h2>
+<p><em>extends <a href="#powerdistributor">PowerDistributor</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>emptyLightColor</td>
+<td>Color</td>
+<td>f8c266ff</td>
+<td></td>
+</tr>
+<tr>
+<td>fullLightColor</td>
+<td>Color</td>
+<td>fb9567ff</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="blockforge">BlockForge</h2>
+<p><em>extends <a href="#payloadacceptor">PayloadAcceptor</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>buildSpeed</td>
+<td>float</td>
+<td>0.4</td>
+<td></td>
+</tr>
+<tr>
+<td>minBlockSize</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>maxBlockSize</td>
+<td>int</td>
+<td>2</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="blockloader">BlockLoader</h2>
+<p><em>extends <a href="#payloadacceptor">PayloadAcceptor</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerLoad</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>loadTime</td>
+<td>float</td>
+<td>2.0</td>
+<td></td>
+</tr>
+<tr>
+<td>itemsLoaded</td>
+<td>int</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>liquidsLoaded</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>maxBlockSize</td>
+<td>int</td>
+<td>2</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="blockunloader">BlockUnloader</h2>
+<p><em>extends <a href="#blockloader">BlockLoader</a></em></p>
+<h2 id="boulder">Boulder</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>variants</td>
+<td>int</td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="buffereditembridge">BufferedItemBridge</h2>
+<p><em>extends <a href="#extendingitembridge">ExtendingItemBridge</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerAccept</td>
+<td>int</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>speed</td>
+<td>float</td>
+<td>40.0</td>
+<td></td>
+</tr>
+<tr>
+<td>bufferCapacity</td>
+<td>int</td>
+<td>50</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="coreblock">CoreBlock</h2>
+<p><em>extends <a href="#storageblock">StorageBlock</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unitType</td>
+<td>UnitType</td>
+<td>alpha</td>
+<td></td>
+</tr>
+<tr>
+<td>timerResupply</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>ammoAmount</td>
+<td>int</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>resupplyRate</td>
+<td>float</td>
+<td>10.0</td>
+<td></td>
+</tr>
+<tr>
+<td>resupplyRange</td>
+<td>float</td>
+<td>60.0</td>
+<td></td>
+</tr>
+<tr>
+<td>resupplyItem</td>
+<td>Item</td>
+<td>copper</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="doubleoverlayfloor">DoubleOverlayFloor</h2>
+<p><em>extends <a href="#overlayfloor">OverlayFloor</a></em></p>
+<h2 id="itemliquidgenerator">ItemLiquidGenerator</h2>
+<p><em>extends <a href="#powergenerator">PowerGenerator</a></em></p>
+<p>Power generation block which can use items, liquids or both as input sources for power production.
+Liquids will take priority over items.</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>minItemEfficiency</td>
+<td>float</td>
+<td>0.2</td>
+<td></td>
+</tr>
+<tr>
+<td>itemDuration</td>
+<td>float</td>
+<td>70.0</td>
+<td>The time in number of ticks during which a single item will produce power.</td>
+</tr>
+<tr>
+<td>minLiquidEfficiency</td>
+<td>float</td>
+<td>0.2</td>
+<td></td>
+</tr>
+<tr>
+<td>maxLiquidGenerate</td>
+<td>float</td>
+<td>0.4</td>
+<td>Maximum liquid used per frame.</td>
+</tr>
+<tr>
+<td>generateEffect</td>
+<td>Effect</td>
+<td>generatespark</td>
+<td></td>
+</tr>
+<tr>
+<td>explodeEffect</td>
+<td>Effect</td>
+<td>generatespark</td>
+<td></td>
+</tr>
+<tr>
+<td>heatColor</td>
+<td>Color</td>
+<td>ff9b59ff</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>liquidRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>randomlyExplode</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>defaults</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="burnergenerator">BurnerGenerator</h2>
+<p><em>extends <a href="#itemliquidgenerator">ItemLiquidGenerator</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>turbineRegions</td>
+<td>TextureRegion[]</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>capRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>turbineSpeed</td>
+<td>float</td>
+<td>2.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="cliff">Cliff</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>size</td>
+<td>float</td>
+<td>11.0</td>
+<td></td>
+</tr>
+<tr>
+<td>cliffs</td>
+<td>TextureRegion[]</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="commandcenter">CommandCenter</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>commandRegions</td>
+<td>TextureRegionDrawable[]</td>
+<td>[null, null, null]</td>
+<td></td>
+</tr>
+<tr>
+<td>topColor</td>
+<td>Color</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>bottomColor</td>
+<td>Color</td>
+<td>5e5e5eff</td>
+<td></td>
+</tr>
+<tr>
+<td>effect</td>
+<td>Effect</td>
+<td>commandSend</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="conduit">Conduit</h2>
+<p><em>extends <a href="#liquidblock">LiquidBlock</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerFlow</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>botColor</td>
+<td>Color</td>
+<td>565656ff</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegions</td>
+<td>TextureRegion[]</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>botRegions</td>
+<td>TextureRegion[]</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>leaks</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="conveyor">Conveyor</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>regions</td>
+<td>TextureRegion[][]</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>speed</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>displayedSpeed</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="cultivator">Cultivator</h2>
+<p><em>extends <a href="#genericcrafter">GenericCrafter</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plantColor</td>
+<td>Color</td>
+<td>5541b1ff</td>
+<td></td>
+</tr>
+<tr>
+<td>plantColorLight</td>
+<td>Color</td>
+<td>7457ceff</td>
+<td></td>
+</tr>
+<tr>
+<td>bottomColor</td>
+<td>Color</td>
+<td>474747ff</td>
+<td></td>
+</tr>
+<tr>
+<td>middleRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>random</td>
+<td>Rand</td>
+<td>new Rand(0)</td>
+<td></td>
+</tr>
+<tr>
+<td>recurrence</td>
+<td>float</td>
+<td>6.0</td>
+<td></td>
+</tr>
+<tr>
+<td>attribute</td>
+<td>Attribute</td>
+<td>spores</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="decaygenerator">DecayGenerator</h2>
+<p><em>extends <a href="#itemliquidgenerator">ItemLiquidGenerator</a></em></p>
+<h2 id="door">Door</h2>
+<p><em>extends <a href="#wall">Wall</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerToggle</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>openfx</td>
+<td>Effect</td>
+<td>dooropen</td>
+<td></td>
+</tr>
+<tr>
+<td>closefx</td>
+<td>Effect</td>
+<td>doorclose</td>
+<td></td>
+</tr>
+<tr>
+<td>doorSound</td>
+<td>Sound</td>
+<td>door</td>
+<td></td>
+</tr>
+<tr>
+<td>openRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="drill">Drill</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hardnessDrillMultiplier</td>
+<td>float</td>
+<td>50.0</td>
+<td></td>
+</tr>
+<tr>
+<td>tier</td>
+<td>int</td>
+<td>0</td>
+<td>Maximum tier of blocks this drill can mine.</td>
+</tr>
+<tr>
+<td>drillTime</td>
+<td>float</td>
+<td>300.0</td>
+<td>Base time to drill one ore, in frames.</td>
+</tr>
+<tr>
+<td>liquidBoostIntensity</td>
+<td>float</td>
+<td>1.6</td>
+<td>How many times faster the drill will progress when boosted by liquid.</td>
+</tr>
+<tr>
+<td>warmupSpeed</td>
+<td>float</td>
+<td>0.02</td>
+<td>Speed at which the drill speeds up.</td>
+</tr>
+<tr>
+<td>drawMineItem</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether to draw the item this drill is mining.</td>
+</tr>
+<tr>
+<td>drillEffect</td>
+<td>Effect</td>
+<td>mine</td>
+<td>Effect played when an item is produced. This is colored.</td>
+</tr>
+<tr>
+<td>rotateSpeed</td>
+<td>float</td>
+<td>2.0</td>
+<td>Speed the drill bit rotates at.</td>
+</tr>
+<tr>
+<td>updateEffect</td>
+<td>Effect</td>
+<td>pulverizeSmall</td>
+<td>Effect randomly played while drilling.</td>
+</tr>
+<tr>
+<td>updateEffectChance</td>
+<td>float</td>
+<td>0.02</td>
+<td>Chance the update effect will appear.</td>
+</tr>
+<tr>
+<td>drawRim</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>heatColor</td>
+<td>Color</td>
+<td>ff5512ff</td>
+<td></td>
+</tr>
+<tr>
+<td>rimRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>rotatorRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>itemRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="extendingitembridge">ExtendingItemBridge</h2>
+<p><em>extends <a href="#itembridge">ItemBridge</a></em></p>
+<h2 id="floor">Floor</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>variants</td>
+<td>int</td>
+<td>3</td>
+<td>number of different variant regions to use</td>
+</tr>
+<tr>
+<td>edge</td>
+<td>String</td>
+<td>"stone"</td>
+<td>edge fallback, used mainly for ores</td>
+</tr>
+<tr>
+<td>speedMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td>Multiplies unit velocity by this when walked on.</td>
+</tr>
+<tr>
+<td>dragMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td>Multiplies unit drag by this when walked on.</td>
+</tr>
+<tr>
+<td>damageTaken</td>
+<td>float</td>
+<td>0.0</td>
+<td>Damage taken per tick on this tile.</td>
+</tr>
+<tr>
+<td>drownTime</td>
+<td>float</td>
+<td>0.0</td>
+<td>How many ticks it takes to drown on this.</td>
+</tr>
+<tr>
+<td>walkEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td>Effect when walking on this floor.</td>
+</tr>
+<tr>
+<td>walkSound</td>
+<td>Sound</td>
+<td>none</td>
+<td>Sound made when walking.</td>
+</tr>
+<tr>
+<td>walkSoundVolume</td>
+<td>float</td>
+<td>0.1</td>
+<td>Volume of sound made when walking.</td>
+</tr>
+<tr>
+<td>walkSoundPitchMin</td>
+<td>float</td>
+<td>0.8</td>
+<td>Volume of sound made when walking.</td>
+</tr>
+<tr>
+<td>walkSoundPitchMax</td>
+<td>float</td>
+<td>1.2</td>
+<td>Volume of sound made when walking.</td>
+</tr>
+<tr>
+<td>drownUpdateEffect</td>
+<td>Effect</td>
+<td>bubble</td>
+<td>Effect displayed when drowning on this floor.</td>
+</tr>
+<tr>
+<td>status</td>
+<td>StatusEffect</td>
+<td>none</td>
+<td>Status effect applied when walking on.</td>
+</tr>
+<tr>
+<td>statusDuration</td>
+<td>float</td>
+<td>60.0</td>
+<td>Intensity of applied status effect.</td>
+</tr>
+<tr>
+<td>liquidDrop</td>
+<td>Liquid</td>
+<td>null</td>
+<td>liquids that drop from this block, used for pumps</td>
+</tr>
+<tr>
+<td>liquidMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td>Multiplier for pumped liquids, used for deep water.</td>
+</tr>
+<tr>
+<td>itemDrop</td>
+<td>Item</td>
+<td>null</td>
+<td>item that drops from this block, used for drills</td>
+</tr>
+<tr>
+<td>isLiquid</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether this block can be drowned in</td>
+</tr>
+<tr>
+<td>playerUnmineable</td>
+<td>boolean</td>
+<td>false</td>
+<td>if true, this block cannot be mined by players. useful for annoying things like sand.</td>
+</tr>
+<tr>
+<td>blendGroup</td>
+<td>Block</td>
+<td>this</td>
+<td>Group of blocks that this block does not draw edges on.</td>
+</tr>
+<tr>
+<td>updateEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td>Effect displayed when randomly updated.</td>
+</tr>
+<tr>
+<td>attributes</td>
+<td>Attributes</td>
+<td>new Attributes()</td>
+<td>Array of affinities to certain things.</td>
+</tr>
+<tr>
+<td>oreDefault</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether this ore generates in maps by default.</td>
+</tr>
+<tr>
+<td>oreScale</td>
+<td>float</td>
+<td>24.0</td>
+<td>Ore generation params.</td>
+</tr>
+<tr>
+<td>oreThreshold</td>
+<td>float</td>
+<td>0.828</td>
+<td>Ore generation params.</td>
+</tr>
+<tr>
+<td>wall</td>
+<td>Block</td>
+<td>air</td>
+<td>Wall variant of this block. May be Blocks.air if not found.</td>
+</tr>
+<tr>
+<td>decoration</td>
+<td>Block</td>
+<td>air</td>
+<td>Decoration block. Usually a rock. May be air.</td>
+</tr>
+<tr>
+<td>needsSurface</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether this overlay needs a surface to be on. False for floating blocks, like spawns.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="forceprojector">ForceProjector</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerUse</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>phaseUseTime</td>
+<td>float</td>
+<td>350.0</td>
+<td></td>
+</tr>
+<tr>
+<td>phaseRadiusBoost</td>
+<td>float</td>
+<td>80.0</td>
+<td></td>
+</tr>
+<tr>
+<td>phaseShieldBoost</td>
+<td>float</td>
+<td>400.0</td>
+<td></td>
+</tr>
+<tr>
+<td>radius</td>
+<td>float</td>
+<td>101.7</td>
+<td></td>
+</tr>
+<tr>
+<td>shieldHealth</td>
+<td>float</td>
+<td>700.0</td>
+<td></td>
+</tr>
+<tr>
+<td>cooldownNormal</td>
+<td>float</td>
+<td>1.75</td>
+<td></td>
+</tr>
+<tr>
+<td>cooldownLiquid</td>
+<td>float</td>
+<td>1.5</td>
+<td></td>
+</tr>
+<tr>
+<td>cooldownBrokenBase</td>
+<td>float</td>
+<td>0.35</td>
+<td></td>
+</tr>
+<tr>
+<td>basePowerDraw</td>
+<td>float</td>
+<td>0.2</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="fracker">Fracker</h2>
+<p><em>extends <a href="#solidpump">SolidPump</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>itemUseTime</td>
+<td>float</td>
+<td>100.0</td>
+<td></td>
+</tr>
+<tr>
+<td>liquidRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>rotatorRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="genericcrafter">GenericCrafter</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>outputItem</td>
+<td>ItemStack</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>outputLiquid</td>
+<td>LiquidStack</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>craftTime</td>
+<td>float</td>
+<td>80.0</td>
+<td></td>
+</tr>
+<tr>
+<td>craftEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>updateEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>updateEffectChance</td>
+<td>float</td>
+<td>0.04</td>
+<td></td>
+</tr>
+<tr>
+<td>drawer</td>
+<td>DrawBlock</td>
+<td>new DrawBlock()</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="genericsmelter">GenericSmelter</h2>
+<p><em>extends <a href="#genericcrafter">GenericCrafter</a></em></p>
+<p>A GenericCrafter with a new glowing region drawn on top.</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flameColor</td>
+<td>Color</td>
+<td>ffc999ff</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="impactreactor">ImpactReactor</h2>
+<p><em>extends <a href="#powergenerator">PowerGenerator</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerUse</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>warmupSpeed</td>
+<td>float</td>
+<td>0.001</td>
+<td></td>
+</tr>
+<tr>
+<td>itemDuration</td>
+<td>float</td>
+<td>60.0</td>
+<td></td>
+</tr>
+<tr>
+<td>explosionRadius</td>
+<td>int</td>
+<td>23</td>
+<td></td>
+</tr>
+<tr>
+<td>explosionDamage</td>
+<td>int</td>
+<td>1900</td>
+<td></td>
+</tr>
+<tr>
+<td>plasma1</td>
+<td>Color</td>
+<td>ffd06bff</td>
+<td></td>
+</tr>
+<tr>
+<td>plasma2</td>
+<td>Color</td>
+<td>ff361bff</td>
+<td></td>
+</tr>
+<tr>
+<td>bottomRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>plasmaRegions</td>
+<td>TextureRegion[]</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="incinerator">Incinerator</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>effect</td>
+<td>Effect</td>
+<td>fuelburn</td>
+<td></td>
+</tr>
+<tr>
+<td>flameColor</td>
+<td>Color</td>
+<td>ffad9dff</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="itembridge">ItemBridge</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerTransport</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>range</td>
+<td>int</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>transportTime</td>
+<td>float</td>
+<td>2.0</td>
+<td></td>
+</tr>
+<tr>
+<td>endRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>bridgeRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>arrowRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>lastBuild</td>
+<td>ItemBridgeBuild</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="itemsource">ItemSource</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<h2 id="itemturret">ItemTurret</h2>
+<p><em>extends <a href="#turret">Turret</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ammoTypes</td>
+<td>ObjectMap<Item,BulletType></td>
+<td>new ObjectMap&lt;&gt;()</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="itemvoid">ItemVoid</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<h2 id="junction">Junction</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>speed</td>
+<td>float</td>
+<td>26.0</td>
+<td></td>
+</tr>
+<tr>
+<td>capacity</td>
+<td>int</td>
+<td>6</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="laserturret">LaserTurret</h2>
+<p><em>extends <a href="#powerturret">PowerTurret</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>firingMoveFract</td>
+<td>float</td>
+<td>0.25</td>
+<td></td>
+</tr>
+<tr>
+<td>shootDuration</td>
+<td>float</td>
+<td>100.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="launchpad">LaunchPad</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerLaunch</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>launchTime</td>
+<td>float</td>
+<td>0.0</td>
+<td>Time inbetween launches.</td>
+</tr>
+<tr>
+<td>launchSound</td>
+<td>Sound</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>lightRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>podRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>lightColor</td>
+<td>Color</td>
+<td>eab678ff</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="legacyblock">LegacyBlock</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<p>Any subclass of this will be removed upon world load.</p>
+<h2 id="legacymechpad">LegacyMechPad</h2>
+<p><em>extends <a href="#legacyblock">LegacyBlock</a></em></p>
+<h2 id="legacyunitfactory">LegacyUnitFactory</h2>
+<p><em>extends <a href="#legacyblock">LegacyBlock</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>replacement</td>
+<td>Block</td>
+<td>air</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="lightblock">LightBlock</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>brightness</td>
+<td>float</td>
+<td>0.9</td>
+<td></td>
+</tr>
+<tr>
+<td>radius</td>
+<td>float</td>
+<td>200.0</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="liquidblock">LiquidBlock</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>liquidRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>bottomRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="liquidbridge">LiquidBridge</h2>
+<p><em>extends <a href="#itembridge">ItemBridge</a></em></p>
+<h2 id="liquidconverter">LiquidConverter</h2>
+<p><em>extends <a href="#genericcrafter">GenericCrafter</a></em></p>
+<h2 id="liquidextendingbridge">LiquidExtendingBridge</h2>
+<p><em>extends <a href="#extendingitembridge">ExtendingItemBridge</a></em></p>
+<h2 id="liquidjunction">LiquidJunction</h2>
+<p><em>extends <a href="#liquidblock">LiquidBlock</a></em></p>
+<h2 id="liquidrouter">LiquidRouter</h2>
+<p><em>extends <a href="#liquidblock">LiquidBlock</a></em></p>
+<h2 id="liquidsource">LiquidSource</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<h2 id="liquidturret">LiquidTurret</h2>
+<p><em>extends <a href="#turret">Turret</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ammoTypes</td>
+<td>ObjectMap<Liquid,BulletType></td>
+<td>new ObjectMap&lt;&gt;()</td>
+<td></td>
+</tr>
+<tr>
+<td>liquidRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>extinguish</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="liquidvoid">LiquidVoid</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<h2 id="logicblock">LogicBlock</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>maxInstructionScale</td>
+<td>int</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>instructionsPerTick</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>range</td>
+<td>float</td>
+<td>80.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logicdisplay">LogicDisplay</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>maxSides</td>
+<td>int</td>
+<td>25</td>
+<td></td>
+</tr>
+<tr>
+<td>displaySize</td>
+<td>int</td>
+<td>64</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="massdriver">MassDriver</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>range</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>rotateSpeed</td>
+<td>float</td>
+<td>0.04</td>
+<td></td>
+</tr>
+<tr>
+<td>translation</td>
+<td>float</td>
+<td>7.0</td>
+<td></td>
+</tr>
+<tr>
+<td>minDistribute</td>
+<td>int</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td>knockback</td>
+<td>float</td>
+<td>4.0</td>
+<td></td>
+</tr>
+<tr>
+<td>reloadTime</td>
+<td>float</td>
+<td>100.0</td>
+<td></td>
+</tr>
+<tr>
+<td>bulletSpeed</td>
+<td>float</td>
+<td>5.5</td>
+<td></td>
+</tr>
+<tr>
+<td>bulletLifetime</td>
+<td>float</td>
+<td>200.0</td>
+<td></td>
+</tr>
+<tr>
+<td>shootEffect</td>
+<td>Effect</td>
+<td>shootBig2</td>
+<td></td>
+</tr>
+<tr>
+<td>smokeEffect</td>
+<td>Effect</td>
+<td>shootBigSmoke2</td>
+<td></td>
+</tr>
+<tr>
+<td>receiveEffect</td>
+<td>Effect</td>
+<td>mineBig</td>
+<td></td>
+</tr>
+<tr>
+<td>shootSound</td>
+<td>Sound</td>
+<td>shootBig</td>
+<td></td>
+</tr>
+<tr>
+<td>shake</td>
+<td>float</td>
+<td>3.0</td>
+<td></td>
+</tr>
+<tr>
+<td>baseRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="memoryblock">MemoryBlock</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>memoryCapacity</td>
+<td>int</td>
+<td>32</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="mendprojector">MendProjector</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerUse</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>baseColor</td>
+<td>Color</td>
+<td>84f491ff</td>
+<td></td>
+</tr>
+<tr>
+<td>phaseColor</td>
+<td>Color</td>
+<td>ffd59eff</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>reload</td>
+<td>float</td>
+<td>250.0</td>
+<td></td>
+</tr>
+<tr>
+<td>range</td>
+<td>float</td>
+<td>60.0</td>
+<td></td>
+</tr>
+<tr>
+<td>healPercent</td>
+<td>float</td>
+<td>12.0</td>
+<td></td>
+</tr>
+<tr>
+<td>phaseBoost</td>
+<td>float</td>
+<td>12.0</td>
+<td></td>
+</tr>
+<tr>
+<td>phaseRangeBoost</td>
+<td>float</td>
+<td>50.0</td>
+<td></td>
+</tr>
+<tr>
+<td>useTime</td>
+<td>float</td>
+<td>400.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="messageblock">MessageBlock</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>maxTextLength</td>
+<td>int</td>
+<td>220</td>
+<td></td>
+</tr>
+<tr>
+<td>maxNewlines</td>
+<td>int</td>
+<td>24</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="nuclearreactor">NuclearReactor</h2>
+<p><em>extends <a href="#powergenerator">PowerGenerator</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerFuel</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>tr</td>
+<td>Vec2</td>
+<td>(0.0,0.0)</td>
+<td></td>
+</tr>
+<tr>
+<td>lightColor</td>
+<td>Color</td>
+<td>7f19eaff</td>
+<td></td>
+</tr>
+<tr>
+<td>coolColor</td>
+<td>Color</td>
+<td>ffffff00</td>
+<td></td>
+</tr>
+<tr>
+<td>hotColor</td>
+<td>Color</td>
+<td>ff9575a3</td>
+<td></td>
+</tr>
+<tr>
+<td>itemDuration</td>
+<td>float</td>
+<td>120.0</td>
+<td>ticks to consume 1 fuel</td>
+</tr>
+<tr>
+<td>heating</td>
+<td>float</td>
+<td>0.01</td>
+<td>heating per frame * fullness</td>
+</tr>
+<tr>
+<td>smokeThreshold</td>
+<td>float</td>
+<td>0.3</td>
+<td>threshold at which block starts smoking</td>
+</tr>
+<tr>
+<td>flashThreshold</td>
+<td>float</td>
+<td>0.46</td>
+<td>heat threshold at which lights start flashing</td>
+</tr>
+<tr>
+<td>explosionRadius</td>
+<td>int</td>
+<td>19</td>
+<td></td>
+</tr>
+<tr>
+<td>explosionDamage</td>
+<td>int</td>
+<td>1250</td>
+<td></td>
+</tr>
+<tr>
+<td>coolantPower</td>
+<td>float</td>
+<td>0.5</td>
+<td>heat removed per unit of coolant</td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>lightsRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="overdriveprojector">OverdriveProjector</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerUse</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>reload</td>
+<td>float</td>
+<td>60.0</td>
+<td></td>
+</tr>
+<tr>
+<td>range</td>
+<td>float</td>
+<td>80.0</td>
+<td></td>
+</tr>
+<tr>
+<td>speedBoost</td>
+<td>float</td>
+<td>1.5</td>
+<td></td>
+</tr>
+<tr>
+<td>speedBoostPhase</td>
+<td>float</td>
+<td>0.75</td>
+<td></td>
+</tr>
+<tr>
+<td>useTime</td>
+<td>float</td>
+<td>400.0</td>
+<td></td>
+</tr>
+<tr>
+<td>phaseRangeBoost</td>
+<td>float</td>
+<td>20.0</td>
+<td></td>
+</tr>
+<tr>
+<td>hasBoost</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>baseColor</td>
+<td>Color</td>
+<td>feb380ff</td>
+<td></td>
+</tr>
+<tr>
+<td>phaseColor</td>
+<td>Color</td>
+<td>ffd59eff</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="overflowgate">OverflowGate</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>speed</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>invert</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="overlayfloor">OverlayFloor</h2>
+<p><em>extends <a href="#floor">Floor</a></em></p>
+<p>A type of floor that is overlaid on top of other floors.</p>
+<h2 id="oreblock">OreBlock</h2>
+<p><em>extends <a href="#overlayfloor">OverlayFloor</a></em></p>
+<p>An overlay ore for a specific item type.</p>
+<h2 id="payloadacceptor">PayloadAcceptor</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>payloadSpeed</td>
+<td>float</td>
+<td>0.5</td>
+<td></td>
+</tr>
+<tr>
+<td>payloadRotateSpeed</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>outRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>inRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="payloadconveyor">PayloadConveyor</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>moveTime</td>
+<td>float</td>
+<td>40.0</td>
+<td></td>
+</tr>
+<tr>
+<td>moveForce</td>
+<td>float</td>
+<td>201.0</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>edgeRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>interp</td>
+<td>Interp</td>
+<td>pow5</td>
+<td></td>
+</tr>
+<tr>
+<td>payloadLimit</td>
+<td>float</td>
+<td>2.5</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="payloadrouter">PayloadRouter</h2>
+<p><em>extends <a href="#payloadconveyor">PayloadConveyor</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>overRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="pointdefenseturret">PointDefenseTurret</h2>
+<p><em>extends <a href="#reloadturret">ReloadTurret</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerTarget</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>retargetTime</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>baseRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>color</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td></td>
+</tr>
+<tr>
+<td>beamEffect</td>
+<td>Effect</td>
+<td>pointBeam</td>
+<td></td>
+</tr>
+<tr>
+<td>hitEffect</td>
+<td>Effect</td>
+<td>pointHit</td>
+<td></td>
+</tr>
+<tr>
+<td>shootEffect</td>
+<td>Effect</td>
+<td>sparkShoot</td>
+<td></td>
+</tr>
+<tr>
+<td>shootSound</td>
+<td>Sound</td>
+<td>lasershoot</td>
+<td></td>
+</tr>
+<tr>
+<td>shootCone</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>bulletDamage</td>
+<td>float</td>
+<td>10.0</td>
+<td></td>
+</tr>
+<tr>
+<td>shootLength</td>
+<td>float</td>
+<td>3.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="powerblock">PowerBlock</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<h2 id="powerdiode">PowerDiode</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arrow</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="powerdistributor">PowerDistributor</h2>
+<p><em>extends <a href="#powerblock">PowerBlock</a></em></p>
+<h2 id="powergenerator">PowerGenerator</h2>
+<p><em>extends <a href="#powerdistributor">PowerDistributor</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>powerProduction</td>
+<td>float</td>
+<td>0.0</td>
+<td>The amount of power produced per tick in case of an efficiency of 1.0, which represents 100%.</td>
+</tr>
+<tr>
+<td>generationType</td>
+<td>Stat</td>
+<td>basePowerGeneration</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="powernode">PowerNode</h2>
+<p><em>extends <a href="#powerblock">PowerBlock</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>laser</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>laserEnd</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>laserRange</td>
+<td>float</td>
+<td>6.0</td>
+<td></td>
+</tr>
+<tr>
+<td>maxNodes</td>
+<td>int</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>laserColor1</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td></td>
+</tr>
+<tr>
+<td>laserColor2</td>
+<td>Color</td>
+<td>fbd367ff</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="powersource">PowerSource</h2>
+<p><em>extends <a href="#powernode">PowerNode</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>powerProduction</td>
+<td>float</td>
+<td>10000.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="powerturret">PowerTurret</h2>
+<p><em>extends <a href="#turret">Turret</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>shootType</td>
+<td>BulletType</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>powerUse</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="powervoid">PowerVoid</h2>
+<p><em>extends <a href="#powerblock">PowerBlock</a></em></p>
+<h2 id="pump">Pump</h2>
+<p><em>extends <a href="#liquidblock">LiquidBlock</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pumpAmount</td>
+<td>float</td>
+<td>0.2</td>
+<td>Pump amount per tile.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reconstructor">Reconstructor</h2>
+<p><em>extends <a href="#unitblock">UnitBlock</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>constructTime</td>
+<td>float</td>
+<td>120.0</td>
+<td></td>
+</tr>
+<tr>
+<td>upgrades</td>
+<td>Seq<UnitType[]></td>
+<td>new Seq&lt;&gt;()</td>
+<td></td>
+</tr>
+<tr>
+<td>capacities</td>
+<td>int[]</td>
+<td>[]</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="reloadturret">ReloadTurret</h2>
+<p><em>extends <a href="#baseturret">BaseTurret</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reloadTime</td>
+<td>float</td>
+<td>10.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="repairpoint">RepairPoint</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerTarget</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>repairRadius</td>
+<td>float</td>
+<td>50.0</td>
+<td></td>
+</tr>
+<tr>
+<td>repairSpeed</td>
+<td>float</td>
+<td>0.3</td>
+<td></td>
+</tr>
+<tr>
+<td>powerUse</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>baseRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>laser</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>laserEnd</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>laserColor</td>
+<td>Color</td>
+<td>e8ffd7ff</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="resupplypoint">ResupplyPoint</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerResupply</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>ammoAmount</td>
+<td>int</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td>resupplyRate</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>range</td>
+<td>float</td>
+<td>60.0</td>
+<td></td>
+</tr>
+<tr>
+<td>ammoColor</td>
+<td>Color</td>
+<td>d99d73ff</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="router">Router</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>speed</td>
+<td>float</td>
+<td>8.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="separator">Separator</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<p>Extracts a random list of items from an input item and an input liquid.</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>results</td>
+<td>ItemStack[]</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>craftTime</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>liquidRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>spinnerRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>spinnerSpeed</td>
+<td>float</td>
+<td>3.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="shallowliquid">ShallowLiquid</h2>
+<p><em>extends <a href="#floor">Floor</a></em></p>
+<p>Do not use in mods. This class provides no new functionality, and is only used for the Mindustry sprite generator.
+Use the standard Floor class instead.</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>liquidBase</td>
+<td>Floor</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>floorBase</td>
+<td>Floor</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>liquidOpacity</td>
+<td>float</td>
+<td>0.35</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="shockmine">ShockMine</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerDamage</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>cooldown</td>
+<td>float</td>
+<td>80.0</td>
+<td></td>
+</tr>
+<tr>
+<td>tileDamage</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>damage</td>
+<td>float</td>
+<td>13.0</td>
+<td></td>
+</tr>
+<tr>
+<td>length</td>
+<td>int</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td>tendrils</td>
+<td>int</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningColor</td>
+<td>Color</td>
+<td>a9d8ffff</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="singletypegenerator">SingleTypeGenerator</h2>
+<p><em>extends <a href="#itemliquidgenerator">ItemLiquidGenerator</a></em></p>
+<h2 id="solargenerator">SolarGenerator</h2>
+<p><em>extends <a href="#powergenerator">PowerGenerator</a></em></p>
+<h2 id="solidpump">SolidPump</h2>
+<p><em>extends <a href="#pump">Pump</a></em></p>
+<p>Pump that makes liquid from solids and takes in power. Only works on solid floor blocks.</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>result</td>
+<td>Liquid</td>
+<td>water</td>
+<td></td>
+</tr>
+<tr>
+<td>updateEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>updateEffectChance</td>
+<td>float</td>
+<td>0.02</td>
+<td></td>
+</tr>
+<tr>
+<td>rotateSpeed</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>baseEfficiency</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>attribute</td>
+<td>Attribute</td>
+<td>null</td>
+<td>Attribute that is checked when calculating output.</td>
+</tr>
+<tr>
+<td>rotatorRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="sorter">Sorter</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>invert</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="spawnblock">SpawnBlock</h2>
+<p><em>extends <a href="#overlayfloor">OverlayFloor</a></em></p>
+<h2 id="stackconveyor">StackConveyor</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>regions</td>
+<td>TextureRegion[]</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>edgeRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>stackRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>speed</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>splitOut</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>recharge</td>
+<td>float</td>
+<td>2.0</td>
+<td>(minimum) amount of loading docks needed to fill a line.</td>
+</tr>
+<tr>
+<td>loadEffect</td>
+<td>Effect</td>
+<td>plasticburn</td>
+<td></td>
+</tr>
+<tr>
+<td>unloadEffect</td>
+<td>Effect</td>
+<td>plasticburn</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="staticwall">StaticWall</h2>
+<p><em>extends <a href="#boulder">Boulder</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>large</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>split</td>
+<td>TextureRegion[][]</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="statictree">StaticTree</h2>
+<p><em>extends <a href="#staticwall">StaticWall</a></em></p>
+<h2 id="storageblock">StorageBlock</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<h2 id="switchblock">SwitchBlock</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>onRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="thermalgenerator">ThermalGenerator</h2>
+<p><em>extends <a href="#powergenerator">PowerGenerator</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>generateEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>attribute</td>
+<td>Attribute</td>
+<td>heat</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tractorbeamturret">TractorBeamTurret</h2>
+<p><em>extends <a href="#baseturret">BaseTurret</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerTarget</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>retargetTime</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>baseRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>laser</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>laserEnd</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>shootCone</td>
+<td>float</td>
+<td>6.0</td>
+<td></td>
+</tr>
+<tr>
+<td>shootLength</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>laserWidth</td>
+<td>float</td>
+<td>0.6</td>
+<td></td>
+</tr>
+<tr>
+<td>force</td>
+<td>float</td>
+<td>0.3</td>
+<td></td>
+</tr>
+<tr>
+<td>scaledForce</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>damage</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>targetAir</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>targetGround</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>laserColor</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td></td>
+</tr>
+<tr>
+<td>status</td>
+<td>StatusEffect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>statusDuration</td>
+<td>float</td>
+<td>300.0</td>
+<td></td>
+</tr>
+<tr>
+<td>shootSound</td>
+<td>Sound</td>
+<td>tractorbeam</td>
+<td></td>
+</tr>
+<tr>
+<td>shootSoundVolume</td>
+<td>float</td>
+<td>0.9</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="unitfactory">UnitFactory</h2>
+<p><em>extends <a href="#unitblock">UnitBlock</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>capacities</td>
+<td>int[]</td>
+<td>[]</td>
+<td></td>
+</tr>
+<tr>
+<td>plans</td>
+<td>Seq<UnitPlan></td>
+<td>new Seq&lt;&gt;(4)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="wall">Wall</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>variants</td>
+<td>int</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningChance</td>
+<td>float</td>
+<td>-1.0</td>
+<td>Lighting chance. -1 to disable</td>
+</tr>
+<tr>
+<td>lightningDamage</td>
+<td>float</td>
+<td>20.0</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningLength</td>
+<td>int</td>
+<td>17</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningColor</td>
+<td>Color</td>
+<td>f3e979ff</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningSound</td>
+<td>Sound</td>
+<td>spark</td>
+<td></td>
+</tr>
+<tr>
+<td>chanceDeflect</td>
+<td>float</td>
+<td>-1.0</td>
+<td>Bullet deflection chance. -1 to disable</td>
+</tr>
+<tr>
+<td>flashHit</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>flashColor</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td></td>
+</tr>
+<tr>
+<td>deflectSound</td>
+<td>Sound</td>
+<td>none</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="thruster">Thruster</h2>
+<p><em>extends <a href="#wall">Wall</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="treeblock">TreeBlock</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>shadow</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>shadowOffset</td>
+<td>float</td>
+<td>-4.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="turret">Turret</h2>
+<p><em>extends <a href="#reloadturret">ReloadTurret</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerTarget</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>targetInterval</td>
+<td>int</td>
+<td>20</td>
+<td></td>
+</tr>
+<tr>
+<td>heatColor</td>
+<td>Color</td>
+<td>ab3400ff</td>
+<td></td>
+</tr>
+<tr>
+<td>shootEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>smokeEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>ammoUseEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>shootSound</td>
+<td>Sound</td>
+<td>shoot</td>
+<td></td>
+</tr>
+<tr>
+<td>maxAmmo</td>
+<td>int</td>
+<td>30</td>
+<td></td>
+</tr>
+<tr>
+<td>ammoPerShot</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>ammoEjectBack</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>inaccuracy</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>velocityInaccuracy</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>shots</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>spread</td>
+<td>float</td>
+<td>4.0</td>
+<td></td>
+</tr>
+<tr>
+<td>recoilAmount</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>restitution</td>
+<td>float</td>
+<td>0.02</td>
+<td></td>
+</tr>
+<tr>
+<td>cooldown</td>
+<td>float</td>
+<td>0.02</td>
+<td></td>
+</tr>
+<tr>
+<td>coolantUsage</td>
+<td>float</td>
+<td>0.2</td>
+<td></td>
+</tr>
+<tr>
+<td>shootCone</td>
+<td>float</td>
+<td>8.0</td>
+<td></td>
+</tr>
+<tr>
+<td>shootShake</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>shootLength</td>
+<td>float</td>
+<td>-1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>xRand</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>minRange</td>
+<td>float</td>
+<td>0.0</td>
+<td>Currently used for artillery only.</td>
+</tr>
+<tr>
+<td>burstSpacing</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>alternate</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>targetAir</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>targetGround</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>chargeTime</td>
+<td>float</td>
+<td>-1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>chargeEffects</td>
+<td>int</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>chargeMaxDelay</td>
+<td>float</td>
+<td>10.0</td>
+<td></td>
+</tr>
+<tr>
+<td>chargeEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>chargeBeginEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>chargeSound</td>
+<td>Sound</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>unitSort</td>
+<td>Sortf</td>
+<td>Unit::dst2</td>
+<td></td>
+</tr>
+<tr>
+<td>baseRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>heatRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>elevation</td>
+<td>float</td>
+<td>-1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>drawer</td>
+<td>Cons<TurretBuild></td>
+<td>rotation - 90)</td>
+<td></td>
+</tr>
+<tr>
+<td>heatDrawer</td>
+<td>Cons<TurretBuild></td>
+<td>color();</td>
+<td></td>
+</tr>
+<tr>
+<td>}</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="unitblock">UnitBlock</h2>
+<p><em>extends <a href="#payloadacceptor">PayloadAcceptor</a></em></p>
+<h2 id="unloader">Unloader</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>speed</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>timerUnload</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="bullet">Bullet</h1>
+<p>Built-in constants:  </p>
+<p><code>artilleryDense</code> <code>artilleryPlastic</code> <code>artilleryPlasticFrag</code> <code>artilleryHoming</code> <code>artilleryIncendiary</code> <code>artilleryExplosive</code> <code>flakScrap</code> <code>flakLead</code> <code>flakGlass</code> <code>flakGlassFrag</code> <code>fragGlass</code> <code>fragExplosive</code> <code>fragPlastic</code> <code>fragSurge</code> <code>fragGlassFrag</code> <code>fragPlasticFrag</code> <code>missileExplosive</code> <code>missileIncendiary</code> <code>missileSurge</code> <code>standardCopper</code> <code>standardDense</code> <code>standardThorium</code> <code>standardHoming</code> <code>standardIncendiary</code> <code>standardDenseBig</code> <code>standardThoriumBig</code> <code>standardIncendiaryBig</code> <code>waterShot</code> <code>cryoShot</code> <code>slagShot</code> <code>oilShot</code> <code>heavyWaterShot</code> <code>heavyCryoShot</code> <code>heavySlagShot</code> <code>heavyOilShot</code> <code>damageLightning</code> <code>damageLightningGround</code> <code>fireball</code> <code>basicFlame</code> <code>pyraFlame</code> <code>driverBolt</code>  </p>
+<h2 id="bullettype">BulletType</h2>
+<p><em>extends <a href="#content">Content</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lifetime</td>
+<td>float</td>
+<td>40.0</td>
+<td></td>
+</tr>
+<tr>
+<td>speed</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>damage</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>hitSize</td>
+<td>float</td>
+<td>4.0</td>
+<td></td>
+</tr>
+<tr>
+<td>drawSize</td>
+<td>float</td>
+<td>40.0</td>
+<td></td>
+</tr>
+<tr>
+<td>drag</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>pierce</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>pierceBuilding</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>pierceCap</td>
+<td>int</td>
+<td>-1</td>
+<td></td>
+</tr>
+<tr>
+<td>hitEffect</td>
+<td>Effect</td>
+<td>mindustry.entities.Effect@4c5e4bfa</td>
+<td></td>
+</tr>
+<tr>
+<td>despawnEffect</td>
+<td>Effect</td>
+<td>mindustry.entities.Effect@4c5e4bfa</td>
+<td></td>
+</tr>
+<tr>
+<td>shootEffect</td>
+<td>Effect</td>
+<td>shootSmall</td>
+<td>Effect created when shooting.</td>
+</tr>
+<tr>
+<td>smokeEffect</td>
+<td>Effect</td>
+<td>shootSmallSmoke</td>
+<td>Extra smoke effect created when shooting.</td>
+</tr>
+<tr>
+<td>hitSound</td>
+<td>Sound</td>
+<td>none</td>
+<td>Sound made when hitting something or getting removed.</td>
+</tr>
+<tr>
+<td>hitSoundPitch</td>
+<td>float</td>
+<td>1.0</td>
+<td>Pitch of the sound made when hitting something</td>
+</tr>
+<tr>
+<td>hitSoundVolume</td>
+<td>float</td>
+<td>1.0</td>
+<td>Volume of the sound made when hitting something</td>
+</tr>
+<tr>
+<td>inaccuracy</td>
+<td>float</td>
+<td>0.0</td>
+<td>Extra inaccuracy when firing.</td>
+</tr>
+<tr>
+<td>ammoMultiplier</td>
+<td>float</td>
+<td>2.0</td>
+<td>How many bullets get created per ammo item/liquid.</td>
+</tr>
+<tr>
+<td>reloadMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td>Multiplied by turret reload speed to get final shoot speed.</td>
+</tr>
+<tr>
+<td>buildingDamageMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td>Multiplier of how much base damage is done to tiles.</td>
+</tr>
+<tr>
+<td>recoil</td>
+<td>float</td>
+<td>0.0</td>
+<td>Recoil from shooter entities.</td>
+</tr>
+<tr>
+<td>killShooter</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether to kill the shooter when this is shot. For suicide bombers.</td>
+</tr>
+<tr>
+<td>instantDisappear</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether to instantly make the bullet disappear.</td>
+</tr>
+<tr>
+<td>splashDamage</td>
+<td>float</td>
+<td>0.0</td>
+<td>Damage dealt in splash. 0 to disable.</td>
+</tr>
+<tr>
+<td>knockback</td>
+<td>float</td>
+<td>0.0</td>
+<td>Knockback in velocity.</td>
+</tr>
+<tr>
+<td>status</td>
+<td>StatusEffect</td>
+<td>none</td>
+<td>Status effect applied on hit.</td>
+</tr>
+<tr>
+<td>statusDuration</td>
+<td>float</td>
+<td>480.0</td>
+<td>Intensity of applied status effect in terms of duration.</td>
+</tr>
+<tr>
+<td>collidesTiles</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether this bullet type collides with tiles.</td>
+</tr>
+<tr>
+<td>collidesTeam</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether this bullet type collides with tiles that are of the same team.</td>
+</tr>
+<tr>
+<td>collidesAir</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether this bullet type collides with air/ground units.</td>
+</tr>
+<tr>
+<td>collidesGround</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether this bullet type collides with air/ground units.</td>
+</tr>
+<tr>
+<td>collides</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether this bullet types collides with anything at all.</td>
+</tr>
+<tr>
+<td>keepVelocity</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether velocity is inherited from the shooter.</td>
+</tr>
+<tr>
+<td>scaleVelocity</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether to scale velocity to disappear at the target position. Used for artillery.</td>
+</tr>
+<tr>
+<td>hittable</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether this bullet can be hit by point defense.</td>
+</tr>
+<tr>
+<td>reflectable</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether this bullet can be reflected.</td>
+</tr>
+<tr>
+<td>absorbable</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether this projectile can be absorbed by shields.</td>
+</tr>
+<tr>
+<td>backMove</td>
+<td>boolean</td>
+<td>true</td>
+<td>Whether to move the bullet back depending on delta to fix some delta-time realted issues. Do not change unless you know what you're doing.</td>
+</tr>
+<tr>
+<td>maxRange</td>
+<td>float</td>
+<td>-1.0</td>
+<td>Bullet range override.</td>
+</tr>
+<tr>
+<td>healPercent</td>
+<td>float</td>
+<td>0.0</td>
+<td>% of block health healed *</td>
+</tr>
+<tr>
+<td>makeFire</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether to make fire on impact</td>
+</tr>
+<tr>
+<td>fragCone</td>
+<td>float</td>
+<td>360.0</td>
+<td></td>
+</tr>
+<tr>
+<td>fragAngle</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>fragBullets</td>
+<td>int</td>
+<td>9</td>
+<td></td>
+</tr>
+<tr>
+<td>fragVelocityMin</td>
+<td>float</td>
+<td>0.2</td>
+<td></td>
+</tr>
+<tr>
+<td>fragVelocityMax</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>fragLifeMin</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>fragLifeMax</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>fragBullet</td>
+<td>BulletType</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>hitColor</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td></td>
+</tr>
+<tr>
+<td>trailColor</td>
+<td>Color</td>
+<td>e58956ff</td>
+<td></td>
+</tr>
+<tr>
+<td>trailChance</td>
+<td>float</td>
+<td>-1.0E-4</td>
+<td></td>
+</tr>
+<tr>
+<td>trailEffect</td>
+<td>Effect</td>
+<td>missileTrail</td>
+<td></td>
+</tr>
+<tr>
+<td>trailParam</td>
+<td>float</td>
+<td>2.0</td>
+<td></td>
+</tr>
+<tr>
+<td>splashDamageRadius</td>
+<td>float</td>
+<td>-1.0</td>
+<td>Use a negative value to disable splash damage.</td>
+</tr>
+<tr>
+<td>incendAmount</td>
+<td>int</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>incendSpread</td>
+<td>float</td>
+<td>8.0</td>
+<td></td>
+</tr>
+<tr>
+<td>incendChance</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>homingPower</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>homingRange</td>
+<td>float</td>
+<td>50.0</td>
+<td></td>
+</tr>
+<tr>
+<td>homingDelay</td>
+<td>float</td>
+<td>-1.0</td>
+<td>Use a negative value to disable homing delay.</td>
+</tr>
+<tr>
+<td>lightningColor</td>
+<td>Color</td>
+<td>f3e979ff</td>
+<td></td>
+</tr>
+<tr>
+<td>lightning</td>
+<td>int</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningLength</td>
+<td>int</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningLengthRand</td>
+<td>int</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningDamage</td>
+<td>float</td>
+<td>-1.0</td>
+<td>Use a negative value to use default bullet damage.</td>
+</tr>
+<tr>
+<td>lightningCone</td>
+<td>float</td>
+<td>360.0</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningAngle</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningType</td>
+<td>BulletType</td>
+<td>null</td>
+<td>The bullet created at lightning points.</td>
+</tr>
+<tr>
+<td>weaveScale</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>weaveMag</td>
+<td>float</td>
+<td>-1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>hitShake</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>despawnShake</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>puddles</td>
+<td>int</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>puddleRange</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>puddleAmount</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>puddleLiquid</td>
+<td>Liquid</td>
+<td>water</td>
+<td></td>
+</tr>
+<tr>
+<td>lightRadius</td>
+<td>float</td>
+<td>16.0</td>
+<td></td>
+</tr>
+<tr>
+<td>lightOpacity</td>
+<td>float</td>
+<td>0.3</td>
+<td></td>
+</tr>
+<tr>
+<td>lightColor</td>
+<td>Color</td>
+<td>fbd367ff</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="basicbullettype">BasicBulletType</h2>
+<p><em>extends <a href="#bullettype">BulletType</a></em></p>
+<p>An extended BulletType for most ammo-based bullets shot from turrets and units.</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>backColor</td>
+<td>Color</td>
+<td>f9c27aff</td>
+<td></td>
+</tr>
+<tr>
+<td>frontColor</td>
+<td>Color</td>
+<td>fff8e8ff</td>
+<td></td>
+</tr>
+<tr>
+<td>mixColorFrom</td>
+<td>Color</td>
+<td>ffffff00</td>
+<td></td>
+</tr>
+<tr>
+<td>mixColorTo</td>
+<td>Color</td>
+<td>ffffff00</td>
+<td></td>
+</tr>
+<tr>
+<td>width</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>height</td>
+<td>float</td>
+<td>7.0</td>
+<td></td>
+</tr>
+<tr>
+<td>shrinkX</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>shrinkY</td>
+<td>float</td>
+<td>0.5</td>
+<td></td>
+</tr>
+<tr>
+<td>spin</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>sprite</td>
+<td>String</td>
+<td>bullet</td>
+<td></td>
+</tr>
+<tr>
+<td>backRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>frontRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="artillerybullettype">ArtilleryBulletType</h2>
+<p><em>extends <a href="#basicbullettype">BasicBulletType</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>trailMult</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>trailSize</td>
+<td>float</td>
+<td>4.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="bombbullettype">BombBulletType</h2>
+<p><em>extends <a href="#basicbullettype">BasicBulletType</a></em></p>
+<h2 id="continuouslaserbullettype">ContinuousLaserBulletType</h2>
+<p><em>extends <a href="#bullettype">BulletType</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>length</td>
+<td>float</td>
+<td>220.0</td>
+<td></td>
+</tr>
+<tr>
+<td>shake</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>fadeTime</td>
+<td>float</td>
+<td>16.0</td>
+<td></td>
+</tr>
+<tr>
+<td>lightStroke</td>
+<td>float</td>
+<td>40.0</td>
+<td></td>
+</tr>
+<tr>
+<td>spaceMag</td>
+<td>float</td>
+<td>35.0</td>
+<td></td>
+</tr>
+<tr>
+<td>colors</td>
+<td>Color[]</td>
+<td>[ec745855, ec7458aa, ff9c5aff, ffffffff]</td>
+<td></td>
+</tr>
+<tr>
+<td>tscales</td>
+<td>float[]</td>
+<td>[1.0, 0.7, 0.5, 0.2]</td>
+<td></td>
+</tr>
+<tr>
+<td>strokes</td>
+<td>float[]</td>
+<td>[2.0, 1.5, 1.0, 0.3]</td>
+<td></td>
+</tr>
+<tr>
+<td>lenscales</td>
+<td>float[]</td>
+<td>[1.0, 1.12, 1.15, 1.17]</td>
+<td></td>
+</tr>
+<tr>
+<td>width</td>
+<td>float</td>
+<td>9.0</td>
+<td></td>
+</tr>
+<tr>
+<td>oscScl</td>
+<td>float</td>
+<td>0.8</td>
+<td></td>
+</tr>
+<tr>
+<td>oscMag</td>
+<td>float</td>
+<td>1.5</td>
+<td></td>
+</tr>
+<tr>
+<td>largeHit</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="flakbullettype">FlakBulletType</h2>
+<p><em>extends <a href="#basicbullettype">BasicBulletType</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>explodeRange</td>
+<td>float</td>
+<td>30.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="laserboltbullettype">LaserBoltBulletType</h2>
+<p><em>extends <a href="#basicbullettype">BasicBulletType</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>width</td>
+<td>float</td>
+<td>2.0</td>
+<td></td>
+</tr>
+<tr>
+<td>height</td>
+<td>float</td>
+<td>7.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="laserbullettype">LaserBulletType</h2>
+<p><em>extends <a href="#bullettype">BulletType</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>colors</td>
+<td>Color[]</td>
+<td>[a9d8ff66, a9d8ffff, ffffffff]</td>
+<td></td>
+</tr>
+<tr>
+<td>laserEffect</td>
+<td>Effect</td>
+<td>lancerLaserShootSmoke</td>
+<td></td>
+</tr>
+<tr>
+<td>length</td>
+<td>float</td>
+<td>160.0</td>
+<td></td>
+</tr>
+<tr>
+<td>width</td>
+<td>float</td>
+<td>15.0</td>
+<td></td>
+</tr>
+<tr>
+<td>lengthFalloff</td>
+<td>float</td>
+<td>0.5</td>
+<td></td>
+</tr>
+<tr>
+<td>sideLength</td>
+<td>float</td>
+<td>29.0</td>
+<td></td>
+</tr>
+<tr>
+<td>sideWidth</td>
+<td>float</td>
+<td>0.7</td>
+<td></td>
+</tr>
+<tr>
+<td>sideAngle</td>
+<td>float</td>
+<td>90.0</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningSpacing</td>
+<td>float</td>
+<td>-1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningDelay</td>
+<td>float</td>
+<td>0.1</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningAngleRand</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>largeHit</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="lightningbullettype">LightningBulletType</h2>
+<p><em>extends <a href="#bullettype">BulletType</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lightningColor</td>
+<td>Color</td>
+<td>a9d8ffff</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningLength</td>
+<td>int</td>
+<td>25</td>
+<td></td>
+</tr>
+<tr>
+<td>lightningLengthRand</td>
+<td>int</td>
+<td>0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="liquidbullettype">LiquidBulletType</h2>
+<p><em>extends <a href="#bullettype">BulletType</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>liquid</td>
+<td>Liquid</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>puddleSize</td>
+<td>float</td>
+<td>6.0</td>
+<td></td>
+</tr>
+<tr>
+<td>orbSize</td>
+<td>float</td>
+<td>3.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="massdriverbolt">MassDriverBolt</h2>
+<p><em>extends <a href="#bullettype">BulletType</a></em></p>
+<h2 id="missilebullettype">MissileBulletType</h2>
+<p><em>extends <a href="#basicbullettype">BasicBulletType</a></em></p>
+<h2 id="pointbullettype">PointBulletType</h2>
+<p><em>extends <a href="#bullettype">BulletType</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>trailSpacing</td>
+<td>float</td>
+<td>10.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="railbullettype">RailBulletType</h2>
+<p><em>extends <a href="#bullettype">BulletType</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pierceEffect</td>
+<td>Effect</td>
+<td>hitBulletSmall</td>
+<td></td>
+</tr>
+<tr>
+<td>updateEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>pierceDamageFactor</td>
+<td>float</td>
+<td>1.0</td>
+<td>Multiplier of damage decreased per health pierced.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>float</td>
+<td>100.0</td>
+<td></td>
+</tr>
+<tr>
+<td>updateEffectSeg</td>
+<td>float</td>
+<td>20.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="sapbullettype">SapBulletType</h2>
+<p><em>extends <a href="#bullettype">BulletType</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>length</td>
+<td>float</td>
+<td>100.0</td>
+<td></td>
+</tr>
+<tr>
+<td>sapStrength</td>
+<td>float</td>
+<td>0.5</td>
+<td></td>
+</tr>
+<tr>
+<td>color</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td></td>
+</tr>
+<tr>
+<td>width</td>
+<td>float</td>
+<td>0.4</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="shrapnelbullettype">ShrapnelBulletType</h2>
+<p><em>extends <a href="#bullettype">BulletType</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>length</td>
+<td>float</td>
+<td>100.0</td>
+<td></td>
+</tr>
+<tr>
+<td>width</td>
+<td>float</td>
+<td>20.0</td>
+<td></td>
+</tr>
+<tr>
+<td>fromColor</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td></td>
+</tr>
+<tr>
+<td>toColor</td>
+<td>Color</td>
+<td>a9d8ffff</td>
+<td></td>
+</tr>
+<tr>
+<td>hitLarge</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>serrations</td>
+<td>int</td>
+<td>7</td>
+<td></td>
+</tr>
+<tr>
+<td>serrationLenScl</td>
+<td>float</td>
+<td>10.0</td>
+<td></td>
+</tr>
+<tr>
+<td>serrationWidth</td>
+<td>float</td>
+<td>4.0</td>
+<td></td>
+</tr>
+<tr>
+<td>serrationSpacing</td>
+<td>float</td>
+<td>8.0</td>
+<td></td>
+</tr>
+<tr>
+<td>serrationSpaceOffset</td>
+<td>float</td>
+<td>80.0</td>
+<td></td>
+</tr>
+<tr>
+<td>serrationFadeOffset</td>
+<td>float</td>
+<td>0.5</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="effect">Effect</h1>
+<p>Built-in constants:  </p>
+<p><code>none</code> <code>unitSpawn</code> <code>unitCapKill</code> <code>unitControl</code> <code>unitDespawn</code> <code>unitSpirit</code> <code>itemTransfer</code> <code>pointBeam</code> <code>pointHit</code> <code>lightning</code> <code>commandSend</code> <code>upgradeCore</code> <code>placeBlock</code> <code>tapBlock</code> <code>breakBlock</code> <code>select</code> <code>smoke</code> <code>fallSmoke</code> <code>unitWreck</code> <code>rocketSmoke</code> <code>rocketSmokeLarge</code> <code>magmasmoke</code> <code>spawn</code> <code>padlaunch</code> <code>vtolHover</code> <code>unitDrop</code> <code>unitLand</code> <code>unitLandSmall</code> <code>unitPickup</code> <code>landShock</code> <code>pickup</code> <code>greenBomb</code> <code>greenLaserCharge</code> <code>greenLaserChargeSmall</code> <code>healWaveDynamic</code> <code>healWave</code> <code>heal</code> <code>shieldWave</code> <code>shieldApply</code> <code>hitBulletSmall</code> <code>hitFuse</code> <code>hitBulletBig</code> <code>hitFlameSmall</code> <code>hitLiquid</code> <code>hitLaserBlast</code> <code>hitLancer</code> <code>hitBeam</code> <code>hitMeltdown</code> <code>hitMeltHeal</code> <code>instBomb</code> <code>instTrail</code> <code>instShoot</code> <code>instHit</code> <code>hitLaser</code> <code>hitYellowLaser</code> <code>despawn</code> <code>flakExplosion</code> <code>plasticExplosion</code> <code>plasticExplosionFlak</code> <code>blastExplosion</code> <code>sapExplosion</code> <code>massiveExplosion</code> <code>artilleryTrail</code> <code>incendTrail</code> <code>missileTrail</code> <code>absorb</code> <code>forceShrink</code> <code>flakExplosionBig</code> <code>burning</code> <code>fire</code> <code>fireSmoke</code> <code>steam</code> <code>fireballsmoke</code> <code>ballfire</code> <code>freezing</code> <code>melting</code> <code>wet</code> <code>muddy</code> <code>sapped</code> <code>sporeSlowed</code> <code>oily</code> <code>overdriven</code> <code>overclocked</code> <code>dropItem</code> <code>shockwave</code> <code>bigShockwave</code> <code>nuclearShockwave</code> <code>impactShockwave</code> <code>spawnShockwave</code> <code>explosion</code> <code>dynamicExplosion</code> <code>blockExplosion</code> <code>blockExplosionSmoke</code> <code>shootSmall</code> <code>shootHeal</code> <code>shootHealYellow</code> <code>shootSmallSmoke</code> <code>shootBig</code> <code>shootBig2</code> <code>shootBigSmoke</code> <code>shootBigSmoke2</code> <code>shootSmallFlame</code> <code>shootPyraFlame</code> <code>shootLiquid</code> <code>casing1</code> <code>casing2</code> <code>casing3</code> <code>casing4</code> <code>casing2Double</code> <code>casing3Double</code> <code>railShoot</code> <code>railTrail</code> <code>railHit</code> <code>lancerLaserShoot</code> <code>lancerLaserShootSmoke</code> <code>lancerLaserCharge</code> <code>lancerLaserChargeBegin</code> <code>lightningCharge</code> <code>sparkShoot</code> <code>lightningShoot</code> <code>thoriumShoot</code> <code>reactorsmoke</code> <code>nuclearsmoke</code> <code>cloudsmoke</code> <code>nuclearcloud</code> <code>impactsmoke</code> <code>impactcloud</code> <code>redgeneratespark</code> <code>generatespark</code> <code>fuelburn</code> <code>coreBurn</code> <code>plasticburn</code> <code>pulverize</code> <code>pulverizeRed</code> <code>pulverizeRedder</code> <code>pulverizeSmall</code> <code>pulverizeMedium</code> <code>producesmoke</code> <code>smokeCloud</code> <code>smeltsmoke</code> <code>formsmoke</code> <code>blastsmoke</code> <code>lava</code> <code>dooropen</code> <code>doorclose</code> <code>dooropenlarge</code> <code>doorcloselarge</code> <code>purify</code> <code>purifyoil</code> <code>purifystone</code> <code>generate</code> <code>mine</code> <code>mineBig</code> <code>mineHuge</code> <code>smelt</code> <code>teleportActivate</code> <code>teleport</code> <code>teleportOut</code> <code>ripple</code> <code>bubble</code> <code>launch</code> <code>launchPod</code> <code>healWaveMend</code> <code>overdriveWave</code> <code>healBlock</code> <code>healBlockFull</code> <code>rotateBlock</code> <code>lightBlock</code> <code>overdriveBlockFull</code> <code>shieldBreak</code> <code>unitShieldBreak</code> <code>coreLand</code>  </p>
+<h2 id="effect_1">Effect</h2>
+<p><em>extends <a href="#object">Object</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>int</td>
+<td>174</td>
+<td></td>
+</tr>
+<tr>
+<td>renderer</td>
+<td>Cons<EffectContainer></td>
+<td>{code}</td>
+<td></td>
+</tr>
+<tr>
+<td>lifetime</td>
+<td>float</td>
+<td>50.0</td>
+<td></td>
+</tr>
+<tr>
+<td>clip</td>
+<td>float</td>
+<td>0.0</td>
+<td>Clip size.</td>
+</tr>
+<tr>
+<td>layer</td>
+<td>float</td>
+<td>110.0</td>
+<td></td>
+</tr>
+<tr>
+<td>layerDuration</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="multieffect">MultiEffect</h2>
+<p><em>extends <a href="#effect">Effect</a></em></p>
+<p>Renders multiple particle effects at once.</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>effects</td>
+<td>Effect[]</td>
+<td>[]</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="particleeffect">ParticleEffect</h2>
+<p><em>extends <a href="#effect">Effect</a></em></p>
+<p>The most essential effect class. Can create particles in various shapes.</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>colorFrom</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td></td>
+</tr>
+<tr>
+<td>colorTo</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td></td>
+</tr>
+<tr>
+<td>particles</td>
+<td>int</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td>cone</td>
+<td>float</td>
+<td>180.0</td>
+<td></td>
+</tr>
+<tr>
+<td>length</td>
+<td>float</td>
+<td>20.0</td>
+<td></td>
+</tr>
+<tr>
+<td>baseLength</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>interp</td>
+<td>Interp</td>
+<td>linear</td>
+<td></td>
+</tr>
+<tr>
+<td>sizeFrom</td>
+<td>float</td>
+<td>2.0</td>
+<td></td>
+</tr>
+<tr>
+<td>sizeTo</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>offset</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>region</td>
+<td>String</td>
+<td>"circle"</td>
+<td></td>
+</tr>
+<tr>
+<td>line</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>strokeFrom</td>
+<td>float</td>
+<td>2.0</td>
+<td></td>
+</tr>
+<tr>
+<td>strokeTo</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>lenFrom</td>
+<td>float</td>
+<td>4.0</td>
+<td></td>
+</tr>
+<tr>
+<td>lenTo</td>
+<td>float</td>
+<td>2.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="waveeffect">WaveEffect</h2>
+<p><em>extends <a href="#effect">Effect</a></em></p>
+<p>Effect that renders a basic shockwave.</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>colorFrom</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td></td>
+</tr>
+<tr>
+<td>colorTo</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td></td>
+</tr>
+<tr>
+<td>sizeFrom</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>sizeTo</td>
+<td>float</td>
+<td>100.0</td>
+<td></td>
+</tr>
+<tr>
+<td>sides</td>
+<td>int</td>
+<td>-1</td>
+<td></td>
+</tr>
+<tr>
+<td>rotation</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>strokeFrom</td>
+<td>float</td>
+<td>2.0</td>
+<td></td>
+</tr>
+<tr>
+<td>strokeTo</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>interp</td>
+<td>Interp</td>
+<td>linear</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="item">Item</h1>
+<p><em>extends <a href="#unlockablecontent">UnlockableContent</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>Color</td>
+<td>000000ff</td>
+<td></td>
+</tr>
+<tr>
+<td>explosiveness</td>
+<td>float</td>
+<td>0.0</td>
+<td>how explosive this item is.</td>
+</tr>
+<tr>
+<td>flammability</td>
+<td>float</td>
+<td>0.0</td>
+<td>flammability above 0.3 makes this eleigible for item burners.</td>
+</tr>
+<tr>
+<td>radioactivity</td>
+<td>float</td>
+<td>0.0</td>
+<td>how radioactive this item is. 0=none, 1=chernobyl ground zero</td>
+</tr>
+<tr>
+<td>charge</td>
+<td>float</td>
+<td>0.0</td>
+<td>how electrically potent this item is.</td>
+</tr>
+<tr>
+<td>hardness</td>
+<td>int</td>
+<td>0</td>
+<td>drill hardness of the item</td>
+</tr>
+<tr>
+<td>cost</td>
+<td>float</td>
+<td>1.0</td>
+<td>base material cost of this item, used for calculating place times 1 cost = 1 tick added to build time</td>
+</tr>
+<tr>
+<td>lowPriority</td>
+<td>boolean</td>
+<td>false</td>
+<td>if true, this item is of lowest priority to drills.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="liquid">Liquid</h1>
+<p><em>extends <a href="#unlockablecontent">UnlockableContent</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>Color</td>
+<td>000000ff</td>
+<td>Color used in pipes and on the ground.</td>
+</tr>
+<tr>
+<td>barColor</td>
+<td>Color</td>
+<td>null</td>
+<td>Color used in bars.</td>
+</tr>
+<tr>
+<td>lightColor</td>
+<td>Color</td>
+<td>00000000</td>
+<td>Color used to draw lights. Note that the alpha channel is used to dictate brightness.</td>
+</tr>
+<tr>
+<td>flammability</td>
+<td>float</td>
+<td>0.0</td>
+<td>0-1, 0 is completely inflammable, anything above that may catch fire when exposed to heat, 0.5+ is very flammable.</td>
+</tr>
+<tr>
+<td>temperature</td>
+<td>float</td>
+<td>0.5</td>
+<td>temperature: 0.5 is 'room' temperature, 0 is very cold, 1 is molten hot</td>
+</tr>
+<tr>
+<td>heatCapacity</td>
+<td>float</td>
+<td>0.5</td>
+<td>how much heat this liquid can store. 0.4=water (decent), anything lower is probably less dense and bad at cooling.</td>
+</tr>
+<tr>
+<td>viscosity</td>
+<td>float</td>
+<td>0.5</td>
+<td>how thick this liquid is. 0.5=water (relatively viscous), 1 would be something like tar (very slow)</td>
+</tr>
+<tr>
+<td>explosiveness</td>
+<td>float</td>
+<td>0.0</td>
+<td>how prone to exploding this liquid is, when heated. 0 = nothing, 1 = nuke</td>
+</tr>
+<tr>
+<td>effect</td>
+<td>StatusEffect</td>
+<td>none</td>
+<td>The associated status effect.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="status">Status</h1>
+<p>Built-in constants:  </p>
+<p><code>none</code> <code>burning</code> <code>freezing</code> <code>unmoving</code> <code>slow</code> <code>wet</code> <code>muddy</code> <code>melting</code> <code>sapped</code> <code>tarred</code> <code>overdrive</code> <code>overclock</code> <code>shielded</code> <code>shocked</code> <code>blasted</code> <code>corroded</code> <code>boss</code> <code>sporeSlowed</code> <code>disarmed</code>  </p>
+<p><em>extends <a href="#unlockablecontent">UnlockableContent</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>damageMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td>Damage dealt by the unit with the effect.</td>
+</tr>
+<tr>
+<td>healthMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td>Unit health multiplier.</td>
+</tr>
+<tr>
+<td>speedMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td>Unit speed multiplier.</td>
+</tr>
+<tr>
+<td>reloadMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td>Unit reload multiplier.</td>
+</tr>
+<tr>
+<td>buildSpeedMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td>Unit build speed multiplier.</td>
+</tr>
+<tr>
+<td>dragMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td>Unit drag multiplier.</td>
+</tr>
+<tr>
+<td>transitionDamage</td>
+<td>float</td>
+<td>0.0</td>
+<td>Damage dealt upon transition to an affinity.</td>
+</tr>
+<tr>
+<td>disarm</td>
+<td>boolean</td>
+<td>false</td>
+<td>Unit weapon(s) disabled.</td>
+</tr>
+<tr>
+<td>damage</td>
+<td>float</td>
+<td>0.0</td>
+<td>Damage per frame.</td>
+</tr>
+<tr>
+<td>effectChance</td>
+<td>float</td>
+<td>0.15</td>
+<td>Chance of effect appearing.</td>
+</tr>
+<tr>
+<td>permanent</td>
+<td>boolean</td>
+<td>false</td>
+<td>If true, the effect never disappears.</td>
+</tr>
+<tr>
+<td>reactive</td>
+<td>boolean</td>
+<td>false</td>
+<td>If true, this effect will only react with other effects and cannot be applied.</td>
+</tr>
+<tr>
+<td>color</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td>Tint color of effect.</td>
+</tr>
+<tr>
+<td>effect</td>
+<td>Effect</td>
+<td>none</td>
+<td>Effect that happens randomly on top of the affected unit.</td>
+</tr>
+<tr>
+<td>affinities</td>
+<td>ObjectSet<StatusEffect></td>
+<td>new ObjectSet&lt;&gt;()</td>
+<td></td>
+</tr>
+<tr>
+<td>opposites</td>
+<td>ObjectSet<StatusEffect></td>
+<td>new ObjectSet&lt;&gt;()</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="unit">Unit</h1>
+<p><em>extends <a href="#unlockablecontent">UnlockableContent</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flying</td>
+<td>boolean</td>
+<td>false</td>
+<td>If true, the unit is always at elevation 1.</td>
+</tr>
+<tr>
+<td>constructor</td>
+<td>Prov&lt;? extends Unit&gt;</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>defaultController</td>
+<td>Prov&lt;? extends UnitController&gt;</td>
+<td>{code}</td>
+<td></td>
+</tr>
+<tr>
+<td>speed</td>
+<td>float</td>
+<td>1.1</td>
+<td></td>
+</tr>
+<tr>
+<td>boostMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>rotateSpeed</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>baseRotateSpeed</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>drag</td>
+<td>float</td>
+<td>0.3</td>
+<td></td>
+</tr>
+<tr>
+<td>accel</td>
+<td>float</td>
+<td>0.5</td>
+<td></td>
+</tr>
+<tr>
+<td>landShake</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>rippleScale</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>riseSpeed</td>
+<td>float</td>
+<td>0.08</td>
+<td></td>
+</tr>
+<tr>
+<td>fallSpeed</td>
+<td>float</td>
+<td>0.018</td>
+<td></td>
+</tr>
+<tr>
+<td>health</td>
+<td>float</td>
+<td>200.0</td>
+<td></td>
+</tr>
+<tr>
+<td>range</td>
+<td>float</td>
+<td>-1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>armor</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>maxRange</td>
+<td>float</td>
+<td>-1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>crashDamageMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>targetAir</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>targetGround</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>faceTarget</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>rotateShooting</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>isCounted</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>lowAltitude</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>circleTarget</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>canBoost</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>destructibleWreck</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>groundLayer</td>
+<td>float</td>
+<td>60.0</td>
+<td></td>
+</tr>
+<tr>
+<td>payloadCapacity</td>
+<td>float</td>
+<td>8.0</td>
+<td></td>
+</tr>
+<tr>
+<td>aimDst</td>
+<td>float</td>
+<td>-1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>buildBeamOffset</td>
+<td>float</td>
+<td>3.8</td>
+<td></td>
+</tr>
+<tr>
+<td>commandLimit</td>
+<td>int</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr>
+<td>visualElevation</td>
+<td>float</td>
+<td>-1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>allowLegStep</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>hovering</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>omniMovement</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>fallEffect</td>
+<td>Effect</td>
+<td>fallSmoke</td>
+<td></td>
+</tr>
+<tr>
+<td>fallThrusterEffect</td>
+<td>Effect</td>
+<td>fallSmoke</td>
+<td></td>
+</tr>
+<tr>
+<td>abilities</td>
+<td>Seq<Ability></td>
+<td>new Seq&lt;&gt;()</td>
+<td></td>
+</tr>
+<tr>
+<td>targetFlag</td>
+<td>BlockFlag</td>
+<td>generator</td>
+<td></td>
+</tr>
+<tr>
+<td>legCount</td>
+<td>int</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td>legGroupSize</td>
+<td>int</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>legLength</td>
+<td>float</td>
+<td>10.0</td>
+<td></td>
+</tr>
+<tr>
+<td>legSpeed</td>
+<td>float</td>
+<td>0.1</td>
+<td></td>
+</tr>
+<tr>
+<td>legTrns</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>legBaseOffset</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>legMoveSpace</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>legExtension</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>legPairOffset</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>legLengthScl</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>kinematicScl</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>maxStretch</td>
+<td>float</td>
+<td>1.75</td>
+<td></td>
+</tr>
+<tr>
+<td>legSplashDamage</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>legSplashRange</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>flipBackLegs</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>ammoResupplyAmount</td>
+<td>int</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td>ammoResupplyRange</td>
+<td>float</td>
+<td>100.0</td>
+<td></td>
+</tr>
+<tr>
+<td>mechSideSway</td>
+<td>float</td>
+<td>0.54</td>
+<td></td>
+</tr>
+<tr>
+<td>mechFrontSway</td>
+<td>float</td>
+<td>0.1</td>
+<td></td>
+</tr>
+<tr>
+<td>mechStride</td>
+<td>float</td>
+<td>-1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>mechStepShake</td>
+<td>float</td>
+<td>-1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>mechStepParticles</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>mechLegColor</td>
+<td>Color</td>
+<td>6e7080ff</td>
+<td></td>
+</tr>
+<tr>
+<td>itemCapacity</td>
+<td>int</td>
+<td>-1</td>
+<td></td>
+</tr>
+<tr>
+<td>ammoCapacity</td>
+<td>int</td>
+<td>-1</td>
+<td></td>
+</tr>
+<tr>
+<td>ammoType</td>
+<td>AmmoType</td>
+<td>copper</td>
+<td></td>
+</tr>
+<tr>
+<td>mineTier</td>
+<td>int</td>
+<td>-1</td>
+<td></td>
+</tr>
+<tr>
+<td>buildSpeed</td>
+<td>float</td>
+<td>-1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>mineSpeed</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>mineSound</td>
+<td>Sound</td>
+<td>minebeam</td>
+<td></td>
+</tr>
+<tr>
+<td>mineSoundVolume</td>
+<td>float</td>
+<td>0.6</td>
+<td></td>
+</tr>
+<tr>
+<td>dpsEstimate</td>
+<td>float</td>
+<td>-1.0</td>
+<td>This is a VERY ROUGH estimate of unit DPS.</td>
+</tr>
+<tr>
+<td>clipSize</td>
+<td>float</td>
+<td>-1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>canDrown</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>engineOffset</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>engineSize</td>
+<td>float</td>
+<td>2.5</td>
+<td></td>
+</tr>
+<tr>
+<td>strafePenalty</td>
+<td>float</td>
+<td>0.5</td>
+<td></td>
+</tr>
+<tr>
+<td>hitSize</td>
+<td>float</td>
+<td>6.0</td>
+<td></td>
+</tr>
+<tr>
+<td>itemOffsetY</td>
+<td>float</td>
+<td>3.0</td>
+<td></td>
+</tr>
+<tr>
+<td>lightRadius</td>
+<td>float</td>
+<td>60.0</td>
+<td></td>
+</tr>
+<tr>
+<td>lightOpacity</td>
+<td>float</td>
+<td>0.6</td>
+<td></td>
+</tr>
+<tr>
+<td>lightColor</td>
+<td>Color</td>
+<td>fbd367ff</td>
+<td></td>
+</tr>
+<tr>
+<td>drawCell</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>drawItems</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>drawShields</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>trailLength</td>
+<td>int</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>trailX</td>
+<td>float</td>
+<td>4.0</td>
+<td></td>
+</tr>
+<tr>
+<td>trailY</td>
+<td>float</td>
+<td>-3.0</td>
+<td></td>
+</tr>
+<tr>
+<td>trailScl</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>canHeal</td>
+<td>boolean</td>
+<td>false</td>
+<td>Whether the unit can heal blocks. Initialized in init()</td>
+</tr>
+<tr>
+<td>singleTarget</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>immunities</td>
+<td>ObjectSet<StatusEffect></td>
+<td>new ObjectSet&lt;&gt;()</td>
+<td></td>
+</tr>
+<tr>
+<td>deathSound</td>
+<td>Sound</td>
+<td>bang</td>
+<td></td>
+</tr>
+<tr>
+<td>weapons</td>
+<td>Seq<Weapon></td>
+<td>new Seq&lt;&gt;()</td>
+<td></td>
+</tr>
+<tr>
+<td>baseRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>legRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>region</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>shadowRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>cellRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>softShadowRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>jointRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>footRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>legBaseRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>baseJointRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>outlineRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>wreckRegions</td>
+<td>TextureRegion[]</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="weather">Weather</h1>
+<h2 id="weather_1">Weather</h2>
+<p><em>extends <a href="#unlockablecontent">UnlockableContent</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>duration</td>
+<td>float</td>
+<td>36000.0</td>
+<td>Default duration of this weather event in ticks.</td>
+</tr>
+<tr>
+<td>opacityMultiplier</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>attrs</td>
+<td>Attributes</td>
+<td>new Attributes()</td>
+<td></td>
+</tr>
+<tr>
+<td>sound</td>
+<td>Sound</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>soundVol</td>
+<td>float</td>
+<td>0.1</td>
+<td></td>
+</tr>
+<tr>
+<td>soundVolMin</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>soundVolOscMag</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>soundVolOscScl</td>
+<td>float</td>
+<td>20.0</td>
+<td></td>
+</tr>
+<tr>
+<td>rand</td>
+<td>Rand</td>
+<td>new Rand()</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>Prov<WeatherState></td>
+<td>WeatherState::create</td>
+<td></td>
+</tr>
+<tr>
+<td>status</td>
+<td>StatusEffect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>statusDuration</td>
+<td>float</td>
+<td>120.0</td>
+<td></td>
+</tr>
+<tr>
+<td>statusAir</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>statusGround</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="particleweather">ParticleWeather</h2>
+<p><em>extends <a href="#weather">Weather</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>particleRegion</td>
+<td>String</td>
+<td>"circle-shadow"</td>
+<td></td>
+</tr>
+<tr>
+<td>color</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td></td>
+</tr>
+<tr>
+<td>region</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>yspeed</td>
+<td>float</td>
+<td>-2.0</td>
+<td></td>
+</tr>
+<tr>
+<td>xspeed</td>
+<td>float</td>
+<td>0.25</td>
+<td></td>
+</tr>
+<tr>
+<td>padding</td>
+<td>float</td>
+<td>16.0</td>
+<td></td>
+</tr>
+<tr>
+<td>sizeMin</td>
+<td>float</td>
+<td>2.4</td>
+<td></td>
+</tr>
+<tr>
+<td>sizeMax</td>
+<td>float</td>
+<td>12.0</td>
+<td></td>
+</tr>
+<tr>
+<td>density</td>
+<td>float</td>
+<td>1200.0</td>
+<td></td>
+</tr>
+<tr>
+<td>minAlpha</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>maxAlpha</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>force</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>noiseScale</td>
+<td>float</td>
+<td>2000.0</td>
+<td></td>
+</tr>
+<tr>
+<td>baseSpeed</td>
+<td>float</td>
+<td>6.1</td>
+<td></td>
+</tr>
+<tr>
+<td>sinSclMin</td>
+<td>float</td>
+<td>30.0</td>
+<td></td>
+</tr>
+<tr>
+<td>sinSclMax</td>
+<td>float</td>
+<td>80.0</td>
+<td></td>
+</tr>
+<tr>
+<td>sinMagMin</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>sinMagMax</td>
+<td>float</td>
+<td>7.0</td>
+<td></td>
+</tr>
+<tr>
+<td>noiseColor</td>
+<td>Color</td>
+<td>ffffffff</td>
+<td></td>
+</tr>
+<tr>
+<td>drawNoise</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>drawParticles</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>useWindVector</td>
+<td>boolean</td>
+<td>false</td>
+<td></td>
+</tr>
+<tr>
+<td>noiseLayers</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>noiseLayerSpeedM</td>
+<td>float</td>
+<td>1.1</td>
+<td></td>
+</tr>
+<tr>
+<td>noiseLayerAlphaM</td>
+<td>float</td>
+<td>0.8</td>
+<td></td>
+</tr>
+<tr>
+<td>noiseLayerSclM</td>
+<td>float</td>
+<td>0.99</td>
+<td></td>
+</tr>
+<tr>
+<td>noiseLayerColorM</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>noisePath</td>
+<td>String</td>
+<td>"noiseAlpha"</td>
+<td></td>
+</tr>
+<tr>
+<td>noise</td>
+<td>Texture</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="rainweather">RainWeather</h2>
+<p><em>extends <a href="#weather">Weather</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>yspeed</td>
+<td>float</td>
+<td>5.0</td>
+<td></td>
+</tr>
+<tr>
+<td>xspeed</td>
+<td>float</td>
+<td>1.5</td>
+<td></td>
+</tr>
+<tr>
+<td>padding</td>
+<td>float</td>
+<td>16.0</td>
+<td></td>
+</tr>
+<tr>
+<td>density</td>
+<td>float</td>
+<td>1200.0</td>
+<td></td>
+</tr>
+<tr>
+<td>stroke</td>
+<td>float</td>
+<td>0.75</td>
+<td></td>
+</tr>
+<tr>
+<td>sizeMin</td>
+<td>float</td>
+<td>8.0</td>
+<td></td>
+</tr>
+<tr>
+<td>sizeMax</td>
+<td>float</td>
+<td>40.0</td>
+<td></td>
+</tr>
+<tr>
+<td>splashTimeScale</td>
+<td>float</td>
+<td>22.0</td>
+<td></td>
+</tr>
+<tr>
+<td>liquid</td>
+<td>Liquid</td>
+<td>water</td>
+<td></td>
+</tr>
+<tr>
+<td>splashes</td>
+<td>TextureRegion[]</td>
+<td>[null, null, null, null, null, null, null, null, null, null, null, null]</td>
+<td></td>
+</tr>
+<tr>
+<td>color</td>
+<td>Color</td>
+<td>7a95eaff</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="other">Other</h1>
+<h2 id="ability">Ability</h2>
+<p><em>extends <a href="#object">Object</a></em></p>
+<h2 id="forcefieldability">ForceFieldAbility</h2>
+<p><em>extends <a href="#ability">Ability</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>radius</td>
+<td>float</td>
+<td>60.0</td>
+<td>Shield radius.</td>
+</tr>
+<tr>
+<td>regen</td>
+<td>float</td>
+<td>0.1</td>
+<td>Shield regen speed in damage/tick.</td>
+</tr>
+<tr>
+<td>max</td>
+<td>float</td>
+<td>200.0</td>
+<td>Maximum shield.</td>
+</tr>
+<tr>
+<td>cooldown</td>
+<td>float</td>
+<td>300.0</td>
+<td>Cooldown after the shield is broken, in ticks.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="movelightningability">MoveLightningAbility</h2>
+<p><em>extends <a href="#ability">Ability</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>damage</td>
+<td>float</td>
+<td>35.0</td>
+<td>Lightning damage</td>
+</tr>
+<tr>
+<td>chance</td>
+<td>float</td>
+<td>0.15</td>
+<td>Chance of firing every tick. Set &gt;= 1 to always fire lightning every tick at max speed.</td>
+</tr>
+<tr>
+<td>length</td>
+<td>int</td>
+<td>12</td>
+<td>Length of the lightning. &lt;= 0 to disable</td>
+</tr>
+<tr>
+<td>minSpeed</td>
+<td>float</td>
+<td>0.8</td>
+<td>Speeds for when to start lightninging and when to stop getting faster</td>
+</tr>
+<tr>
+<td>maxSpeed</td>
+<td>float</td>
+<td>1.2</td>
+<td>Speeds for when to start lightninging and when to stop getting faster</td>
+</tr>
+<tr>
+<td>color</td>
+<td>Color</td>
+<td>a9d8ffff</td>
+<td>Lightning color</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>float</td>
+<td>0.0</td>
+<td>Shifts where the lightning spawns along the Y axis</td>
+</tr>
+<tr>
+<td>heatRegion</td>
+<td>String</td>
+<td>"error"</td>
+<td>Jittering heat sprite like the shield on v5 Javelin</td>
+</tr>
+<tr>
+<td>bullet</td>
+<td>BulletType</td>
+<td>null</td>
+<td>Bullet type that is fired. Can be null</td>
+</tr>
+<tr>
+<td>bulletAngle</td>
+<td>float</td>
+<td>0.0</td>
+<td>Bullet angle parameters</td>
+</tr>
+<tr>
+<td>bulletSpread</td>
+<td>float</td>
+<td>0.0</td>
+<td>Bullet angle parameters</td>
+</tr>
+<tr>
+<td>shootEffect</td>
+<td>Effect</td>
+<td>sparkShoot</td>
+<td></td>
+</tr>
+<tr>
+<td>shootSound</td>
+<td>Sound</td>
+<td>spark</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="repairfieldability">RepairFieldAbility</h2>
+<p><em>extends <a href="#ability">Ability</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>amount</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>reload</td>
+<td>float</td>
+<td>100.0</td>
+<td></td>
+</tr>
+<tr>
+<td>range</td>
+<td>float</td>
+<td>60.0</td>
+<td></td>
+</tr>
+<tr>
+<td>healEffect</td>
+<td>Effect</td>
+<td>heal</td>
+<td></td>
+</tr>
+<tr>
+<td>activeEffect</td>
+<td>Effect</td>
+<td>healWaveDynamic</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="shieldregenfieldability">ShieldRegenFieldAbility</h2>
+<p><em>extends <a href="#ability">Ability</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>amount</td>
+<td>float</td>
+<td>1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>max</td>
+<td>float</td>
+<td>100.0</td>
+<td></td>
+</tr>
+<tr>
+<td>reload</td>
+<td>float</td>
+<td>100.0</td>
+<td></td>
+</tr>
+<tr>
+<td>range</td>
+<td>float</td>
+<td>60.0</td>
+<td></td>
+</tr>
+<tr>
+<td>applyEffect</td>
+<td>Effect</td>
+<td>shieldApply</td>
+<td></td>
+</tr>
+<tr>
+<td>activeEffect</td>
+<td>Effect</td>
+<td>shieldWave</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="statusfieldability">StatusFieldAbility</h2>
+<p><em>extends <a href="#ability">Ability</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>effect</td>
+<td>StatusEffect</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>duration</td>
+<td>float</td>
+<td>60.0</td>
+<td></td>
+</tr>
+<tr>
+<td>reload</td>
+<td>float</td>
+<td>100.0</td>
+<td></td>
+</tr>
+<tr>
+<td>range</td>
+<td>float</td>
+<td>20.0</td>
+<td></td>
+</tr>
+<tr>
+<td>applyEffect</td>
+<td>Effect</td>
+<td>heal</td>
+<td></td>
+</tr>
+<tr>
+<td>activeEffect</td>
+<td>Effect</td>
+<td>overdriveWave</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="unitspawnability">UnitSpawnAbility</h2>
+<p><em>extends <a href="#ability">Ability</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unit</td>
+<td>UnitType</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>spawnTime</td>
+<td>float</td>
+<td>60.0</td>
+<td></td>
+</tr>
+<tr>
+<td>spawnX</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>spawnY</td>
+<td>float</td>
+<td>0.0</td>
+<td></td>
+</tr>
+<tr>
+<td>spawnEffect</td>
+<td>Effect</td>
+<td>spawn</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="weapon">Weapon</h2>
+<p><em>extends <a href="#object">Object</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>""</td>
+<td>displayed weapon region</td>
+</tr>
+<tr>
+<td>bullet</td>
+<td>BulletType</td>
+<td>null</td>
+<td>bullet shot</td>
+</tr>
+<tr>
+<td>ejectEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td>shell ejection effect</td>
+</tr>
+<tr>
+<td>mirror</td>
+<td>boolean</td>
+<td>true</td>
+<td>whether to create a flipped copy of this weapon upon initialization. default: true</td>
+</tr>
+<tr>
+<td>flipSprite</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether to flip the weapon's sprite when rendering</td>
+</tr>
+<tr>
+<td>alternate</td>
+<td>boolean</td>
+<td>true</td>
+<td>whether to shoot the weapons in different arms one after another, rather than all at once; only valid when mirror = true</td>
+</tr>
+<tr>
+<td>rotate</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether to rotate toward the target independently of unit</td>
+</tr>
+<tr>
+<td>top</td>
+<td>boolean</td>
+<td>true</td>
+<td>whether to draw the outline on top.</td>
+</tr>
+<tr>
+<td>continuous</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether to hold the bullet in place while firing</td>
+</tr>
+<tr>
+<td>rotateSpeed</td>
+<td>float</td>
+<td>20.0</td>
+<td>rotation speed of weapon when rotation is enabled, in degrees/t</td>
+</tr>
+<tr>
+<td>reload</td>
+<td>float</td>
+<td>0.0</td>
+<td>weapon reload in frames</td>
+</tr>
+<tr>
+<td>shots</td>
+<td>int</td>
+<td>1</td>
+<td>amount of shots per fire</td>
+</tr>
+<tr>
+<td>spacing</td>
+<td>float</td>
+<td>0.0</td>
+<td>spacing in degrees between multiple shots, if applicable</td>
+</tr>
+<tr>
+<td>inaccuracy</td>
+<td>float</td>
+<td>0.0</td>
+<td>inaccuracy of degrees of each shot</td>
+</tr>
+<tr>
+<td>shake</td>
+<td>float</td>
+<td>0.0</td>
+<td>intensity and duration of each shot's screen shake</td>
+</tr>
+<tr>
+<td>recoil</td>
+<td>float</td>
+<td>1.5</td>
+<td>visual weapon knockback.</td>
+</tr>
+<tr>
+<td>shootX</td>
+<td>float</td>
+<td>0.0</td>
+<td>projectile/effect offsets from center of weapon</td>
+</tr>
+<tr>
+<td>shootY</td>
+<td>float</td>
+<td>3.0</td>
+<td>projectile/effect offsets from center of weapon</td>
+</tr>
+<tr>
+<td>x</td>
+<td>float</td>
+<td>5.0</td>
+<td>offsets of weapon position on unit</td>
+</tr>
+<tr>
+<td>y</td>
+<td>float</td>
+<td>0.0</td>
+<td>offsets of weapon position on unit</td>
+</tr>
+<tr>
+<td>xRand</td>
+<td>float</td>
+<td>0.0</td>
+<td>random spread on the X axis</td>
+</tr>
+<tr>
+<td>shadow</td>
+<td>float</td>
+<td>-1.0</td>
+<td>radius of shadow drawn under the weapon; &lt;0 to disable</td>
+</tr>
+<tr>
+<td>velocityRnd</td>
+<td>float</td>
+<td>0.0</td>
+<td>fraction of velocity that is random</td>
+</tr>
+<tr>
+<td>firstShotDelay</td>
+<td>float</td>
+<td>0.0</td>
+<td>delay in ticks between shots</td>
+</tr>
+<tr>
+<td>shotDelay</td>
+<td>float</td>
+<td>0.0</td>
+<td>delay in ticks between shots</td>
+</tr>
+<tr>
+<td>shootCone</td>
+<td>float</td>
+<td>5.0</td>
+<td>The half-radius of the cone in which shooting will start.</td>
+</tr>
+<tr>
+<td>cooldownTime</td>
+<td>float</td>
+<td>20.0</td>
+<td>ticks to cool down the heat region</td>
+</tr>
+<tr>
+<td>soundPitchMin</td>
+<td>float</td>
+<td>0.8</td>
+<td>random sound pitch range</td>
+</tr>
+<tr>
+<td>soundPitchMax</td>
+<td>float</td>
+<td>1.0</td>
+<td>random sound pitch range</td>
+</tr>
+<tr>
+<td>ignoreRotation</td>
+<td>boolean</td>
+<td>false</td>
+<td>whether shooter rotation is ignored when shooting.</td>
+</tr>
+<tr>
+<td>minShootVelocity</td>
+<td>float</td>
+<td>-1.0</td>
+<td>min velocity required for this weapon to shoot</td>
+</tr>
+<tr>
+<td>otherSide</td>
+<td>int</td>
+<td>-1</td>
+<td>internal value used for alternation - do not change!</td>
+</tr>
+<tr>
+<td>shootSound</td>
+<td>Sound</td>
+<td>pew</td>
+<td>sound used for shooting</td>
+</tr>
+<tr>
+<td>chargeSound</td>
+<td>Sound</td>
+<td>none</td>
+<td>sound used for weapons that have a delay</td>
+</tr>
+<tr>
+<td>noAmmoSound</td>
+<td>Sound</td>
+<td>noammo</td>
+<td>sound played when there is nothing to shoot</td>
+</tr>
+<tr>
+<td>region</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td>displayed region (autoloaded)</td>
+</tr>
+<tr>
+<td>heatRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td>heat region, must be same size as region (optional)</td>
+</tr>
+<tr>
+<td>outlineRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td>outline region to display if top is false</td>
+</tr>
+<tr>
+<td>heatColor</td>
+<td>Color</td>
+<td>ab3400ff</td>
+<td>heat region tint</td>
+</tr>
+<tr>
+<td>shootStatus</td>
+<td>StatusEffect</td>
+<td>none</td>
+<td>status effect applied when shooting</td>
+</tr>
+<tr>
+<td>shootStatusDuration</td>
+<td>float</td>
+<td>300.0</td>
+<td>status effect duration when shot</td>
+</tr>
+</tbody>
+</table>
+<h2 id="buildvisibility">BuildVisibility</h2>
+<p>A flag used by the game to change a few special-case things. It may be one of the following strings:</p>
+<ul>
+<li><code>hidden</code></li>
+<li><code>shown</code> (default)</li>
+<li><code>debugOnly</code></li>
+<li><code>sandboxOnly</code></li>
+<li><code>campaignOnly</code></li>
+<li><code>lightingOnly</code></li>
+</ul>
+<h2 id="blockgroup">BlockGroup</h2>
+<p>Groups for blocks to build on top of each other:</p>
+<ul>
+<li><code>none</code></li>
+<li><code>walls</code></li>
+<li><code>turrets</code></li>
+<li><code>transportation</code></li>
+<li><code>power</code></li>
+<li><code>liquids</code></li>
+<li><code>drills</code></li>
+</ul>
+<h2 id="itemstack">ItemStack</h2>
+<p>A <code>ItemStack</code> can be a string or an object. It's used to describe the type and amount of items to a machine.</p>
+<p>As a <code>string</code>:</p>
+<pre><code>copper/5
+</code></pre>
+<p>As an <code>object</code>:</p>
+<pre><code>item: copper
+amount: 5
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>item</td>
+<td>string</td>
+<td>The name of an <a href="#item">Item</a>.</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>int</td>
+<td>The amount of said item.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="liquidstack">LiquidStack</h2>
+<p>A <code>LiquidStack</code> can be a string or an object. It's used to describe the type and amount of liquid to a machine.</p>
+<p>As a <code>string</code>:</p>
+<pre><code>water/0.5
+</code></pre>
+<p>As an <code>object</code>:</p>
+<pre><code>liquid: water
+amount: 0.5
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>liquid</td>
+<td>string</td>
+<td>The name of a <a href="#liquid">Liquid</a>.</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>float</td>
+<td>The amount of said liquid.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="category">Category</h2>
+<p>Categories for building menu:</p>
+<ul>
+<li><code>turret</code> Offensive turrets;</li>
+<li><code>production</code> Blocks that produce raw resources, such as drills;</li>
+<li><code>distribution</code> Blocks that move items around;</li>
+<li><code>liquid</code> Blocks that move liquids around;</li>
+<li><code>power</code> Blocks that generate or transport power;</li>
+<li><code>defense</code> Walls and other defensive structures;</li>
+<li><code>crafting</code> Blocks that craft things;</li>
+<li><code>units</code> Blocks that create units;</li>
+<li><code>logic</code> Blocks that are related to logic operations;</li>
+<li><code>effect</code> Things for storage or passive effects.</li>
+</ul>
+<h2 id="color">Color</h2>
+<p>Color is a hexadecimal string, <code>&lt;rr&gt;&lt;gg&gt;&lt;bb&gt;</code> for example:</p>
+<ul>
+<li><code>ff0000</code> is red,</li>
+<li><code>00ff00</code> is green,</li>
+<li><code>0000ff</code> is blue,</li>
+<li><code>ffff00</code> is yellow,</li>
+<li><code>00ffff</code> is cyan,</li>
+<li>etc.</li>
+</ul>
+<h2 id="cachelayer">CacheLayer</h2>
+<p>Flags used by for cache render:</p>
+<ul>
+<li><code>normal</code> normal layer;</li>
+<li><code>walls</code> walls layer;</li>
+<li><code>water</code> water layer, adding tile water shaders, and giving wave reflections;</li>
+<li><code>tar</code> tar layer, adding tar shaders, making it darker and giving it some bubble reflections;</li>
+</ul>
+<h2 id="targetpriority">TargetPriority</h2>
+<p>A higher ordinal means a higher priority. Higher priority blocks will always get targeted over those of lower priority, regardless of distance.</p>
+<ol>
+<li><code>base</code></li>
+<li><code>turret</code></li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../5-markup/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Markup
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../6-migrationv6/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              6.0 Migration Guide
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>
