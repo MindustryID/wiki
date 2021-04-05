@@ -1,101 +1,103 @@
-# Frequently Asked Questions
+# Pertanyaan yang Sering Diajukan
 
-## How do I play multiplayer with my friends/enemies?
+## Bagaimana cara bermain multipemain dengan teman / musuh saya?
 
-If you're on the same wifi or hotspot network, it should be easy. Start playing a game, open the pause menu and press "Host Multiplayer Game" button. This will make your game available to everyone in the same network. To join this game from another device, click Play > Join Game. If another player is hosting, the game should pop up in the list of servers.
+Jika Anda berada di jaringan wifi atau hotspot yang sama, itu seharusnya mudah. Mulai bermain game, buka menu jeda dan tekan tombol "Host Multiplayer Game". Ini akan membuat game Anda tersedia untuk semua orang di jaringan yang sama. Untuk bergabung dengan game ini dari perangkat lain, klik Mainkan> Gabung Game. Jika ada pemain lain yang menjadi host, game tersebut akan muncul di daftar server.
 
-## I can't find my friend's multiplayer game!
+## Saya tidak dapat menemukan game multipemain teman saya!
 
-If you are sure that you are on the same network, and you still can't find their game, considering using a wifi hotspot instead of a public network. Some public wifi networks simply do not allow server discovery.
+Jika Anda yakin berada di jaringan yang sama, dan Anda masih tidak dapat menemukan game mereka, pertimbangkan untuk menggunakan hotspot wifi, bukan jaringan publik. Beberapa jaringan wifi publik tidak mengizinkan penemuan server.
 
-If you're using a wifi hotspot and you still can't find a friend's game, you could try connecting directly via IP. Instead of looking for the game, find the internal IP of the hosting device (look up how to find it for the specific device you're using), and have the other player type in that IP in the Play > Join Game > Add Server button.
+Jika Anda menggunakan hotspot wifi dan masih tidak dapat menemukan game teman, Anda dapat mencoba menghubungkan langsung melalui IP. Alih-alih mencari gim, temukan IP internal perangkat hosting (cari cara menemukannya untuk perangkat tertentu yang Anda gunakan), dan minta pemain lain mengetikkan IP tersebut di Play> Join Game> Add Server tombol.
 
-## How can I play with someone across networks?
+## Bagaimana saya bisa bermain dengan seseorang di seluruh jaringan?
 
-You need to port forward and share your IP with the other players. See the guide [here.](https://mindustrygame.github.io/wiki/servers/)
+Anda perlu melakukan port forward dan membagikan IP Anda dengan pemain lain. Lihat panduannya [di sini.] (Https://mindustrygame.github.io/wiki/servers/)
 
-Consider using a public server, such as those that are on the game already.
+Pertimbangkan untuk menggunakan server publik, seperti yang sudah ada di dalam game.
 
-## How do I set up a dedicated server? / How do I port forward?
+## Bagaimana cara menyiapkan server khusus? / Bagaimana cara saya melakukan port forward?
 
-See [this guide.](https://mindustrygame.github.io/wiki/servers/)
+Lihat [panduan ini.] (Https://mindustrygame.github.io/wiki/servers/)
 
-## Can PC players play with iOS/Android players?
+## Bisakah pemain PC bermain dengan pemain iOS / Android?
 
-Yes, Mindustry is fully cross-platform. As long as all the devices are running the same version of Mindustry, any device can connect to any other device.
+Ya, Mindustry sepenuhnya lintas platform. Selama semua perangkat menjalankan versi Mindustry yang sama, perangkat apa pun dapat terhubung ke perangkat lain.
 
-## How do I import a map?
+## Bagaimana cara mengimpor peta?
 
-First of all, you need to make sure that the map is compatible with your game version. If you're running Mindustry 4.0 or later, you need a .msav map file.
-Once you download the file onto your device, open the Mindustry main menu. Select Editor -> Import Map (on the top of the screen). Find the directory that the map is in, select the file and press "open".  
+Pertama-tama, Anda perlu memastikan bahwa peta tersebut kompatibel dengan versi game Anda. Jika Anda menjalankan Mindustry 4.0 atau yang lebih baru, Anda memerlukan file peta .msav.
+Setelah Anda mengunduh file ke perangkat Anda, buka menu utama Mindustry. Pilih Editor -> Impor Peta (di bagian atas layar). Temukan direktori tempat peta itu berada, pilih file dan tekan "buka".
 
-Note that the file chooser will only display files with an .msav extension. If you can't find the file, make sure that you're looking in the right place and that the extension is correct. Note that Discord may sometimes remove the extension from files when downloading, so you'll need to open your file browser of choice and add the extension manually.
+Perhatikan bahwa pemilih file hanya akan menampilkan file dengan ekstensi .msav. Jika Anda tidak dapat menemukan file tersebut, pastikan Anda mencari di tempat yang tepat dan ekstensi sudah benar. Perhatikan bahwa Discord terkadang menghapus ekstensi dari file saat mengunduh, jadi Anda harus membuka browser file pilihan Anda dan menambahkan ekstensi secara manual.
 
-## How do I export a map file?
+## Bagaimana cara mengekspor file peta?
 
-Open your map in the editor. Open the menu, then press "Export". Select a directory, type in a filename and press "Save".
+Buka peta Anda di editor. Buka menu, lalu tekan "Ekspor". Pilih direktori, ketik nama file dan tekan "Simpan".
 
-## I don't like the current version of Mindustry for some reason, what do I do?
+## Saya tidak suka versi Mindustry saat ini karena alasan tertentu, apa yang harus saya lakukan?
 
-Just download Mindustry Classic for the old experience. It's identical to build 3.5 40, albeit with some minor bugfixes.
+Unduh saja Mindustry Classic untuk pengalaman lama. Ini identik dengan build 3.5 40, meskipun dengan beberapa perbaikan bug minor.
 
-PC/Android APK: [https://anuke.itch.io/mindustry-classic](https://anuke.itch.io/mindustry-classic)
+APK PC / Android: [https://anuke.itch.io/mindustry-classic](https://anuke.itch.io/mindustry-classic)
 
-You can also find it by searching "mindustry classic" on the Google Play store.
+Anda juga dapat menemukannya dengan menelusuri "mindustry classic" di Google Play Store.
 
-## Does Mindustry run on a Raspberry Pi?
+## Apakah Mindustry menjalankan Raspberry Pi?
 
-While the game itself could theoretically support it, no, it does not support the Raspberry Pi.
+Meskipun gim itu sendiri secara teoritis dapat mendukungnya, tidak, itu tidak mendukung Raspberry Pi.
 
-However, the dedicated server will run on a Pi as long as you have the right version of Java installed. Note that the 3.5/Classic dedicated server will not run on a Pi; only 4.0 and above is supported.
+Namun, server khusus akan berjalan di Pi selama Anda menginstal versi Java yang benar. Perhatikan bahwa server khusus 3.5 / Klasik tidak akan berjalan di Pi; hanya 4.0 dan lebih tinggi yang didukung.
 
-## Where is the game's source code?
+## Di mana kode sumber permainan?
 
-On GitHub: [https://github.com/Anuken/Mindustry](https://github.com/Anuken/Mindustry)
+Di GitHub: [https://github.com/Anuken/Mindustry](https://github.com/Anuken/Mindustry)
 
-## Did Anuke make the game alone?
+## Apakah Anuke membuat game itu sendiri?
 
-For the most part, yes. Music, graphics and programming are done by me. Translations are made by contributors from the community.
-Some people also contribute to the game's code by submitting pull requests on GitHub. These people are marked with a Contributor role on Discord. There are many people who contribute to the wiki/documentation as well.
+Untuk sebagian besar, ya. Musik, grafik dan pemrograman dilakukan oleh saya. Terjemahan dibuat oleh kontributor dari komunitas.
+Beberapa orang juga berkontribusi pada kode game dengan mengirimkan permintaan penarikan di GitHub. Orang-orang ini ditandai dengan peran Kontributor di Discord. Ada banyak orang yang berkontribusi pada wiki / dokumentasi juga.
 
-## How do I join the Google Play beta program?
+## Bagaimana cara bergabung dengan program beta Google Play?
 
-Open the Google Play page for Mindustry, scroll to the bottom of the page and tap 'join beta'. Beta builds can take some time to become available after tapping the button. Be patient. I do not control how fast this happens; it is handled automatically by Google.
+Buka halaman Google Play untuk Mindustry, gulir ke bawah halaman dan ketuk 'join beta'. Versi beta memerlukan beberapa waktu agar tersedia setelah mengetuk tombol. Sabar. Saya tidak mengontrol seberapa cepat ini terjadi; itu ditangani secara otomatis oleh Google.
 
-## I can't connect to servers / My game is out of date. What do I do?
+## Saya tidak dapat terhubung ke server / Game saya kedaluwarsa. Apa yang saya lakukan?
 
-If you're using Google Play on Android, wait for an update to become available. Builds are usually updated before the announcement is made, but Google may take hours to process it. Be patient.  
+Jika Anda menggunakan Google Play di Android, tunggu pembaruan tersedia. Build biasanya diperbarui sebelum pengumuman dibuat, tetapi Google mungkin membutuhkan waktu berjam-jam untuk memprosesnya. Sabar.
 
-If you're on iOS, it's the same deal, except you may need to wait a bit longer. iOS builds take a longer time to release, and Apple takes 1-2 days to verify each release even after they are uploaded.
+Jika Anda menggunakan iOS, itu kesepakatan yang sama, kecuali Anda mungkin perlu menunggu lebih lama. Build iOS membutuhkan waktu lebih lama untuk dirilis, dan Apple membutuhkan 1-2 hari untuk memverifikasi setiap rilis bahkan setelah diunggah.
 
-If you're using the desktop version, just go on itch.io using the links at the top of this channel and download the game again.  
+Jika Anda menggunakan versi desktop, lanjutkan saja ke itch.io menggunakan tautan di bagian atas saluran ini dan unduh game lagi.
 
-*Updating should not reset progress.*
+* Memperbarui seharusnya tidak mengatur ulang kemajuan. *
 
-## Are Anuke and Anuken different people?
+## Apakah Anuke dan Anuken berbeda orang?
 
-They are very well the same person. Anuke(n) uses "Anuken" when "Anuke" is taken.
+Mereka adalah orang yang sama. Anuke (n) menggunakan "Anuken" saat "Anuke" diambil.
 
-> I usually use Anuken when Anuke is taken as a username. -Anuken
+> Saya biasanya menggunakan Anuken saat Anuke diambil sebagai nama pengguna. -Anuken
 
-## Why are you charging for the game on Steam and iOS when it is available for free?
+## Mengapa Anda menagih untuk game di Steam dan iOS saat tersedia untuk
 
-The game is being charged for on Steam and iOS because it is one way of supporting Anuke, and it has features not available on the free versions, such as:
+Gratis?
 
-- A map, mod, and schematic browser
-- Secure, seamless multiplayer using Steam Multiplayer (eliminates the need to port-forward)
-- Publicly visible servers at startup
-- Achievements
-- Stat tracking
-- Cloud saves and progress transfer using Steam
-- Steam community
+Gim ini dikenai biaya di Steam dan iOS karena ini adalah salah satu cara untuk mendukung Anuke, dan memiliki fitur yang tidak tersedia di versi gratis, seperti:
 
-On the App Store, distributing the game there costs a lot, as a developer will need a Mac, and a $100/year developer license to do so. Such expenses are covered by charging for the game on there.
+- Peta, mod, dan browser skematik
+- Multiplayer yang aman dan mulus menggunakan Steam Multiplayer (menghilangkan kebutuhan untuk memajukan port)
+- Server yang terlihat untuk umum saat startup
+- Prestasi
+- Pelacakan stat
+- Cloud menyimpan dan melanjutkan transfer menggunakan Steam
+- Komunitas uap
 
-## How can I contribute to the game? 
+Di App Store, mendistribusikan game di sana membutuhkan banyak biaya, karena pengembang membutuhkan Mac, dan lisensi pengembang $ 100 / tahun untuk melakukannya. Pengeluaran semacam itu ditanggung dengan menagih untuk game di sana.
 
-- The easiest way is to give constructive feedback and discussion (preferably about the game) in our Discord Server.
-- Report bugs that you find on the GitHub repository. **Please remember to use the templates properly**, as doing so will make your issue more organized and follow a common pattern, making Anuke's job easier. If you know how to program in Java, feel free to help Anuke out and fix said bugs, then open a PR. 
-- Donations to Anuke are open on the Itch.io page if you would like to give a monetary contribution. You can also buy the game on Steam.
-- If you are fluent in a language that Mindustry doesn't support yet, or if you want to contribute to the ones already there, stop by the #translations channel, and ask about it. You can contribute to the current bundles and open a PR in the game's repo.
-- If you want to contribute to this wiki, please contact Anuke or Luxray5474. They'll let you know what you should do and how we roll.
+## Bagaimana cara berkontribusi pada game?
+
+- Cara termudah adalah memberikan umpan balik dan diskusi yang konstruktif (lebih disukai tentang game) di Server Perselisihan kami.
+- Laporkan bug yang Anda temukan di repositori GitHub. ** Harap ingat untuk menggunakan templat dengan benar **, karena hal itu akan membuat masalah Anda lebih teratur dan mengikuti pola yang sama, membuat pekerjaan Anuke lebih mudah. Jika Anda tahu cara memprogram di Java, jangan ragu untuk membantu Anuke dan memperbaiki bug tersebut, lalu buka PR.
+- Donasi untuk Anuke terbuka di halaman Itch.io jika Anda ingin memberikan sumbangan uang. Anda juga dapat membeli gim di Steam.
+- Jika Anda fasih dalam bahasa yang belum didukung oleh Mindustry, atau jika Anda ingin berkontribusi pada bahasa yang sudah ada di sana, mampirlah ke saluran #translations, dan tanyakan tentang itu. Anda dapat berkontribusi ke bundel saat ini dan membuka PR di repo game.
+- Jika Anda ingin berkontribusi di wiki ini, silakan hubungi Anuke atau Luxray5474. Mereka akan memberi tahu Anda apa yang harus Anda lakukan dan bagaimana kami melakukannya.
