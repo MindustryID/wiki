@@ -10,11 +10,11 @@ Perhatikan bahwa sebagian besar wiki * dibuat secara otomatis *, artinya Anda ha
 
 ## Tautan
 
-- _ [Kode Sumber] (https://github.com/Anuken/Mindustry) _
-- _ [Papan Trello] (https://trello.com/b/aE2tcUwF/mindustry-trello) _
-- _ [Ruang Obrolan Discord] (https://discord.gg/mindustry) _
-- _ [Rilis & Catatan Patch] (https://github.com/Anuken/Mindustry/releases) _
-- _ [Javadoc] (https://mindustrygame.github.io/docs/) _
+- _[Kode Sumber](https://github.com/Anuken/Mindustry)_
+- _[Papan Trello](https://trello.com/b/aE2tcUwF/mindustry-trello)_
+- _[Ruang Obrolan Discord](https://discord.gg/mindustry)_
+- _[Rilis & Catatan Patch](https://github.com/Anuken/Mindustry/releases)_
+- _[Javadoc](https://mindustrygame.github.io/docs/)_
 
 ## Unduhan
 
