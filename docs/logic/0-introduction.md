@@ -1,6 +1,6 @@
 # Pengantar
 
-** Selamat datang di manual Mindustry Logic yang resmi, meskipun tidak lengkap. **
+**Selamat datang di manual Mindustry Logic yang resmi, meskipun tidak lengkap.**
 
 Ini adalah panduan dan referensi untuk Mindustry Logic. Ini berisi informasi dasar dan lanjutan yang berkaitan dengan bahasa. Manual ini dirancang agar komprehensif untuk semua level pemrograman, dan kami mencoba membuatnya dipahami oleh orang-orang yang bahkan tidak tahu apa itu kode.
 
@@ -32,11 +32,11 @@ Sebagian besar waktu itu hanya karena jawaban atas pertanyaan Anda sangat dekat,
 
 Bagaimana cara mengajukan pertanyaan yang efektif:
 
-* Pertama, coba cari tahu dengan bantuan manual ini atau ** Google **. * Sertakan apa yang sudah Anda coba dan sudah Anda ketahui. *
-* Harap __ ** JANGAN ** __ memposting pertanyaan yang sangat sering diajukan seperti "bagaimana cara mengontrol menara" atau "bagaimana membuat unit bergerak". Sekali lagi, Anda dapat menemukan jawaban Anda di sini.
-* Tanyakan secara __ ** detail ** __ sehingga siapa pun yang membantu Anda memiliki semua konteks yang mereka butuhkan untuk melakukannya secara efektif.
+* Pertama, coba cari tahu dengan bantuan manual ini atau **Google**. *Sertakan apa yang sudah Anda coba dan sudah Anda ketahui.*
+* Harap __**JANGAN**__ memposting pertanyaan yang sangat sering diajukan seperti "bagaimana cara mengontrol menara" atau "bagaimana membuat unit bergerak". Sekali lagi, Anda dapat menemukan jawaban Anda di sini.
+* Tanyakan secara __**detail**__ sehingga siapa pun yang membantu Anda memiliki semua konteks yang mereka butuhkan untuk melakukannya secara efektif.
 
-Kami berusaha sebaik mungkin untuk tidak bersikap kasar atau tidak sopan, tetapi pertanyaan yang tidak sesuai dengan standar tersebut dapat menguji kesabaran kami, terutama jika solusinya sederhana dan tercakup dalam manual. __ ** Membuang-buang waktu seseorang bertanya tentang pertanyaan yang sudah tertulis dengan jelas di manual. ** __
+Kami berusaha sebaik mungkin untuk tidak bersikap kasar atau tidak sopan, tetapi pertanyaan yang tidak sesuai dengan standar tersebut dapat menguji kesabaran kami, terutama jika solusinya sederhana dan tercakup dalam manual. __**Membuang-buang waktu seseorang bertanya tentang pertanyaan yang sudah tertulis dengan jelas di manual.**__
 
 Contoh struktur dan semangat pertanyaan yang dapat diterima:
 
