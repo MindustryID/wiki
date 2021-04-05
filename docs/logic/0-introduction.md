@@ -1,52 +1,52 @@
-# Introduction
+# Pengantar
 
-**Welcome to the official, although incomplete, Mindustry Logic manual.**
+** Selamat datang di manual Mindustry Logic yang resmi, meskipun tidak lengkap. **
 
-This is both a guide and a reference for Mindustry Logic. It contains both basic and advanced information relating to the language. This manual is designed to be comprehensive to all levels of programming, and we're trying to make it understood by people who don't even know what code is.
+Ini adalah panduan dan referensi untuk Mindustry Logic. Ini berisi informasi dasar dan lanjutan yang berkaitan dengan bahasa. Manual ini dirancang agar komprehensif untuk semua level pemrograman, dan kami mencoba membuatnya dipahami oleh orang-orang yang bahkan tidak tahu apa itu kode.
 
-## What is Mindustry Logic?
+## Apa itu Mindustry Logic?
 
-Mindustry Logic *(mlog)* is a scripting language added in v6 for the purpose of introducing more advanced automation and strategy into the game. It is heavily inspired by Assembly languages, where there is only one instruction or operation at a time. This is quite unlike more popular languages such as Python, Java, or C++, where you have convenient ways to create one-liners, functions, conditional statements, loops, and classes.
+Mindustry Logic * (mlog) * adalah bahasa skrip yang ditambahkan di v6 untuk tujuan memperkenalkan otomatisasi dan strategi yang lebih canggih ke dalam game. Ini sangat terinspirasi oleh bahasa Assembly, di mana hanya ada satu instruksi atau operasi pada satu waktu. Ini tidak seperti bahasa yang lebih populer seperti Python, Java, atau C ++, di mana Anda memiliki cara mudah untuk membuat satu baris, fungsi, pernyataan bersyarat, loop, dan kelas.
 
-The current capabilities of the language are:
+Kemampuan bahasa saat ini adalah:
 
-* Getting information about blocks and units, including the player
-* Controlling buildings and turrets
-* Controlling and writing/reading information to/from units
-* Displaying shapes and colors in displays
-* Outputting text through message blocks
-* Reading and writing information to and from memory cells
-* Reading player input through switch blocks
-* Mathematical operations, both unary and binary
-* And much more!
+* Mendapatkan informasi tentang blok dan unit, termasuk pemain
+* Mengontrol gedung dan menara
+* Mengontrol dan menulis / membaca informasi ke / dari unit
+* Menampilkan bentuk dan warna dalam tampilan
+* Mengeluarkan teks melalui blok pesan
+* Membaca dan menulis informasi ke dan dari sel memori
+* Membaca masukan pemain melalui blok saklar
+* Operasi matematika, baik uner maupun biner
+* Dan banyak lagi!
   
-## What do I need before I get into Mindustry Logic?
+## Apa yang saya butuhkan sebelum saya masuk ke Mindustry Logic?
 
-A good thing to have beforehand is some programming experience, at least in regards to concepts and theory. This can help with understanding some of the techniques and concepts of this language. But most importantly, you need *patience and an open mind*, since a lot can change between updates and many things may seem daunting and complex until you try them out.
+Hal yang baik untuk dimiliki sebelumnya adalah beberapa pengalaman pemrograman, setidaknya dalam hal konsep dan teori. Ini dapat membantu memahami beberapa teknik dan konsep bahasa ini. Tetapi yang paling penting, Anda membutuhkan * kesabaran dan pikiran terbuka *, karena banyak hal yang dapat berubah di antara pembaruan dan banyak hal mungkin tampak menakutkan dan rumit sampai Anda mencobanya.
 
-You might also want to have Google on hand if you don't understand specific programming terms used here.
+Anda mungkin juga ingin memiliki Google jika Anda tidak memahami istilah pemrograman khusus yang digunakan di sini.
 
-## Why is everyone rude in #logic on the Discord?
+## Mengapa semua orang tidak sopan dalam #logic on the Discord?
 
-Most of the time it's just because the answer to your question is in very close reach, and all you need is to install this manual or read it better. All if not most of the time, all you need to do is RTFM (read this fabulous manual) thoroughly, and you will find your answer. If you're absolutely sure it isn't covered here, you are welcome to ask a question in #logic. 
+Sebagian besar waktu itu hanya karena jawaban atas pertanyaan Anda sangat dekat, dan yang Anda butuhkan hanyalah menginstal manual ini atau membacanya dengan lebih baik. Semua jika tidak sebagian besar waktu, yang perlu Anda lakukan hanyalah RTFM (baca manual yang luar biasa ini) secara menyeluruh, dan Anda akan menemukan jawabannya. Jika Anda benar-benar yakin itu tidak dibahas di sini, Anda dapat mengajukan pertanyaan di #logic.
 
-How to ask an effective question:
+Bagaimana cara mengajukan pertanyaan yang efektif:
 
-* First, try to figure it out with the help of this manual or **Google**. *Include what you've tried and already know.*
-* Please __**DO NOT**__ post extremely frequently asked questions such as "how do I control turret" or "how to make unit move". Again, you can find your answers here.
-* Ask in __**detail**__ so anybody who helps you has all the context they need to do so effectively.
+* Pertama, coba cari tahu dengan bantuan manual ini atau ** Google **. * Sertakan apa yang sudah Anda coba dan sudah Anda ketahui. *
+* Harap __ ** JANGAN ** __ memposting pertanyaan yang sangat sering diajukan seperti "bagaimana cara mengontrol menara" atau "bagaimana membuat unit bergerak". Sekali lagi, Anda dapat menemukan jawaban Anda di sini.
+* Tanyakan secara __ ** detail ** __ sehingga siapa pun yang membantu Anda memiliki semua konteks yang mereka butuhkan untuk melakukannya secara efektif.
 
-We try our best not to be rude or impolite, but questions that don't go by those standards can test our patience, especially if the solution is simple and covered by the manual. __**It's a waste of someone's time to ask them about a question that's already written clearly in the manual.**__
+Kami berusaha sebaik mungkin untuk tidak bersikap kasar atau tidak sopan, tetapi pertanyaan yang tidak sesuai dengan standar tersebut dapat menguji kesabaran kami, terutama jika solusinya sederhana dan tercakup dalam manual. __ ** Membuang-buang waktu seseorang bertanya tentang pertanyaan yang sudah tertulis dengan jelas di manual. ** __
 
-Examples of acceptable question structure and spirit:
+Contoh struktur dan semangat pertanyaan yang dapat diterima:
 
-* "Hey after reading the manual, I can't understand what exactly a double is. Can't I just use an int?"
-* "I'm having trouble with radar. It doesn't detect my player even though I'm in range of the turret. Here is my code:"
-* "Why can't I print a string and a variable properly in the same print instruction?"
+* "Hei setelah membaca manual, saya tidak mengerti apa sebenarnya double itu. Tidak bisakah saya menggunakan int?"
+* "Saya mengalami masalah dengan radar. Itu tidak mendeteksi pemain saya meskipun saya dalam jangkauan turret. Ini kode saya:"
+* "Mengapa saya tidak dapat mencetak string dan variabel dengan benar dalam instruksi cetak yang sama?"
 
-It's inevitable that not everybody can do that all of the time, so try your best to make your question presentable at the very least, and follow at least one of these guidelines.
+Tidak dapat dipungkiri bahwa tidak semua orang dapat melakukan itu sepanjang waktu, jadi cobalah yang terbaik untuk membuat pertanyaan Anda terlihat rapi, dan ikuti setidaknya satu dari panduan ini.
 
-# How do I get the in-game manual?
+# Bagaimana cara mendapatkan manual dalam game?
 
-There is a more comprehensive in-game manual mod that goes into detail for instructions and variables available at [DeltaNedas/rtfm](https://github.com/DeltaNedas/rtfm).
-Once installed you can access the instruction manual page by clicking the new book button in the processor UI, other pages are available in the full RTFM dialog.
+Ada mod manual dalam game yang lebih komprehensif yang menjelaskan detail untuk instruksi dan variabel yang tersedia di [DeltaNedas/rtfm](https://github.com/DeltaNedas/rtfm).
+Setelah terinstal, Anda dapat mengakses halaman manual instruksi dengan mengklik tombol buku baru di UI prosesor, halaman lain tersedia dalam dialog RTFM lengkap.
