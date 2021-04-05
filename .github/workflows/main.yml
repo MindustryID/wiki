@@ -46,8 +46,8 @@ jobs:
         run: |
           cd ..
           git clone https://github.com/Anuken/Mindustry --depth 1
-          git clone https://github.com/MindustryID/wiki-generator --depth 1
-          cd wiki-generator/
+          git clone https://github.com/MindustryID/wiki-generator Mindustry-Wiki-Generator --depth 1
+          cd Mindustry-Wiki-Generator/
           ./run.sh
           cd ../wiki
           mkdocs build
