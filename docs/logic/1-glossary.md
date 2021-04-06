@@ -1,95 +1,95 @@
-# Glossary
+# Glosarium
 
-This glossary provides more detailed explanations on many terms used in this manual.
+Glosarium ini memberikan penjelasan yang lebih rinci tentang banyak istilah yang digunakan dalam manual ini.
 
-## Data Types
+## Jenis Data
 
-There are two main datatypes in Mindustry; numbers and Objects.
+Ada dua tipe data utama di Mindustry; angka dan Objek.
 
-### number
+### nomor
 
-A decimal number. Can be negative or positive, and can represent true (anything not equal to 0) or false (0) values. Null is also represented as 0.
+Angka desimal. Bisa negatif atau positif, dan dapat mewakili nilai benar (apa pun yang tidak sama dengan 0) atau salah (0). Null juga direpresentasikan sebagai 0.
 
-Some instructions can only accept whole numbers, so it is indicated accordingly in this manual.
+Beberapa instruksi hanya dapat menerima bilangan bulat, jadi itu ditunjukkan sesuai dengan manual ini.
 
-Internally, numbers are stored as 64-bit floating point values (`double`), and operated upon as 64-bit signed integers (`long`) when bitshifting is involved.
+Secara internal, angka disimpan sebagai nilai floating point 64-bit (`double`), dan dioperasikan sebagai integer bertanda 64-bit (` long`) saat bitshifting terlibat.
 
 ### String
 
-An Object that represents text enclosed in quotes, e.g. `"hello mindustry"`
+Objek yang mewakili teks yang diapit tanda kutip, mis. `"halo mindustry"`
 
-### Building
+### Bangunan
 
-An Object that represents a physical Building in a world. 
+Objek yang merepresentasikan Bangunan fisik di dunia.
 
-**This is different from a Block**; a Block is simply a type of Building, but a Building is a tangible Block - as in, it has health, interacts with power and items, etc.
+**Ini berbeda dari Block**; Blok hanyalah sejenis Bangunan, tetapi Bangunan adalah Blok berwujud - seperti dalam, ia memiliki kesehatan, berinteraksi dengan kekuatan dan barang, dll.
 
-Essentially, **a Building is a Block that physically exists in a world.**
+Intinya, **Bangunan adalah Blok yang secara fisik ada di dunia.**
 
-For example, the `getlink` instruction will return a *Building* Object, which you can get information about using `sensor`.
+Misalnya, instruksi `getlink` akan mengembalikan Objek * Membangun *, di mana Anda bisa mendapatkan informasi tentang menggunakan`sensor`.
 
-### Unit
+### Satuan
 
-An Object that represents a Unit in a world, including the player.
+Objek yang mewakili Unit di dunia, termasuk pemain.
 
-For example, the `ubind` instruction will set a processor variable `@unit` to a Unit Object representing a bound unit.
+Misalnya, instruksi `ubind` akan menyetel variabel prosesor` @unit` ke Objek Unit yang mewakili unit terikat.
 
-## Parameter Types
+## Jenis Parameter
 
-These are like data types, but only work as parameters for instructions, and are not returned by any instruction.
+Ini seperti tipe data, tetapi hanya berfungsi sebagai parameter untuk instruksi, dan tidak dikembalikan oleh instruksi apa pun.
 
 ### BuildingType `content`
 
-A type of Building. Starts with `@`.
+Suatu jenis Bangunan. Dimulai dengan `@`.
 
-Within the game's code, this is better referred to as "Block". However, for the sake of readability in this manual, we will call it BuildingType. *See [###Building] for an explanation on Building vs. Block.*
+Di dalam kode permainan, ini lebih baik disebut sebagai "Blokir". Namun, agar panduan ini mudah dibaca, kami akan menyebutnya Tipe Bangunan. *Lihat [### Building] untuk penjelasan tentang Building vs. Block.*
 
-Unlike Items and Liquids, you cannot use this in `sensor`. However, you can use `@type` in `sensor`, and compare against it with `jump`.
+Tidak seperti Item dan Cairan, Anda tidak dapat menggunakan ini di `sensor`. Namun, Anda dapat menggunakan `@ type` dalam` sensor`, dan membandingkannya dengan `jump`.
 
-Example: `@scatter`
+Contoh: `@ scatter`
 
 ### UnitType `content`
 
-A type of Unit. Starts with `@`.
+Jenis Unit. Dimulai dengan `@`.
 
-Example: `@toxopid`
+Contoh: `@ toxopid`
 
-*A full list is shown under the pencil button in the "Unit Bind" instruction block.*
+*Daftar lengkap ditampilkan di bawah tombol pensil di blok instruksi "Unit Bind".*
 
 <img src="/wiki/images/misc/logic-glossary-unitType-unitBind.png">
 
-### Senseable
+### Masuk akal
 
-An Item, Liquid, or Building or Unit property that can be "sensed" by `sensor`. Starts with `@`.
+Properti Item, Cairan, atau Bangunan atau Unit yang dapat "dideteksi" oleh `sensor`. Dimulai dengan `@`.
 
-Examples: `@scrap`, `@slag`, `@totalAmmo`
+Contoh: `@scrap`,` @slag`, `@totalAmmo`
 
-*A full list is shown under the pencil button in the "Sensor" instruction block.*
+*Daftar lengkap ditampilkan di bawah tombol pensil di blok instruksi "Sensor".*
 
 <img src="/wiki/images/misc/logic-glossary-senseable-sensor.png">
 
 ### Target
 
-A trait to filter a unit or block target by. Primarily used in `radar`, `uradar`, and `ulocate`. `radar` and `uradar` have the same Targets, but `ulocate` is diferent, since it looks for Buildings.
+Sifat untuk memfilter unit atau memblokir target. Terutama digunakan dalam `radar`,` uradar`, dan `ulocate`. `radar` dan` uradar` memiliki Target yang sama, tetapi `ulocate` berbeda, karena mencari Gedung.
 
-*A full list is shown by pressing parameters after "target" in `radar` and `uradar`, or "find" and "type" in `uradar`.*
+*Daftar lengkap ditampilkan dengan menekan parameter setelah "target" di `radar` dan` uradar`, atau "find" dan "type" di `uradar`.*
 
 <img src="/wiki/images/misc/logic-glossary-target-radar.png">
 
 ### Op
 
-A mathematical operation. *This is different from the `op` instruction.* 
+Operasi matematika. * Ini berbeda dari instruksi `op`.*
 
-*A full list is shown under the "+" button in the "Operation" instruction block.*
+*Daftar lengkap ditampilkan di bawah tombol "+" di blok instruksi "Operasi".*
 
 <img src="/wiki/images/misc/logic-glossary-op-operation.png">
 
-For the more complex ones, you can Google "<operation name\> Java math".
+Untuk yang lebih kompleks, Anda dapat menggunakan Google "<operation name\> matematika Java".
 
-### Comp
+### Komp
 
-A comparison. Primarily used in the `jump` instruction when comparing two values. `always` will return true no matter what, so it will always cause a jump.
+Sebuah perbandingan. Terutama digunakan dalam instruksi `jump` saat membandingkan dua nilai. `always` akan kembali menjadi true apa pun yang terjadi, jadi itu akan selalu menyebabkan lompatan.
 
-*A full list is shown under the comparison button in the "Jump" instruction block.*
+*Daftar lengkap ditampilkan di bawah tombol perbandingan di blok instruksi "Lompat".*
 
 <img src="/wiki/images/misc/logic-glossary-comp-jump.png">
