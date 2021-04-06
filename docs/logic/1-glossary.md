@@ -42,7 +42,7 @@ Ini seperti tipe data, tetapi hanya berfungsi sebagai parameter untuk instruksi,
 
 Suatu jenis Bangunan. Dimulai dengan `@`.
 
-Di dalam kode permainan, ini lebih baik disebut sebagai "Blokir". Namun, agar panduan ini mudah dibaca, kami akan menyebutnya Tipe Bangunan. *Lihat [### Building] untuk penjelasan tentang Building vs. Block.*
+Di dalam kode permainan, ini lebih baik disebut sebagai "Blokir". Namun, agar panduan ini mudah dibaca, kami akan menyebutnya Tipe Bangunan. *Lihat [###Building] untuk penjelasan tentang Building vs. Block.*
 
 Tidak seperti Item dan Cairan, Anda tidak dapat menggunakan ini di `sensor`. Namun, Anda dapat menggunakan `@ type` dalam` sensor`, dan membandingkannya dengan `jump`.
 
