@@ -46,13 +46,13 @@ Di dalam kode permainan, ini lebih baik disebut sebagai "Blokir". Namun, agar pa
 
 Tidak seperti Item dan Cairan, Anda tidak dapat menggunakan ini di `sensor`. Namun, Anda dapat menggunakan `@ type` dalam` sensor`, dan membandingkannya dengan `jump`.
 
-Contoh: `@ scatter`
+Contoh: `@scatter`
 
 ### UnitType `content`
 
 Jenis Unit. Dimulai dengan `@`.
 
-Contoh: `@ toxopid`
+Contoh: `@toxopid`
 
 *Daftar lengkap ditampilkan di bawah tombol pensil di blok instruksi "Unit Bind".*
 
