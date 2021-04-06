@@ -88,13 +88,13 @@ Gim ini dikenai biaya di Steam dan iOS karena ini adalah salah satu cara untuk m
 - Prestasi
 - Pelacakan stat
 - Cloud menyimpan dan melanjutkan transfer menggunakan Steam
-- Komunitas uap
+- Komunitas Steam
 
-Di App Store, mendistribusikan game di sana membutuhkan banyak biaya, karena pengembang membutuhkan Mac, dan lisensi pengembang $ 100 / tahun untuk melakukannya. Pengeluaran semacam itu ditanggung dengan menagih untuk game di sana.
+Di App Store, mendistribusikan game di sana membutuhkan banyak biaya, karena pengembang membutuhkan Mac, dan lisensi pengembang $100/tahun (100 dollar per tahun) untuk melakukannya. Pengeluaran semacam itu ditanggung dengan menagih untuk game di sana.
 
 ## Bagaimana cara berkontribusi pada game?
 
-- Cara termudah adalah memberikan umpan balik dan diskusi yang konstruktif (lebih disukai tentang game) di Server Perselisihan kami.
+- Cara termudah adalah memberikan umpan balik dan diskusi yang konstruktif (lebih disukai tentang game) di Server Discord kami.
 - Laporkan bug yang Anda temukan di repositori GitHub. ** Harap ingat untuk menggunakan templat dengan benar **, karena hal itu akan membuat masalah Anda lebih teratur dan mengikuti pola yang sama, membuat pekerjaan Anuke lebih mudah. Jika Anda tahu cara memprogram di Java, jangan ragu untuk membantu Anuke dan memperbaiki bug tersebut, lalu buka PR.
 - Donasi untuk Anuke terbuka di halaman Itch.io jika Anda ingin memberikan sumbangan uang. Anda juga dapat membeli gim di Steam.
 - Jika Anda fasih dalam bahasa yang belum didukung oleh Mindustry, atau jika Anda ingin berkontribusi pada bahasa yang sudah ada di sana, mampirlah ke saluran #translations, dan tanyakan tentang itu. Anda dapat berkontribusi ke bundel saat ini dan membuka PR di repo game.
