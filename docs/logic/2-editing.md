@@ -1,33 +1,33 @@
-# Writing and Editing Code
+# Menulis dan Mengedit Kode
 
-There are two primary methods to writing Mindustry Logic: The Visual Editor and manual editing. Each is better in their own way, so choose whichever works for you the best.
+Ada dua metode utama untuk menulis Logika Mindustry: Editor Visual dan pengeditan manual. Masing-masing lebih baik dengan caranya sendiri, jadi pilih mana yang terbaik untuk Anda.
 
-## The Visual Editor
+## Editor Visual
 
-The Visual Editor is the "Editing" interface of a processor (when you press the "pencil" button). **It's the recommended method for beginners**, since it has been designed to be easy to understand and use.
+Editor Visual adalah antarmuka "Pengeditan" dari sebuah prosesor (saat Anda menekan tombol "pensil"). ** Ini adalah metode yang disarankan untuk pemula **, karena telah dirancang agar mudah dipahami dan digunakan.
 
-The advantages of editing this way as opposed to editing manually are:
+Keuntungan mengedit dengan cara ini dibandingkan dengan mengedit secara manual adalah:
 
-* A block-based, color-coded, drag-and-drop interface
-* Easy parameter chooser, shows all of the needed parameters
-* Visual, easy-to-set jump relationships
-* Mobile-friendly
+* Antarmuka berbasis blok, kode warna, seret dan lepas
+* Pemilih parameter yang mudah, menampilkan semua parameter yang dibutuhkan
+* Visual, hubungan lompatan yang mudah diatur
+* Ramah seluler
 
 <img src="/wiki/images/misc/logic-editing-visualEditor-overview.png">
 
-You can also export and import code to and from text form.
+Anda juga dapat mengekspor dan mengimpor kode ke dan dari bentuk teks.
 
-## Manual Editing
+## Pengeditan Manual
 
-Manual editing involves using a text editor such as Notepad++, Vim, or Visual Studio Code to edit your code. **For more advanced users and longer code, manual editing is the way to go**.
+Pengeditan manual melibatkan penggunaan editor teks seperti Notepad ++, Vim, atau Visual Studio Code untuk mengedit kode Anda. ** Untuk pengguna yang lebih mahir dan kode yang lebih panjang, pengeditan manual adalah caranya **.
 
-The advantages of manually editing code as opposed to the Visual Editor are:
+Keuntungan mengedit kode secara manual dibandingkan dengan Editor Visual adalah:
 
-* Denser than the Visual Editor; more code can be seen at a time
-* Typing is faster than dragging-and-dropping across long walls of code
-* Can be used to make quick pieces of code for demonstration without opening Mindustry
-* Syntax highlighting in some editors, such as [VS Code (plugin)](https://marketplace.visualstudio.com/items?itemName=vortetty.masm), [Emacs (package)](https://github.com/vednoc/masm-mode), and [Vim (plugin)](https://github.com/purofle/vim-mindustry-logic)
-* A text block does not block part of the parameter text
-* Ability to save and access code outside of Mindustry
+* Lebih padat dari Editor Visual; lebih banyak kode dapat dilihat sekaligus
+* Mengetik lebih cepat daripada menyeret-dan-menjatuhkan melintasi dinding kode yang panjang
+* Dapat digunakan untuk membuat potongan kode cepat untuk demonstrasi tanpa membuka Mindustry
+* Penyorotan sintaks di beberapa editor, seperti [VS Code(plugin)](https://marketplace.visualstudio.com/items?itemName=vortetty.masm), [Emacs (paket)](https://github.com/ vednoc/masm-mode), dan [Vim(plugin)](https://github.com/purofle/vim-mindustry-logic)
+* Blok teks tidak memblokir bagian dari teks parameter
+* Kemampuan untuk menyimpan dan mengakses kode di luar Mindustry
 
-However, it can be a little difficult for beginners or those who aren't used to editing code, since variables have to be typed out explicitly, and jumps can get very messy without a visual guide, among other things. 
+Namun, ini bisa agak sulit bagi pemula atau mereka yang tidak terbiasa mengedit kode, karena variabel harus diketik secara eksplisit, dan lompatan bisa menjadi sangat berantakan tanpa panduan visual, antara lain.
