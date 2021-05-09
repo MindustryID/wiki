@@ -16,7 +16,7 @@
     
     
       
-        <title>Types - Mindustry Wiki</title>
+        <title>Tipe - Mindustry Wiki</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#types" class="md-skip">
+        <a href="#tipe" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Types
+              Tipe
             
           </span>
         </div>
@@ -2509,7 +2509,7 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Types
+        Tipe
       </a>
       
     </li>
@@ -2994,7 +2994,7 @@
                   </a>
                 
                 
-                <h1 id="types">Types</h1>
+                <h1 id="tipe">Tipe</h1>
 <h1 id="block">Block</h1>
 <h2 id="block_1">Block</h2>
 <p><em>extends <a href="#unlockablecontent">UnlockableContent</a></em></p>
@@ -10332,7 +10332,7 @@ Use the standard Floor class instead.</p>
 </tbody>
 </table>
 <h2 id="buildvisibility">BuildVisibility</h2>
-<p>A flag used by the game to change a few special-case things. It may be one of the following strings:</p>
+<p>Bendera yang digunakan oleh game untuk mengubah beberapa hal kasus khusus. Ini mungkin salah satu dari string berikut:</p>
 <ul>
 <li><code>hidden</code></li>
 <li><code>shown</code> (default)</li>
@@ -10342,7 +10342,7 @@ Use the standard Floor class instead.</p>
 <li><code>lightingOnly</code></li>
 </ul>
 <h2 id="blockgroup">BlockGroup</h2>
-<p>Groups for blocks to build on top of each other:</p>
+<p>Grup untuk blok untuk dibangun di atas satu sama lain:</p>
 <ul>
 <li><code>none</code></li>
 <li><code>walls</code></li>
@@ -10353,99 +10353,99 @@ Use the standard Floor class instead.</p>
 <li><code>drills</code></li>
 </ul>
 <h2 id="itemstack">ItemStack</h2>
-<p>A <code>ItemStack</code> can be a string or an object. It's used to describe the type and amount of items to a machine.</p>
-<p>As a <code>string</code>:</p>
+<p>Sebuah <code>ItemStack</code> bisa berupa string atau objek. Ini digunakan untuk mendeskripsikan jenis dan jumlah item ke sebuah mesin.</p>
+<p>Sebagai <code>string</code>:</p>
 <pre><code>copper/5
 </code></pre>
-<p>As an <code>object</code>:</p>
+<p>Sebagai <code>objek</code>:</p>
 <pre><code>item: copper
 amount: 5
 </code></pre>
 <table>
 <thead>
 <tr>
-<th>field</th>
-<th>type</th>
-<th>notes</th>
+<th>bidang</th>
+<th>tipe</th>
+<th>catatan</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>item</td>
 <td>string</td>
-<td>The name of an <a href="#item">Item</a>.</td>
+<td>Nama dari [Item] (#item).</td>
 </tr>
 <tr>
 <td>amount</td>
 <td>int</td>
-<td>The amount of said item.</td>
+<td>Jumlah item tersebut.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="liquidstack">LiquidStack</h2>
-<p>A <code>LiquidStack</code> can be a string or an object. It's used to describe the type and amount of liquid to a machine.</p>
-<p>As a <code>string</code>:</p>
-<pre><code>water/0.5
+<p>Sebuah <code>LiquidStack</code> bisa berupa string atau objek. Ini digunakan untuk mendeskripsikan jenis dan jumlah item ke sebuah mesin.</p>
+<p>Sebagai <code>string</code>:</p>
+<pre><code>water/5
 </code></pre>
-<p>As an <code>object</code>:</p>
+<p>Sebagai <code>objek</code>:</p>
 <pre><code>liquid: water
-amount: 0.5
+amount: 5
 </code></pre>
 <table>
 <thead>
 <tr>
-<th>field</th>
-<th>type</th>
-<th>notes</th>
+<th>bidang</th>
+<th>tipe</th>
+<th>catatan</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>liquid</td>
 <td>string</td>
-<td>The name of a <a href="#liquid">Liquid</a>.</td>
+<td>Nama dari [Liquid] (#liduid).</td>
 </tr>
 <tr>
 <td>amount</td>
-<td>float</td>
-<td>The amount of said liquid.</td>
+<td>int</td>
+<td>Jumlah item tersebut.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="category">Category</h2>
-<p>Categories for building menu:</p>
+<h2 id="kategori">Kategori</h2>
+<p>Kategori untuk menu bangunan:</p>
 <ul>
-<li><code>turret</code> Offensive turrets;</li>
-<li><code>production</code> Blocks that produce raw resources, such as drills;</li>
-<li><code>distribution</code> Blocks that move items around;</li>
-<li><code>liquid</code> Blocks that move liquids around;</li>
-<li><code>power</code> Blocks that generate or transport power;</li>
-<li><code>defense</code> Walls and other defensive structures;</li>
-<li><code>crafting</code> Blocks that craft things;</li>
-<li><code>units</code> Blocks that create units;</li>
-<li><code>logic</code> Blocks that are related to logic operations;</li>
-<li><code>effect</code> Things for storage or passive effects.</li>
+<li><code>turret</code> Menara ofensif;</li>
+<li><code>production</code> Blok yang menghasilkan sumber daya mentah, seperti bor;</li>
+<li><code>distribution</code> Blok yang memindahkan item;</li>
+<li><code>liquid</code> Blok yang memindahkan cairan;</li>
+<li><code>power</code> Blok yang menghasilkan atau mengangkut daya;</li>
+<li><code>defence</code> Tembok dan struktur pertahanan lainnya;</li>
+<li><code>crafting</code> Blok yang membuat sesuatu;</li>
+<li><code>units</code> Blok yang membuat unit;</li>
+<li><code>logic</code> Blok yang terkait dengan operasi logika;</li>
+<li><code>effect</code> Hal untuk penyimpanan atau efek pasif.</li>
 </ul>
 <h2 id="color">Color</h2>
-<p>Color is a hexadecimal string, <code>&lt;rr&gt;&lt;gg&gt;&lt;bb&gt;</code> for example:</p>
+<p>Warna adalah string heksadesimal, <code>&lt;rr&gt; &lt;gg&gt; &lt;bb&gt;</code> misalnya:</p>
 <ul>
-<li><code>ff0000</code> is red,</li>
-<li><code>00ff00</code> is green,</li>
-<li><code>0000ff</code> is blue,</li>
-<li><code>ffff00</code> is yellow,</li>
-<li><code>00ffff</code> is cyan,</li>
-<li>etc.</li>
+<li><code>ff0000</code> berwarna merah,</li>
+<li><code>00ff00</code> berwarna hijau,</li>
+<li><code>0000ff</code> berwarna biru,</li>
+<li><code>ffff00</code> berwarna kuning,</li>
+<li><code>00ffff</code> adalah cyan,</li>
+<li>dll.</li>
 </ul>
 <h2 id="cachelayer">CacheLayer</h2>
-<p>Flags used by for cache render:</p>
+<p>Bendera yang digunakan oleh untuk perenderan cache:</p>
 <ul>
-<li><code>normal</code> normal layer;</li>
-<li><code>walls</code> walls layer;</li>
-<li><code>water</code> water layer, adding tile water shaders, and giving wave reflections;</li>
-<li><code>tar</code> tar layer, adding tar shaders, making it darker and giving it some bubble reflections;</li>
+<li>lapisan normal <code>normal</code>;</li>
+<li>lapisan dinding <code>wall</code>;</li>
+<li>Lapisan air <code>water</code>, menambahkan peneduh air ubin, dan memberikan pantulan gelombang;</li>
+<li>Lapisan tar <code>tar</code>, menambahkan shader tar, membuatnya lebih gelap dan memberinya beberapa pantulan gelembung;</li>
 </ul>
 <h2 id="targetpriority">TargetPriority</h2>
-<p>A higher ordinal means a higher priority. Higher priority blocks will always get targeted over those of lower priority, regardless of distance.</p>
+<p>Urutan yang lebih tinggi berarti prioritas yang lebih tinggi. Pemblokiran dengan prioritas lebih tinggi akan selalu ditargetkan daripada yang berprioritas lebih rendah, berapa pun jaraknya.</p>
 <ol>
 <li><code>base</code></li>
 <li><code>turret</code></li>
