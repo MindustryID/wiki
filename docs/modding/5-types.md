@@ -1,11 +1,11 @@
-# Types
+# Tipe
 
 $allTypes
 
 
 ## BuildVisibility
 
-A flag used by the game to change a few special-case things. It may be one of the following strings:
+Bendera yang digunakan oleh game untuk mengubah beberapa hal kasus khusus. Ini mungkin salah satu dari string berikut:
 
 -   `hidden`
 -   `shown` (default)
@@ -18,7 +18,7 @@ A flag used by the game to change a few special-case things. It may be one of th
 
 ## BlockGroup
 
-Groups for blocks to build on top of each other:
+Grup untuk blok untuk dibangun di atas satu sama lain:
 
 -   `none`
 -   `walls`
@@ -31,84 +31,84 @@ Groups for blocks to build on top of each other:
 
 ## ItemStack
 
-A `ItemStack` can be a string or an object. It's used to describe the type and amount of items to a machine.
+Sebuah `ItemStack` bisa berupa string atau objek. Ini digunakan untuk mendeskripsikan jenis dan jumlah item ke sebuah mesin.
 
-As a `string`:
+Sebagai `string`:
 
     copper/5
 
-As an `object`:
+Sebagai `objek`:
 
     item: copper
     amount: 5
 
-|field|type|notes|
+|bidang|tipe|catatan|
 |---|---|---|
-|item|string|The name of an [Item](#item).|
-|amount|int|The amount of said item.|
+|item|string|Nama dari [Item] (#item).|
+|amount|int|Jumlah item tersebut.|
 
 
 
 ## LiquidStack
 
-A `LiquidStack` can be a string or an object. It's used to describe the type and amount of liquid to a machine.
+Sebuah `LiquidStack` bisa berupa string atau objek. Ini digunakan untuk mendeskripsikan jenis dan jumlah item ke sebuah mesin.
 
-As a `string`:
+Sebagai `string`:
 
-    water/0.5
+    water/5
 
-As an `object`:
+Sebagai `objek`:
 
     liquid: water
-    amount: 0.5
+    amount: 5
 
-|field|type|notes|
+|bidang|tipe|catatan|
 |---|---|---|
-|liquid|string|The name of a [Liquid](#liquid).|
-|amount|float|The amount of said liquid.|
+|liquid|string|Nama dari [Liquid] (#liduid).|
+|amount|int|Jumlah item tersebut.|
 
 
-## Category
+## Kategori
 
-Categories for building menu:
+Kategori untuk menu bangunan:
 
--   `turret` Offensive turrets;
--   `production` Blocks that produce raw resources, such as drills;
--   `distribution` Blocks that move items around;
--   `liquid` Blocks that move liquids around;
--   `power` Blocks that generate or transport power;
--   `defense` Walls and other defensive structures;
--   `crafting` Blocks that craft things;
--   `units` Blocks that create units;
--   `logic` Blocks that are related to logic operations;
--   `effect` Things for storage or passive effects.
+-    `turret` Menara ofensif;
+-    `production` Blok yang menghasilkan sumber daya mentah, seperti bor;
+-    `distribution` Blok yang memindahkan item;
+-    `liquid` Blok yang memindahkan cairan;
+-    `power` Blok yang menghasilkan atau mengangkut daya;
+-    `defence` Tembok dan struktur pertahanan lainnya;
+-    `crafting` Blok yang membuat sesuatu;
+-    `units` Blok yang membuat unit;
+-    `logic` Blok yang terkait dengan operasi logika;
+-    `effect` Hal untuk penyimpanan atau efek pasif.
 
 
 ## Color
 
-Color is a hexadecimal string, `<rr><gg><bb>` for example:
+Warna adalah string heksadesimal, `<rr> <gg> <bb>` misalnya:
 
--   `ff0000` is red,
--   `00ff00` is green,
--   `0000ff` is blue,
--   `ffff00` is yellow,
--   `00ffff` is cyan,
--   etc.
+- `ff0000` berwarna merah,
+- `00ff00` berwarna hijau,
+- `0000ff` berwarna biru,
+- `ffff00` berwarna kuning,
+- `00ffff` adalah cyan,
+- dll.
 
 
 
 ## CacheLayer
 
-Flags used by for cache render:
+Bendera yang digunakan oleh untuk perenderan cache:
 
--   `normal` normal layer;
--   `walls` walls layer;
--   `water` water layer, adding tile water shaders, and giving wave reflections;
--   `tar` tar layer, adding tar shaders, making it darker and giving it some bubble reflections;
+- lapisan normal `normal`;
+- lapisan dinding `wall`;
+- Lapisan air `water`, menambahkan peneduh air ubin, dan memberikan pantulan gelombang;
+- Lapisan tar `tar`, menambahkan shader tar, membuatnya lebih gelap dan memberinya beberapa pantulan gelembung;
 
 ## TargetPriority
 
-A higher ordinal means a higher priority. Higher priority blocks will always get targeted over those of lower priority, regardless of distance.
+Urutan yang lebih tinggi berarti prioritas yang lebih tinggi. Pemblokiran dengan prioritas lebih tinggi akan selalu ditargetkan daripada yang berprioritas lebih rendah, berapa pun jaraknya.
 
 1.  `base`
 2.  `turret`
