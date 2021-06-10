@@ -23,6 +23,7 @@ jobs:
         run: |
           # install pip=>20.1 to use "pip cache dir"
           python3 -m pip install --upgrade pip
+
       - name: Get pip cache dir
         id: pip-cache
         run: echo "::set-output name=dir::$(pip cache dir)"
@@ -34,6 +35,7 @@ jobs:
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
+
       - name: Install dependencies
         run: python3 -m pip install -r ./requirements.txt
 
@@ -41,12 +43,19 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 14
-
+      - name: Checkout latest Mindustry tag
+        run: |
+          cd ..
+          git clone https://github.com/Anuken/Mindustry
+          cd Mindustry
+          git fetch --tags
+          latestTag=$(git describe --tags `git rev-list --tags --max-count=1`)
+          echo "Checking out tag: ${latestTag}"
+          git checkout ${latestTag}
       - name: Generate docs
         run: |
           cd ..
-          git clone https://github.com/Anuken/Mindustry --depth 1
-          git clone https://github.com/MindustryID/wiki-generator Mindustry-Wiki-Generator --depth 1
+          git clone https://github.com/Anuken/Mindustry-Wiki-Generator --depth 1
           cd Mindustry-Wiki-Generator/
           ./run.sh
           cd ../wiki
