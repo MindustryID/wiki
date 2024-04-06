@@ -27,21 +27,25 @@ Meskipun, kita memiliki variabel dalam contoh yang disebut `playerUnit`. Variabe
 
 ### Tipe Data dan Pengubahan Implisit
 
-The values in variables, of course, have different types that are specific to different sources and purposes, such as `Unit` for Units, `number` for any number, etc. You can find a list of all of them in the Glossary.
 
-Mindustry Logic also has this thing with variables called **Implicit Conversion**. That means that, if needed, it will convert a variable's value from one type to another.
+Value dalam variabel, tentu saja, ada tipe yang berbeda itu adalah spesifik ke sumber yang berbeda
+dan tujuannya, seperti `Unit` untuk Units, `number` untuk angka yang manapun, dll. Kamu bisa cari sebuah daftar dari semua itu di Glosarium.
 
-If an instruction is given a `number`, but it needs an `Object`, it will be converted to `null`. If an instruction needs a `number`, but is given an `Object`, it will be converted to 1 if the object isn't `null`, otherwise 0.
+Mindustry Logic juga memiliki hal ini dengan variabel disebut **Pengubahan Implisit**. Itu bermaksud itu, jika dibutuhkan, itu akan mengubah sebuah value milik variabel dari satu tipe ke lain.
 
-Examples:
+Jika sebuah intruksi dimasukan sebuah `number`, tetapi itu membutuhkan `Object`, itu akan diubah menjadi `null`. 
+Jika sebuah intruksi membutuhkan sebuah `number`, tetapi itu dimasukan `Object`, itu akan diubah menjadi 1 jika objek bukan `null`, lain kali 0. 
+If an instruction needs a `number`, but is given an `Object`, it will be converted to 1 if the object isn't `null`, sebaliknya 0.
+
+Contoh:
 
 * `53` -> `null`
 * `null` -> 0,
-* `Object` which is a Silicon Crucible -> 1
+* `Object` yang mana itu Silicon Crucible -> 1
 
-The `print` instruction is the only instruction that requires a `String` as an input, so its rules are stated in its own part of the manual.
+Intruksi `print` adalah hanya intruksi yang membutuhkan `String`sebagai input, jadi peraturan itu telah sudah dinyatakan dalam bagian dari panduan itu sendiri.
 
-### Variable Naming
+### Penamaan Variabel
 
 Naming variables properly is an important skill to have when programming in general. It helps to make code easier to read and understand. Thus, that can make it easier for people to learn from or fix your code.
 
