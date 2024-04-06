@@ -1,21 +1,21 @@
 # Markup
 
-Penyaji teks menggunakan bahasa markup sederhana untuk mewarnai teks.
+The text renderer uses a simple markup language for coloring text.
 
-- `[name]` menyetel warna berdasarkan nama, ada beberapa [warna bawaan] (# warna bawaan);
-- `[#rrggbb]` / `[#rrggbbaa]` menyetel warna menurut nilai hex, dengan setiap nilai menjadi apa saja dari `00` hingga` ff`:
-    - `rr` adalah nilai merah,
-    - `gg` adalah nilai hijau,
-    - `bb` adalah nilai biru,
-    - `aa` adalah nilai alpha;
-- `[]` menyetel warna kembali ke warna sebelumnya;
-- `[[` mengesampingkan tanda kurung kiri, jadi Anda bisa menulis `[[merah]` untuk menulis dan itu akan dirender sebagai `[merah]`.
+-   `[name]` sets the color by name, there's a few [built-in colors](#built-in-colors);
+-   `[#rrggbb]` / `[#rrggbbaa]` sets the color by hex value, with each value being anything from `00` to `ff`:
+    -   `rr` is the red value,
+    -   `gg` is the green value,
+    -   `bb` is the blue value,
+    -   `aa` is the alpha value;
+-   `[]` sets the color back to the previous color;
+-   `[[` escapes the left bracket, so you can write `[[red]` to write and it'll render as `[red]`.
 
-Catatan:
+Notes:
 
-- kesalahan / warna yang tidak diketahui akan diabaikan secara diam-diam.
+-   errors/unknown colors will be silently ignored.
 
-Contoh:
+Example:
 
     [red]red
     [#ff0000]full-red
@@ -26,7 +26,7 @@ Contoh:
 
 
 
-### Warna Bawaan
+### Built-in Colors
 
     [clear]clear
     [black]black

@@ -26,7 +26,7 @@ Keuntungan mengedit kode secara manual dibandingkan dengan Editor Visual adalah:
 * Lebih padat dari Editor Visual; lebih banyak kode dapat dilihat sekaligus
 * Mengetik lebih cepat daripada menyeret-dan-menjatuhkan melintasi dinding kode yang panjang
 * Dapat digunakan untuk membuat potongan kode cepat untuk demonstrasi tanpa membuka Mindustry
-* Penyorotan sintaks di beberapa editor, seperti [VS Code(plugin)](https://marketplace.visualstudio.com/items?itemName=vortetty.masm), [Emacs (paket)](https://github.com/ vednoc/masm-mode), dan [Vim(plugin)](https://github.com/purofle/vim-mindustry-logic)
+* Penyorotan sintaks di beberapa editor, seperti [VS Code (plugin)](https://marketplace.visualstudio.com/items?itemName=vortetty.mindustry-logic), [Emacs (package)](https://github.com/vednoc/masm-mode), [Vim (plugin)](https://github.com/purofle/vim-mindustry-logic), dan [Sublime Text (package)](https://github.com/gigamicro/Mindustry4Sublime)
 * Blok teks tidak memblokir bagian dari teks parameter
 * Kemampuan untuk menyimpan dan mengakses kode di luar Mindustry
 

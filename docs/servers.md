@@ -10,12 +10,14 @@ Anda dapat terhubung ke salah satunya menggunakan tombol "Gabung Game" di bawah 
 
 Untuk membuat server khusus, mesin Linux atau Windows khusus ** sangat ** direkomendasikan.
 
-1. Jika Anda belum melakukannya, instal setidaknya JRE dan JDK 8.
-2. Unduh rilis server yang diinginkan dari [itch.io](https://anuke.itch.io/mindustry), atau kompilasi sendiri.
-3. Buka terminal atau sesi TTY lalu ubah `cd` ke direktori tempat JAR ditempatkan.
-4. Jalankan `java -jar server.jar` menggunakan Command Prompt (di Windows) atau terminal favorit Anda (di Linux dan Mac). Perintah tersebut dijelaskan dalam perintah `help`.
-5. Mulai hosting peta dengan `host <mapname> [mode]` setelah Anda mengkonfigurasi server.
-6. Jika Anda menggunakan Windows untuk menjalankan server Anda, gunakan mesin pencari favorit Anda untuk mencari cara menambahkan aturan ke Windows Firewall Anda, karena sebagian besar waktu memblokir port tersebut. Pastikan untuk mengizinkan ** port 6567 TCP dan UDP **.
+1. Jika Anda belum memilikinya, instal Java
+2. Unduh rilis server yang diinginkan dari [itch.io](https://anuke.itch.io/mindustry), atau [rilis Github](https://github.com/Anuken/Mindustry/releases). Nama file seharusnya `server.jar` atau `server-release.jar`, meskipun jika kau di Windows itu mungkin hanya mmenampilkan sebagai `server` atau `server-release`.
+3. Pindahkan file server ke folder yang ditentukan. Itu direkomendasikan diletakkan ke direktori baru dari desktopmu
+4. Buka jendela terminal (CMD atau POWERSHELL jika kamu di Windows). gunakan perintah "[cd](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/)" untuk menavigasi ke direktorimu yang telah meneltakan file server didalamnya, contoh `cd Desktop` lalu `cd Server`. Jalankan `java -jar [server].jar`, ubah \[server] dengan nama dari file servermu.
+5. Servermu seharusnya mulai. Ketik `help` untuk melihat daftar dari semua perintah konsol. Jika kamu mendapatkan pesan seperti "Unable to access file server.jar" kamu sepertinya ada kesalahan dalam direktori.
+6. Mulai hosting peta dengan `host <mapname> [mode]` setelah Anda mengkonfigurasi server.
+7. Jika Anda menggunakan Windows untuk menjalankan server Anda, gunakan mesin pencari favorit Anda untuk mencari cara menambahkan aturan ke Windows Firewall Anda, karena sebagian besar waktu memblokir port tersebut. Pastikan untuk mengizinkan ** port 6567 TCP dan UDP **.
+8. Untuk menutup server, antara menutup jendela terminal atau tekan Ctrl+C pada jendela terminal
 
 Kecuali Anda telah mengaktifkan penerusan port, server khusus Anda hanya dapat dihubungkan oleh klien dalam jaringan lokal Anda. Jika Anda ingin membuat server Anda tersedia secara global, baca di bawah.
 

@@ -1,28 +1,31 @@
-# Variables and Constants
+# Variabel dan Konstan
 
-Variables and constants are essentially "containers" of values. Each one has a name and value. Mindustry has variables which can be set by the user and their code, and constants which are set only by the processor and cannot be changed by the user. 
+Variabel dan konstan pada dasarnya "kontainer" dari value(isi). Setiap satu memiliki nama dan value. Mindustry memiliki variabel yang mana bisa diatur oleh user dan kode mereka, dan konstan yang mana bisa diubah hanya oleh prosessor dan tidak dapat diubah oleh user
 
-*To find out the possible data or parameter types of a variable or constant, see the Glossary.*
+*Untuk mencari tahu data yang mungkin atau tipe parameter dari variabel dan konstan, lihat Glosarium*
 
-## Variables
+## Variabel
 
-### Creating and Changing Variables
+### Membuat dan Mengubah Variabel
 
-Variables are what their name suggests; a value that can be changed.
+Variabel yang mereka nama menunjukan; sebuah value yang dapat diubah.
 
-For example, in this code: `set myVariable 3`, the `set` instruction will create a variable named `myVariable`, and give it a value of `3`.
+Contohnya, dalam kode: `set myVariable 3`, intruksi `set` akan membuat sebuah variabel yang bernama `myVariable`, dan memberikan suatu value untuk `3`.
 
-Later on, this can change its value to `9`: `set myVariable 9`.
+Kemudian itu, ini dapat diubah value itu ke `9`: `set myVariable 9`.
 
-Notice how we used the same instruction for both creating and changing variables. This is because **if a variable that it's changing does not already exist, an instruction will create it first.** If you know Python, you'll probably have realized that it works in the same way.
+Beritahu bagaimana kita menggunakan inrtuksi yang sama untuk antara membuat dan mengubah variabel. ini karena **jika sebuah variabel yang itu berubah tidak sebenarnya ada, sebuah intruksi akan membuat itu dulu**
+Jika kamu tahu Python, kamu akan mungkin telah sadar bagaimana itu bekerja dalam tujuan yang sama.
+If you know Python, you'll probably have realized that it works in the same way.
 
-Another example is using `sensor`: `sensor playerX playerUnit @x` (or Sensor playerX = @x in playerUnit for the visual editor).
 
-Assuming that the player's position is `141, 20`, a variable named `playerX` will be created first, then assigned a value of `141`.
+Contoh yang lain dengan menggunakan `sensor`: `sensor playerX playerUnit @x` (atau Sensor playerX = @x dalam playerUnit untuk editor visual)
 
-However, we have another variable in the example called `playerUnit`. That variable is a **parameter**. A parameter is an input value to an instruction. In this case, we probably got `playerUnit` from the `radar` instruction. If a parameter is not provided or is invalid, the instruction will not execute.
+Menganggap itu posisi player adalah `141, 20`, sebuah variabel dengan nama `playerX` akan dibuat terlebih dahulu, lalu mengisi sebuah value dari `141`.
 
-### Data Types and Implicit Conversion
+Meskipun, kita memiliki variabel dalam contoh yang disebut `playerUnit`. Variabel itu adalah **parameter**. Sebuah parameter sebuah masukan value kedalam intruksi. Dalam kasus ini, kita mungkin dapat `playerUnit` dari intruksi `radar`. jika parameter tidak ditunjukan tau salah, intruksi tidak bakal dijalankan.
+
+### Tipe Data dan Pengubahan Implisit
 
 The values in variables, of course, have different types that are specific to different sources and purposes, such as `Unit` for Units, `number` for any number, etc. You can find a list of all of them in the Glossary.
 
@@ -128,7 +131,7 @@ You can also view each linked building's "constant name" over them when the proc
 
 A constant that represents the current bound unit. It only changes when the processor unbinds a unit, or binds another one. It can be accessed using Unit instructions such as `ucontrol`, `ulocate`, and `uradar`. Since it's a Unit Object, you can also use it with `sensor`.
 
-This presents a core part of unit control in mlog; **only one unit can be bound at a time.** However, you can reference this in a variable, like `set unitReference @unit`. That variable, though, can not be used to get information about or control the referenced unit. It can only be used to check against other units. Therefore, you can think of it as a "unit identity".
+This presents a core part of unit control in mlog; **only one unit can be bound at a time.** However, you can reference this in a variable, like `set unitReference @unit`. That variable, though, can not be used to control the referenced unit. It can only be used to check against other units or to get information about it. Therefore, you can think of it as a "unit identity".
 
 #### @time `constant` `number`
 

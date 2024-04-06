@@ -1,114 +1,108 @@
-# Tipe
+# Types
+
+*Note:* Deprecated content classes are not listed here, and their use is heavily discouraged. Transition to non-deprecated equivalents as quickly as possible.
+
+View the list of all deprecated classes and methods in the [Mindustry Javadoc](https://mindustrygame.github.io/docs/deprecated-list.html).
+
+All JSON examples are automatically taken from [Exotic Mod](https://github.com/BlueWolf3682/Exotic-Mod) by *BlueWolf3682*. These should *only* be used as a reference for fields - do not directly copy-paste them into your mod, they will **not** work!
 
 $allTypes
 
 
 ## BuildVisibility
 
-Bendera yang digunakan oleh game untuk mengubah beberapa hal kasus khusus. Ini mungkin salah satu dari string berikut:
+A flag used by the game to change a few special-case things. It may be one of the following strings:
 
--   `hidden`
--   `shown` (default)
--   `debugOnly`
--   `sandboxOnly`
--   `campaignOnly`
--   `lightingOnly`
-
+$buildVisibilities
 
 
 ## BlockGroup
 
-Grup untuk blok untuk dibangun di atas satu sama lain:
+Groups for blocks to build on top of each other:
 
--   `none`
--   `walls`
--   `turrets`
--   `transportation`
--   `power`
--   `liquids`
--   `drills`
+$blockGroups
 
 
 ## ItemStack
 
-Sebuah `ItemStack` bisa berupa string atau objek. Ini digunakan untuk mendeskripsikan jenis dan jumlah item ke sebuah mesin.
+A `ItemStack` can be a string or an object. It's used to describe the type and amount of items to a machine.
 
-Sebagai `string`:
+As a `string`:
 
     copper/5
 
-Sebagai `objek`:
+As an `object`:
 
     item: copper
     amount: 5
 
-|bidang|tipe|catatan|
+|field|type|notes|
 |---|---|---|
-|item|string|Nama dari [Item] (#item).|
-|amount|int|Jumlah item tersebut.|
+|item|string|The name of an [Item](#item).|
+|amount|int|The amount of said item.|
 
 
 
 ## LiquidStack
 
-Sebuah `LiquidStack` bisa berupa string atau objek. Ini digunakan untuk mendeskripsikan jenis dan jumlah item ke sebuah mesin.
+A `LiquidStack` can be a string or an object. It's used to describe the type and amount of liquid to a machine.
 
-Sebagai `string`:
+As a `string`:
 
-    water/5
+    water/0.5
 
-Sebagai `objek`:
+As an `object`:
 
     liquid: water
-    amount: 5
+    amount: 0.5
 
-|bidang|tipe|catatan|
+|field|type|notes|
 |---|---|---|
-|liquid|string|Nama dari [Liquid] (#liduid).|
-|amount|int|Jumlah item tersebut.|
+|liquid|string|The name of a [Liquid](#liquid).|
+|amount|float|The amount of said liquid.|
 
 
-## Kategori
+## Category
 
-Kategori untuk menu bangunan:
+Categories for building menu:
 
--    `turret` Menara ofensif;
--    `production` Blok yang menghasilkan sumber daya mentah, seperti bor;
--    `distribution` Blok yang memindahkan item;
--    `liquid` Blok yang memindahkan cairan;
--    `power` Blok yang menghasilkan atau mengangkut daya;
--    `defence` Tembok dan struktur pertahanan lainnya;
--    `crafting` Blok yang membuat sesuatu;
--    `units` Blok yang membuat unit;
--    `logic` Blok yang terkait dengan operasi logika;
--    `effect` Hal untuk penyimpanan atau efek pasif.
+-   `turret` Offensive turrets;
+-   `production` Blocks that produce raw resources, such as drills;
+-   `distribution` Blocks that move items around;
+-   `liquid` Blocks that move liquids around;
+-   `power` Blocks that generate or transport power;
+-   `defense` Walls and other defensive structures;
+-   `crafting` Blocks that craft things;
+-   `units` Blocks that create units;
+-   `logic` Blocks that are related to logic operations;
+-   `effect` Things for storage or passive effects.
 
 
 ## Color
 
-Warna adalah string heksadesimal, `<rr> <gg> <bb>` misalnya:
+Color is a hexadecimal string, `<rr><gg><bb>` for example:
 
-- `ff0000` berwarna merah,
-- `00ff00` berwarna hijau,
-- `0000ff` berwarna biru,
-- `ffff00` berwarna kuning,
-- `00ffff` adalah cyan,
-- dll.
+-   `ff0000` is red,
+-   `00ff00` is green,
+-   `0000ff` is blue,
+-   `ffff00` is yellow,
+-   `00ffff` is cyan,
+-   etc.
 
 
 
 ## CacheLayer
 
-Bendera yang digunakan oleh untuk perenderan cache:
+Flags used by for cache render:
 
-- lapisan normal `normal`;
-- lapisan dinding `wall`;
-- Lapisan air `water`, menambahkan peneduh air ubin, dan memberikan pantulan gelombang;
-- Lapisan tar `tar`, menambahkan shader tar, membuatnya lebih gelap dan memberinya beberapa pantulan gelembung;
+-   `normal` normal layer;
+-   `walls` walls layer;
+-   `water` water layer, adding tile water shaders, and giving wave reflections;
+-   `tar` tar layer, adding tar shaders, making it darker and giving it some bubble reflections;
 
 ## TargetPriority
 
-Urutan yang lebih tinggi berarti prioritas yang lebih tinggi. Pemblokiran dengan prioritas lebih tinggi akan selalu ditargetkan daripada yang berprioritas lebih rendah, berapa pun jaraknya.
+A higher ordinal means a higher priority. Higher priority blocks will always get targeted over those of lower priority, regardless of distance.
 
 1.  `base`
 2.  `turret`
