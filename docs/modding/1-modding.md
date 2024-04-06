@@ -1,17 +1,17 @@
 
-# Modding Introduction
+# Intruksi Modding
 
-Mindustry mods are simply directories of assets. There are many ways to use the modding API, depending on exactly what you want to do, and how far you're willing to go to do it.
+Mod Mindustry adalah lebih simpel direktori dari aset. mereka ada banyak cara untuk menggunakan API modding, tergantung dalam tepatnya apa yang kamu inginkan untuk dilakukan, dan seberapa jauh kamu menginginkan itu melakuan itu 
 
-You could just resprite existing game content, you can create new game content with the simpler Json API (which is the main focus of this documentation), you can add custom sounds (or reuse existing ones). It's possible to add maps to campaign mode, and add scripts to program special behavior into your mod, like custom effects. 
+Kamu harus hanya resprite konten yang udah ada di game, kamu bisa bikin konten game dengan JSON API yang dipermudah (yang mana itu fokus utama dalam dokumentasi), kamu dapat menambahkan suara kustom (atau menggunakan lagi yang udah ada). itu mungkin untuk menambahkan peta kedalam mode kampanye, dan nambahan skrip untuk memogran kebiasaan special dalam modmu, seperti efek kustom.
 
-Sharing your mod is as simple as giving someone your project directory; mods are also cross platfrom to any platform that supports them. You'll want to use [GitHub](#github) (*or a similar service*) for hosting your source code.
-To make mods all you really need is any computer with a text editor.
+Membagikan modmu itu mudah seperti memberi seseorang direktori projekmu; mod juga cross-platform ke beberapa platform yang mendukung itu. Kamu ingin menggunakan [GitHub](#github) (*atau layanan yang serupa, seperti; gitbucket sama gitlab*) untuk melayankan kode sumbermu.
+Untuk membuat mod semua yang kamu diperlukan adalah sebuah komputer dengan penyunting teks.
 
 
-## Directory Structure
+## Struktur Direktori
 
-Your project directory should look something like this:
+Direktori projekmu seharusnya terlihat seperti ini:
 
     project
     ├── mod.hjson
@@ -28,32 +28,32 @@ Your project directory should look something like this:
     ├── sprites-override
     └── sprites
 
--   `mod.hjson` (required) metadata file for your mod,
--   `content/*` directories for game [Content](#content),
--   `maps/` directory for in-game maps,
--   `bundles/` directory for [Bundles](#bundles),
--   `sounds/` directory for [Sound](#sound) files,
--   `schematics/` directory for [Schematic](#schematic) files,
--   `scripts/` directory for [Scripts](#scripts),
--   `sprites-override/` [Sprites](#sprites) directory for overriding ingame content,
--   `sprites/` [Sprites](#sprites) directory for your content,
+-   `mod.hjson` (required) file metadata untuk modmu,
+-   `content/*` direktori untuk [Konten](#content),
+-   `maps/` direktori untuk peta dalam-game,
+-   `bundles/` direktori untuk [Bundle](#bundles),
+-   `sounds/` direktori untuk [Suara](#sound) files,
+-   `schematics/` direktori untuk [Skematik](#schematic) files,
+-   `scripts/` direktori untuk [Skrip](#scripts),
+-   `sprites-override/` [Sprites](#sprites) Direktori untuk menimpa konten dalam-game,
+-   `sprites/` [Sprites](#sprites) Direktori untuk kontenmu,
 
-Every platform has a different user application data directory, and this is where your mods should be placed:
+Setiap platform memiliki direktori data user aplikasi, dan itu dimana modmu seharusnya diletakan:
 
 -   Linux: `~/.local/share/Mindustry/mods/`
 -   Steam: `steam/steamapps/common/Mindustry/mods/`
 -   Windows: `%appdata%/Mindustry/mods/`
 -   MacOS: `~/Library/Application Support/Mindustry/mods/`
 
-*Note that your filenames should be lowercased and hyphen separated:*
+*Catatan nama filemu seharusnya tidak kapital dan tanda penghubung dipisahkan:*
 
--   correct: `my-custom-block.json`
--   incorrect: `My Custom Block.json`
+-   benar: `my-custom-block.json`
+-   salah: `My Custom Block.json`
 
 
 ## Hjson
 
-Mindustry uses [Hjson](https://hjson.org/), which for anyone who knows Json, is simply a superset of the very popular serialization language known as [Json](https://en.wikipedia.org/wiki/JSON). &#x2013; This means that any valid Json will work, but you get extra useful stuff:
+Mindustry gunakan [Hjson](https://hjson.org/), yang mana untuk seseorang siapa tahu json, itu sesimpel sebuah superset dari bahasa yang diserialisasi sangat populer diketahui sebagai [Json](https://en.wikipedia.org/wiki/JSON). &#x2013; Itu berarti itu beberapa json yang valid akan bekerja, tetapi kamu memiliki hal ekstra yang berguna:
 
     # single line comment
     
@@ -77,7 +77,7 @@ Mindustry uses [Hjson](https://hjson.org/), which for anyone who knows Json, is 
     key4: { key1: string
             key2: 0 }
 
-If you don't know any of those words. &#x2013; A serialization language, is simply a language which encodes information for a program, and *encode* means to translate informantion from one form to another, and in this case, to translate text into Java data structures.
+Jika kamu gak tau beberapa kata itu. &#x2013; Sebuah bahasa serialisasi, adalah sesimpel sebuah bahasa yang mengodekan informasi untuk sebuah program, dan *encode* berarti untuk menerjemahkan suatu informasi dari satu bentuk ke bentuk lain, dan dalam kasus ini, untuk menerjemahkan teks kedalam struktur data Java.
 
 
 
