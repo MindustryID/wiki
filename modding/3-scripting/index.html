@@ -14474,7 +14474,7 @@
         
   
   <span class="md-ellipsis">
-    Modding Introduction
+    Intruksi Modding
   </span>
   
 
@@ -14495,7 +14495,7 @@
         
   
   <span class="md-ellipsis">
-    Plugins & JVM Mods
+    Plugin dan mod JVM
   </span>
   
 
@@ -16407,9 +16407,9 @@
 
 
 <h1 id="scripting">Scripting</h1>
-<p>Mindustry uses JavaScript for mod scripting. Scripts use the <code>js</code> extension and are placed in the <code>scripts/</code> subdirectory.</p>
-<p>Execution starts with the file named <code>main.js</code>. Any other script files can be imported by the main file with <code>require("script_name")</code>. 
-A typical setup looks like this:</p>
+<p>Mindustry menggunakan Javascript untuk <em>mod scripting</em>. Skrip gunakan ekstensi <code>js</code> dan diletakan kedalam subdirektori <code>scripts/</code>.</p>
+<p>Eksekusi dimulai dengan file bernama <code>main.js</code>. file skrip yang lain dapat diimpor dengan file utama dengan <code>require("script_name")</code>. </p>
+<p>setup secara tipikal terliat seperti ini:</p>
 <p><em>scripts/main.js</em>:</p>
 <pre><code class="language-js">
 require(&quot;blocks&quot;);
@@ -16431,21 +16431,21 @@ terribleium.color = Color.valueOf(&quot;ff0000&quot;);
 //...
 
 </code></pre>
-<h1 id="examples">Examples</h1>
-<h2 id="listening-to-events">Listening to events</h2>
+<h1 id="contoh">Contoh</h1>
+<h2 id="mendengarkan-suatu-eventacara">Mendengarkan suatu Event(Acara)</h2>
 <p><img src="/wiki/images/misc/modding-pathetic.gif"></p>
 <pre><code class="language-js">
-// listen for the event where a unit is destroyed
+// Mendengarkan acara tentang unit telah hancur
 Events.on(UnitDestroyEvent, event =&gt; {
-  // display toast on top of screen when the unit was a player
+  // Menampilakn toast diatas layar yang bertulisan &quot;Pathetic.&quot;
   if(event.unit.isPlayer()){
     Vars.ui.hudfrag.showToast(&quot;Pathetic.&quot;);
   }
 })
 
 </code></pre>
-<p>The easiest way to find events you can listen to is to look at source file: <a href="https://github.com/Anuken/Mindustry/blob/master/core/src/mindustry/game/EventType.java">Mindustry/blob/master/core/src/mindustry/game/EventType.java</a></p>
-<h2 id="displaying-a-dialog-box">Displaying a dialog box</h2>
+<p>Cara yang gampang untuk mencari event yang kau dapat didengar untuk itu dengan lihat file sumber: <a href="https://github.com/Anuken/Mindustry/blob/master/core/src/mindustry/game/EventType.java">Mindustry/blob/master/core/src/mindustry/game/EventType.java</a></p>
+<h2 id="menampilkan-kotak-dialog">Menampilkan kotak Dialog</h2>
 <pre><code class="language-js">const myDialog = new BaseDialog(&quot;Dialog Title&quot;);
 // Add &quot;go back&quot; button
 myDialog.addCloseButton();
@@ -16454,10 +16454,11 @@ myDialog.cont.add(&quot;Goodbye.&quot;);
 // Show dialog
 myDialog.show();
 </code></pre>
-<h2 id="play-some-custom-sounds">Play some custom sounds</h2>
-<p>Playing custom audio is easy, provided you store your sound clip as a <code>.mp3</code> or <code>.ogg</code> file in your <code>/sounds</code> directory.</p>
-<p>For this example, we have stored <code>example.mp3</code> at <code>/sounds/example.mp3</code>.</p>
-<h3 id="using-a-lib-to-load-the-sound">Using a lib to load the sound</h3>
+<h2 id="memainkan-suatu-musik-kustom">Memainkan suatu musik kustom</h2>
+<p>Memainkan audio kuston itu mudah, menyediakan kamu untuk menyimpan klip suaramu sebagai file <code>.mp3</code> atau <code>.ogg</code> dalam direktori <code>/sounds</code> mu.</p>
+<p>Untuk contoh, kita telah menyimpan <code>example.mp3</code> di <code>/sounds/example.mp3</code>.
+For this example, we have stored <code>example.mp3</code> at <code>/sounds/example.mp3</code>.</p>
+<h3 id="gunakan-sebuah-pustaka-untuk-memuat-suara">Gunakan sebuah pustaka untuk memuat suara</h3>
 <p><em>scripts/alib.js</em>:</p>
 <pre><code class="language-js">exports.loadSound = (() =&gt; {
     const cache = {};

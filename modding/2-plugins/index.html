@@ -22,7 +22,7 @@
     
     
       
-        <title>Plugins & JVM Mods - Mindustry Wiki</title>
+        <title>Plugin dan mod JVM - Mindustry Wiki</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#plugins-jvm-mods" class="md-skip">
+        <a href="#plugin-dan-mod-jvm" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Plugins & JVM Mods
+              Plugin dan mod JVM
             
           </span>
         </div>
@@ -14474,7 +14474,7 @@
         
   
   <span class="md-ellipsis">
-    Modding Introduction
+    Intruksi Modding
   </span>
   
 
@@ -14504,7 +14504,7 @@
           
   
   <span class="md-ellipsis">
-    Plugins & JVM Mods
+    Plugin dan mod JVM
   </span>
   
 
@@ -14515,7 +14515,7 @@
         
   
   <span class="md-ellipsis">
-    Plugins & JVM Mods
+    Plugin dan mod JVM
   </span>
   
 
@@ -14537,27 +14537,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#plugins" class="md-nav__link">
+  <a href="#plugin" class="md-nav__link">
     <span class="md-ellipsis">
-      Plugins
+      Plugin
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#importing" class="md-nav__link">
+  <a href="#mengimpor" class="md-nav__link">
     <span class="md-ellipsis">
-      Importing
+      Mengimpor
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#capabilities-security" class="md-nav__link">
+  <a href="#kapabilitas-dan-keamanan" class="md-nav__link">
     <span class="md-ellipsis">
-      Capabilities &amp; Security
+      Kapabilitas dan Keamanan
     </span>
   </a>
   
@@ -16454,27 +16454,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#plugins" class="md-nav__link">
+  <a href="#plugin" class="md-nav__link">
     <span class="md-ellipsis">
-      Plugins
+      Plugin
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#importing" class="md-nav__link">
+  <a href="#mengimpor" class="md-nav__link">
     <span class="md-ellipsis">
-      Importing
+      Mengimpor
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#capabilities-security" class="md-nav__link">
+  <a href="#kapabilitas-dan-keamanan" class="md-nav__link">
     <span class="md-ellipsis">
-      Capabilities &amp; Security
+      Kapabilitas dan Keamanan
     </span>
   </a>
   
@@ -16498,39 +16498,39 @@
   
 
 
-<h1 id="plugins-jvm-mods">Plugins &amp; JVM Mods</h1>
-<p>Mindustry supports loading <code>jar</code> files with Java bytecode on desktop &amp; Android. These function similarly to JS mods, and must supply a single main class to instantiate when the mod is created.</p>
-<p>Theoretically, all JVM languages should be supported.</p>
-<p>Jar/JVM mods use the same <code>mod.hjson</code> meta file that standard mods do, with one addition: The <em>fully qualified main class</em> can be specified with <code>main: "mypackage.MyMod"</code>. This class should extend <code>mindustry.mod.Mod</code>.</p>
-<p>If a main class is not specified, it defaults to <code>modnameinlowercase.ModName + "Mod".</code></p>
-<p>A simple <code>mod.hjson</code> for a Java mod could look like this:</p>
+<h1 id="plugin-dan-mod-jvm">Plugin dan mod JVM</h1>
+<p>Mindustry mendukung memuat file <code>jar</code> dengan kodebita Java di desktop &amp; Android. Fungsi itu mirip seperti mod JS, dan harus menyediakan kelas utama dan instantiasi jika mod itu dibuat</p>
+<p>Secara teori, semua bahasa JVM seharusnya tendukung.</p>
+<p>Mod JAR/JVM menggunakan file meta <code>mod.hjson</code> yang sama itu mod biasa lakukan, tetapi dengan satu tambahan: <em>kelas utama yang sepenuhnya dikualifikasi</em> dsapat dispesifikasi dengan <code>main: "mypackage.MyMod"</code>. Kelas ini seharusnya memanjang ke <code>mindustry.mod.Mod</code>.</p>
+<p>Jika sebuah kelas utama tidak diberikan, itu secara defauilt ke <code>modnameinlowercase.ModName + "Mod".</code></p>
+<p><code>mod.hjson</code> yang simpel untuk mod Java terlihat seperti ini:</p>
 <pre><code class="language-hjson">name: &quot;Nothing&quot;
 author: &quot;Yourself&quot;
 main: &quot;nothing.NothingMod&quot;
 description: &quot;...&quot;
 version: &quot;99.99&quot;
 </code></pre>
-<p>See the <a href="https://github.com/Anuken/ExampleJavaMod">example Java mod repo</a>, the <a href="https://github.com/Anuken/ExampleKotlinMod">example Kotlin mod repo</a> or the <a href="https://github.com/Sonnicon/mindustry-modtemplate">Java mod template</a> for more information.</p>
-<h2 id="plugins">Plugins</h2>
-<p>Plugins are Java mods that are intended to be run on servers only. Usually, these add <em>new commands</em> or <em>new gamemodes</em>.
-All plugin main classes should extend <code>mindustry.mod.Plugin</code>. This makes them implicitly <em>hidden</em> - clients will not need to download the plugin to join the server. They are server-side only.</p>
-<p>Plugins name their meta file <code>plugin.[h]json</code>. The file structure is identical to that of other Java mods - see above for details.</p>
-<p>You can see an example plugin <a href="https://github.com/Anuken/ExamplePlugin">here</a>. For a more practical example that can be used on real servers, see <a href="https://github.com/Anuken/AuthorizePlugin">this repo</a>.</p>
-<h2 id="importing">Importing</h2>
-<p>Unlike JS or JSON mods, JAR mods need to be compiled. This means that they cannot be imported directly from Github - instead, <em>Github Releases</em> are used. </p>
-<p>When a user tries to install a JAR mod, Mindustry will check the latest (and <em>only</em> the latest) Github release for <code>.jar</code> artifacts. When the first artifact is found, it is downloaded to the client. Note that pre-releases are ignored.</p>
-<p>I recommend using Github Actions (or any other CI) to automatically build and upload jar artifacts to new releases.</p>
-<h2 id="capabilities-security">Capabilities &amp; Security</h2>
-<p>As jar mods are loaded directly through a URLClassLoader with no sandboxing, they do not have any security limitations. This means:</p>
+<p>Lihat <a href="https://github.com/Anuken/ExampleJavaMod">repositori contoh mod Java</a>, <a href="https://github.com/Anuken/ExampleKotlinMod">repositori contoh mod Kotlin</a> atau <a href="https://github.com/Sonnicon/mindustry-modtemplate">templat mod Java</a> untuk informasi tambahan.</p>
+<h2 id="plugin">Plugin</h2>
+<p>Plugin adalah mod Java yang bertujuan untuk dijalanke hanya di server. Biasanya, mereka menambahkan <em>perintah baru</em> atau <em>mode permainan baru</em>.
+Semua kelas utama plugin seharusnya memanjang ke <code>mindustry.mod.Plugin</code>. Itu membuat mereka secara implicit <em>hidden</em> - Klien tidak membutuhkan untuk mendownload plugin untuk menghubung ke server. Mereka itu hanya server-side.</p>
+<p>Nama file meta plugin mereka <code>plugin.[h]json</code>. Struktur file itu indentik seperti mod Java lainnya - lihat diatas untuk detail.</p>
+<p>Kamu bisa melihat contoh plugin <a href="https://github.com/Anuken/ExamplePlugin">disini</a>. Untuk contoh lebih praktis itu dapat digunakan kedalam server asli. lihat <a href="https://github.com/Anuken/AuthorizePlugin">repo ini</a>.</p>
+<h2 id="mengimpor">Mengimpor</h2>
+<p>Gak seperti mod JS atau JSON, mod jar harus disusun. itu bermaksud mereka itu tidak diimport secara langsung dari Github - malahan <em>Rilis Github</em> digunakan.</p>
+<p>Kapan sebuah user untuk install sebuah mod JAR, Mindustry hanya ngecek yang terbaru (dan <em>hanya</em> yang terbaru) untuk artefak <code>.jar</code>. Kapan artefak pertama ditemuka, itu diunduh ke klien. Catatan pra-rilis tidak dianggap.</p>
+<p>Saya merekomendasikan gunakan Github Action (atau CI yang lain) untuk membangun dan mengunggah artefak jar ke rilis baru secara otomatis.</p>
+<h2 id="kapabilitas-dan-keamanan">Kapabilitas dan Keamanan</h2>
+<p>Sebagai mod jar telah memuat secara langsung ke URLClassLoader dengan tanpa sandboxing, mereka tidak memiliki beberapa kekurangan keamanan. Itu berarti:</p>
 <ul>
-<li>All Java APIs can be accessed.</li>
-<li>Reflection can be used to access private/hidden properties.</li>
-<li>Mods have full access to the client's computer, opening the door to potentially malicious actions.</li>
-<li>Mods can change game files or core rewrite bytecode.</li>
+<li>Semua API Java bisa diakses.</li>
+<li>Refleksi dapat digunakan untuk akses properti yang pribadi/tersembunyi</li>
+<li>Mod dapat akses penuh ke komputer milik klien, membuka pintu untuk berpotensi aksi kejahatan.</li>
+<li>Mod dapat mengubah file game atau menulis ulang kodebita inti</li>
 </ul>
-<p>Thus, you should <em>never import jar mods from untrusted sources.</em> Now, you may be wondering: Why aren't jar mods sandboxed? Isn't that a massive security risk? </p>
-<p>The answer is: <em>Yes</em>, it is. However, there are no good alternatives. Even if I implemented a <code>SecurityManager</code> to limit mod capabilities, it wouldn't help - Java is inherently insecure, and any reasonably-"secure" sandbox implementation (<em>if one even exists</em>) would require disabling reflection in mods, which is unacceptable.</p>
-<p>As a point of comparison, Forge (<em>a popular Java mod loader for Minecraft</em>) doesn't sandbox mods either.</p>
+<p>Jadi, kamu seharusnya <em>jangan pernah mengimpor mod jar dari sumbet tidak dipercaya.</em> Sekarang, kamu akan berpikir: Kenapa mod jar tidak disandbox? Itu bukan ancaman keamanan yang masif?</p>
+<p>Jawabannya: <em>Ya</em>, tentu. Tetapi, tidak ada alternatif yang bagus. sampai jika saya mengimplementasi <code>SecurityManager</code> untuk membatasi kapabilitas mod, itu sia-sia - Java itu sebenarnya tidak aman, dan beberapa alasan-implementasi sandbox yang "aman" (<em>jika satupun ada</em>) harus membutuhkan mematikan refleksi dalam mod, itu yang tidak dapat diterima.</p>
+<p>Sebagai poin dari perbandingan, Forge (<em>sebuah memuat mod java yang populer untuk Minecraft</em>) tidak ada mod sandbox pula.</p>
 
 
 

@@ -22,7 +22,7 @@
     
     
       
-        <title>Modding Introduction - Mindustry Wiki</title>
+        <title>Intruksi Modding - Mindustry Wiki</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modding-introduction" class="md-skip">
+        <a href="#intruksi-modding" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modding Introduction
+              Intruksi Modding
             
           </span>
         </div>
@@ -14483,7 +14483,7 @@
           
   
   <span class="md-ellipsis">
-    Modding Introduction
+    Intruksi Modding
   </span>
   
 
@@ -14494,7 +14494,7 @@
         
   
   <span class="md-ellipsis">
-    Modding Introduction
+    Intruksi Modding
   </span>
   
 
@@ -14516,9 +14516,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#directory-structure" class="md-nav__link">
+  <a href="#struktur-direktori" class="md-nav__link">
     <span class="md-ellipsis">
-      Directory Structure
+      Struktur Direktori
     </span>
   </a>
   
@@ -14643,7 +14643,7 @@
         
   
   <span class="md-ellipsis">
-    Plugins & JVM Mods
+    Plugin dan mod JVM
   </span>
   
 
@@ -16535,9 +16535,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#directory-structure" class="md-nav__link">
+  <a href="#struktur-direktori" class="md-nav__link">
     <span class="md-ellipsis">
-      Directory Structure
+      Struktur Direktori
     </span>
   </a>
   
@@ -16660,13 +16660,13 @@
   
 
 
-<h1 id="modding-introduction">Modding Introduction</h1>
-<p>Mindustry mods are simply directories of assets. There are many ways to use the modding API, depending on exactly what you want to do, and how far you're willing to go to do it.</p>
-<p>You could just resprite existing game content, you can create new game content with the simpler Json API (which is the main focus of this documentation), you can add custom sounds (or reuse existing ones). It's possible to add maps to campaign mode, and add scripts to program special behavior into your mod, like custom effects. </p>
-<p>Sharing your mod is as simple as giving someone your project directory; mods are also cross platfrom to any platform that supports them. You'll want to use <a href="#github">GitHub</a> (<em>or a similar service</em>) for hosting your source code.
-To make mods all you really need is any computer with a text editor.</p>
-<h2 id="directory-structure">Directory Structure</h2>
-<p>Your project directory should look something like this:</p>
+<h1 id="intruksi-modding">Intruksi Modding</h1>
+<p>Mod Mindustry adalah lebih simpel direktori dari aset. mereka ada banyak cara untuk menggunakan API modding, tergantung dalam tepatnya apa yang kamu inginkan untuk dilakukan, dan seberapa jauh kamu menginginkan itu melakuan itu </p>
+<p>Kamu harus hanya resprite konten yang udah ada di game, kamu bisa bikin konten game dengan JSON API yang dipermudah (yang mana itu fokus utama dalam dokumentasi), kamu dapat menambahkan suara kustom (atau menggunakan lagi yang udah ada). itu mungkin untuk menambahkan peta kedalam mode kampanye, dan nambahan skrip untuk memogran kebiasaan special dalam modmu, seperti efek kustom.</p>
+<p>Membagikan modmu itu mudah seperti memberi seseorang direktori projekmu; mod juga cross-platform ke beberapa platform yang mendukung itu. Kamu ingin menggunakan <a href="#github">GitHub</a> (<em>atau layanan yang serupa, seperti; gitbucket sama gitlab</em>) untuk melayankan kode sumbermu.
+Untuk membuat mod semua yang kamu diperlukan adalah sebuah komputer dengan penyunting teks.</p>
+<h2 id="struktur-direktori">Struktur Direktori</h2>
+<p>Direktori projekmu seharusnya terlihat seperti ini:</p>
 <pre><code>project
 ├── mod.hjson
 ├── content
@@ -16683,30 +16683,30 @@ To make mods all you really need is any computer with a text editor.</p>
 └── sprites
 </code></pre>
 <ul>
-<li><code>mod.hjson</code> (required) metadata file for your mod,</li>
-<li><code>content/*</code> directories for game <a href="#content">Content</a>,</li>
-<li><code>maps/</code> directory for in-game maps,</li>
-<li><code>bundles/</code> directory for <a href="#bundles">Bundles</a>,</li>
-<li><code>sounds/</code> directory for <a href="#sound">Sound</a> files,</li>
-<li><code>schematics/</code> directory for <a href="#schematic">Schematic</a> files,</li>
-<li><code>scripts/</code> directory for <a href="#scripts">Scripts</a>,</li>
-<li><code>sprites-override/</code> <a href="#sprites">Sprites</a> directory for overriding ingame content,</li>
-<li><code>sprites/</code> <a href="#sprites">Sprites</a> directory for your content,</li>
+<li><code>mod.hjson</code> (required) file metadata untuk modmu,</li>
+<li><code>content/*</code> direktori untuk <a href="#content">Konten</a>,</li>
+<li><code>maps/</code> direktori untuk peta dalam-game,</li>
+<li><code>bundles/</code> direktori untuk <a href="#bundles">Bundle</a>,</li>
+<li><code>sounds/</code> direktori untuk <a href="#sound">Suara</a> files,</li>
+<li><code>schematics/</code> direktori untuk <a href="#schematic">Skematik</a> files,</li>
+<li><code>scripts/</code> direktori untuk <a href="#scripts">Skrip</a>,</li>
+<li><code>sprites-override/</code> <a href="#sprites">Sprites</a> Direktori untuk menimpa konten dalam-game,</li>
+<li><code>sprites/</code> <a href="#sprites">Sprites</a> Direktori untuk kontenmu,</li>
 </ul>
-<p>Every platform has a different user application data directory, and this is where your mods should be placed:</p>
+<p>Setiap platform memiliki direktori data user aplikasi, dan itu dimana modmu seharusnya diletakan:</p>
 <ul>
 <li>Linux: <code>~/.local/share/Mindustry/mods/</code></li>
 <li>Steam: <code>steam/steamapps/common/Mindustry/mods/</code></li>
 <li>Windows: <code>%appdata%/Mindustry/mods/</code></li>
 <li>MacOS: <code>~/Library/Application Support/Mindustry/mods/</code></li>
 </ul>
-<p><em>Note that your filenames should be lowercased and hyphen separated:</em></p>
+<p><em>Catatan nama filemu seharusnya tidak kapital dan tanda penghubung dipisahkan:</em></p>
 <ul>
-<li>correct: <code>my-custom-block.json</code></li>
-<li>incorrect: <code>My Custom Block.json</code></li>
+<li>benar: <code>my-custom-block.json</code></li>
+<li>salah: <code>My Custom Block.json</code></li>
 </ul>
 <h2 id="hjson">Hjson</h2>
-<p>Mindustry uses <a href="https://hjson.org/">Hjson</a>, which for anyone who knows Json, is simply a superset of the very popular serialization language known as <a href="https://en.wikipedia.org/wiki/JSON">Json</a>. &#x2013; This means that any valid Json will work, but you get extra useful stuff:</p>
+<p>Mindustry gunakan <a href="https://hjson.org/">Hjson</a>, yang mana untuk seseorang siapa tahu json, itu sesimpel sebuah superset dari bahasa yang diserialisasi sangat populer diketahui sebagai <a href="https://en.wikipedia.org/wiki/JSON">Json</a>. &#x2013; Itu berarti itu beberapa json yang valid akan bekerja, tetapi kamu memiliki hal ekstra yang berguna:</p>
 <pre><code># single line comment
 
 // single line comment
@@ -16729,7 +16729,7 @@ key3: [ value 1
 key4: { key1: string
         key2: 0 }
 </code></pre>
-<p>If you don't know any of those words. &#x2013; A serialization language, is simply a language which encodes information for a program, and <em>encode</em> means to translate informantion from one form to another, and in this case, to translate text into Java data structures.</p>
+<p>Jika kamu gak tau beberapa kata itu. &#x2013; Sebuah bahasa serialisasi, adalah sesimpel sebuah bahasa yang mengodekan informasi untuk sebuah program, dan <em>encode</em> berarti untuk menerjemahkan suatu informasi dari satu bentuk ke bentuk lain, dan dalam kasus ini, untuk menerjemahkan teks kedalam struktur data Java.</p>
 <h2 id="modhjson"><code>mod.hjson</code></h2>
 <p>At the root of your project directory, you must have a <code>mod.json</code> which defines the basic metadata for your project. This file can also be (optionally) named <code>mod.hjson</code> to potentially help your text editor pick better syntax highlighting.</p>
 <pre><code>name: "mod-name"
@@ -16737,7 +16737,6 @@ displayName: "This isn't a mod."
 author: Yourself
 description: "Bbfashbjhcbabfhsbafbhajbf"
 version: "1.0"
-minGameVersion: "146"
 dependencies: [ ]
 hidden: false
 </code></pre>

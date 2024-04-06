@@ -14474,7 +14474,7 @@
         
   
   <span class="md-ellipsis">
-    Modding Introduction
+    Intruksi Modding
   </span>
   
 
@@ -14495,7 +14495,7 @@
         
   
   <span class="md-ellipsis">
-    Plugins & JVM Mods
+    Plugin dan mod JVM
   </span>
   
 
@@ -14600,9 +14600,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#built-in-colors" class="md-nav__link">
+  <a href="#warna" class="md-nav__link">
     <span class="md-ellipsis">
-      Built-in Colors
+      Warna
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Warna">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#warna-bawaan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Warna Bawaan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ikon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ikon
     </span>
   </a>
   
@@ -16436,9 +16460,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#built-in-colors" class="md-nav__link">
+  <a href="#warna" class="md-nav__link">
     <span class="md-ellipsis">
-      Built-in Colors
+      Warna
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Warna">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#warna-bawaan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Warna Bawaan
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ikon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ikon
     </span>
   </a>
   
@@ -16463,32 +16511,33 @@
 
 
 <h1 id="markup">Markup</h1>
-<p>The text renderer uses a simple markup language for coloring text.</p>
+<p>Penyaji teks digunakan bahasa markup simpel dalam perwarnaan teks.</p>
+<h2 id="warna">Warna</h2>
 <ul>
-<li><code>[name]</code> sets the color by name, there's a few <a href="#built-in-colors">built-in colors</a>;</li>
-<li><code>[#rrggbb]</code> / <code>[#rrggbbaa]</code> sets the color by hex value, with each value being anything from <code>00</code> to <code>ff</code>:<ul>
-<li><code>rr</code> is the red value,</li>
-<li><code>gg</code> is the green value,</li>
-<li><code>bb</code> is the blue value,</li>
-<li><code>aa</code> is the alpha value;</li>
+<li><code>[name]</code> ubah warna dari nama, mereka ada beberapa <a href="#warna-bawaan">warna bawaan</a>;</li>
+<li><code>[#rrggbb]</code> / <code>[#rrggbbaa]</code> ubah warna dengan nilai heks, dengan setiap semua nilai dari <code>00</code> ke <code>ff</code>:<ul>
+<li><code>rr</code> adalan nilai merah,</li>
+<li><code>gg</code> adalan nilai hijau,</li>
+<li><code>bb</code> adalan nilai biru,</li>
+<li><code>aa</code> adalan nilai alfa(transparansi);</li>
 </ul>
 </li>
-<li><code>[]</code> sets the color back to the previous color;</li>
-<li><code>[[</code> escapes the left bracket, so you can write <code>[[red]</code> to write and it'll render as <code>[red]</code>.</li>
+<li><code>[]</code> ubah warna dengan warna sebelumnya;</li>
+<li><code>[[</code> lolos dari branket kiri, jadi kamu bisa menulis <code>[[red]</code> untuk menulis itu akan menyajikan sebagai <code>[red]</code>.</li>
 </ul>
-<p>Notes:</p>
+<p>Catatan:</p>
 <ul>
-<li>errors/unknown colors will be silently ignored.</li>
+<li>warna error/tidak diketahui akan diabaikan secara diam-diam</li>
 </ul>
-<p>Example:</p>
-<pre><code>[red]red
-[#ff0000]full-red
-[#ff000066]half-red
-[#ff000033]half-half-red
-[#00ff00]green
-[]half-half-red
+<p>Contoh:</p>
+<pre><code>[red]merah
+[#ff0000]merah-penuh
+[#ff000066]setengah-merah
+[#ff000033]setengah-setengah-merah
+[#00ff00]hijau
+[]setengah-setengah-merah
 </code></pre>
-<h3 id="built-in-colors">Built-in Colors</h3>
+<h3 id="warna-bawaan">Warna Bawaan</h3>
 <pre><code>[clear]clear
 [black]black
 [white]white
@@ -16524,6 +16573,12 @@
 [violet]violet
 [maroon]maroon
 </code></pre>
+<h2 id="ikon">Ikon</h2>
+<p>Ikon (lebih tepatnya emoji) adalah penyaji suatu gambar kecil pada teks, biasanya menggunakan <strong>unicode</strong> untuk menggunakan ikon in-game (karena mereka menggunakan font ikon untuk aset game)</p>
+<p>ini adalah icon dari aset game <code>icon.ttf</code> dengan <strong>Character Map</strong>:
+<img alt="alt text" src="../../docs/images/modding/markup/image.png" />
+<em>Catatan: kamu harus ke <a href="https://github.com/Anuken/Mindustry/tree/master/core/assets/fonts">sini</a> lalu Unduh dan Pasang <code>icon.ttf</code> ke komputermu</em></p>
+<p><em>Untuk Icon Item, Cairan, Blok sama Unit, menggunakan cara yang berbeda.</em></p>
 
 
 
