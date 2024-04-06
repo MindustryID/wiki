@@ -1,32 +1,33 @@
 # Markup
 
-The text renderer uses a simple markup language for coloring text.
+Penyaji teks digunakan bahasa markup simpel dalam perwarnaan teks.
 
--   `[name]` sets the color by name, there's a few [built-in colors](#built-in-colors);
--   `[#rrggbb]` / `[#rrggbbaa]` sets the color by hex value, with each value being anything from `00` to `ff`:
-    -   `rr` is the red value,
-    -   `gg` is the green value,
-    -   `bb` is the blue value,
-    -   `aa` is the alpha value;
--   `[]` sets the color back to the previous color;
--   `[[` escapes the left bracket, so you can write `[[red]` to write and it'll render as `[red]`.
+## Warna
+-   `[name]` ubah warna dari nama, mereka ada beberapa [warna bawaan](#warna-bawaan);
+-   `[#rrggbb]` / `[#rrggbbaa]` ubah warna dengan nilai heks, dengan setiap semua nilai dari `00` ke `ff`:
+    -   `rr` adalan nilai merah,
+    -   `gg` adalan nilai hijau,
+    -   `bb` adalan nilai biru,
+    -   `aa` adalan nilai alfa(transparansi);
+-   `[]` ubah warna dengan warna sebelumnya;
+-   `[[` lolos dari branket kiri, jadi kamu bisa menulis `[[red]` untuk menulis itu akan menyajikan sebagai `[red]`.
 
-Notes:
+Catatan:
 
--   errors/unknown colors will be silently ignored.
+-   warna error/tidak diketahui akan diabaikan secara diam-diam
 
-Example:
+Contoh:
 
-    [red]red
-    [#ff0000]full-red
-    [#ff000066]half-red
-    [#ff000033]half-half-red
-    [#00ff00]green
-    []half-half-red
+    [red]merah
+    [#ff0000]merah-penuh
+    [#ff000066]setengah-merah
+    [#ff000033]setengah-setengah-merah
+    [#00ff00]hijau
+    []setengah-setengah-merah
 
 
 
-### Built-in Colors
+### Warna Bawaan
 
     [clear]clear
     [black]black
@@ -62,3 +63,13 @@ Example:
     [purple]purple
     [violet]violet
     [maroon]maroon
+
+## Ikon
+
+Ikon (lebih tepatnya emoji) adalah penyaji suatu gambar kecil pada teks, biasanya menggunakan **unicode** untuk menggunakan ikon in-game (karena mereka menggunakan font ikon untuk aset game)
+
+ini adalah icon dari aset game `icon.ttf` dengan **Character Map**:
+![alt text](../../docs/images/modding/markup/image.png)
+*Catatan: kamu harus ke [sini](https://github.com/Anuken/Mindustry/tree/master/core/assets/fonts) lalu Unduh dan Pasang `icon.ttf` ke komputermu*
+
+*Untuk Icon Item, Cairan, Blok sama Unit, menggunakan cara yang berbeda.*

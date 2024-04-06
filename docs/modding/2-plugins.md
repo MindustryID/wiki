@@ -1,15 +1,14 @@
-# Plugins & JVM Mods
+# Plugin dan mod JVM
 
-Mindustry supports loading `jar` files with Java bytecode on desktop & Android. These function similarly to JS mods, and must supply a single main class to instantiate when the mod is created.
+Mindustry mendukung memuat file `jar` dengan kodebita Java di desktop & Android. Fungsi itu mirip seperti mod JS, dan harus menyediakan kelas utama dan instantiasi jika mod itu dibuat
 
-Theoretically, all JVM languages should be supported.
+Secara teori, semua bahasa JVM seharusnya tendukung.
 
-Jar/JVM mods use the same `mod.hjson` meta file that standard mods do, with one addition: The *fully qualified main class* can be specified with `main: "mypackage.MyMod"`. This class should extend `mindustry.mod.Mod`.
+Mod JAR/JVM menggunakan file meta `mod.hjson` yang sama itu mod biasa lakukan, tetapi dengan satu tambahan: *kelas utama yang sepenuhnya dikualifikasi* dsapat dispesifikasi dengan `main: "mypackage.MyMod"`. Kelas ini seharusnya memanjang ke `mindustry.mod.Mod`.
 
+Jika sebuah kelas utama tidak diberikan, itu secara defauilt ke `modnameinlowercase.ModName + "Mod".`
 
-If a main class is not specified, it defaults to `modnameinlowercase.ModName + "Mod".`
-
-A simple `mod.hjson` for a Java mod could look like this:
+`mod.hjson` yang simpel untuk mod Java terlihat seperti ini:
 
 ```hjson
 name: "Nothing"
@@ -19,36 +18,35 @@ description: "..."
 version: "99.99"
 ```
 
-See the [example Java mod repo](https://github.com/Anuken/ExampleJavaMod), the [example Kotlin mod repo](https://github.com/Anuken/ExampleKotlinMod) or the [Java mod template](https://github.com/Sonnicon/mindustry-modtemplate) for more information.
+Lihat [repositori contoh mod Java](https://github.com/Anuken/ExampleJavaMod), [repositori contoh mod Kotlin](https://github.com/Anuken/ExampleKotlinMod) atau [templat mod Java](https://github.com/Sonnicon/mindustry-modtemplate) untuk informasi tambahan.
 
-## Plugins
+## Plugin
+Plugin adalah mod Java yang bertujuan untuk dijalanke hanya di server. Biasanya, mereka menambahkan *perintah baru* atau *mode permainan baru*.
+Semua kelas utama plugin seharusnya memanjang ke `mindustry.mod.Plugin`. Itu membuat mereka secara implicit *hidden* - Klien tidak membutuhkan untuk mendownload plugin untuk menghubung ke server. Mereka itu hanya server-side.
 
-Plugins are Java mods that are intended to be run on servers only. Usually, these add *new commands* or *new gamemodes*.
-All plugin main classes should extend `mindustry.mod.Plugin`. This makes them implicitly *hidden* - clients will not need to download the plugin to join the server. They are server-side only.
+Nama file meta plugin mereka `plugin.[h]json`. Struktur file itu indentik seperti mod Java lainnya - lihat diatas untuk detail.
 
-Plugins name their meta file `plugin.[h]json`. The file structure is identical to that of other Java mods - see above for details.
+Kamu bisa melihat contoh plugin [disini](https://github.com/Anuken/ExamplePlugin). Untuk contoh lebih praktis itu dapat digunakan kedalam server asli. lihat [repo ini](https://github.com/Anuken/AuthorizePlugin).
 
-You can see an example plugin [here](https://github.com/Anuken/ExamplePlugin). For a more practical example that can be used on real servers, see [this repo](https://github.com/Anuken/AuthorizePlugin).
+## Mengimpor
 
-## Importing
+Gak seperti mod JS atau JSON, mod jar harus disusun. itu bermaksud mereka itu tidak diimport secara langsung dari Github - malahan *Rilis Github* digunakan.
 
-Unlike JS or JSON mods, JAR mods need to be compiled. This means that they cannot be imported directly from Github - instead, *Github Releases* are used. 
+Kapan sebuah user untuk install sebuah mod JAR, Mindustry hanya ngecek yang terbaru (dan *hanya* yang terbaru) untuk artefak `.jar`. Kapan artefak pertama ditemuka, itu diunduh ke klien. Catatan pra-rilis tidak dianggap.
 
-When a user tries to install a JAR mod, Mindustry will check the latest (and *only* the latest) Github release for `.jar` artifacts. When the first artifact is found, it is downloaded to the client. Note that pre-releases are ignored.
+Saya merekomendasikan gunakan Github Action (atau CI yang lain) untuk membangun dan mengunggah artefak jar ke rilis baru secara otomatis.
 
-I recommend using Github Actions (or any other CI) to automatically build and upload jar artifacts to new releases.
+## Kapabilitas dan Keamanan
 
-## Capabilities & Security
+Sebagai mod jar telah memuat secara langsung ke URLClassLoader dengan tanpa sandboxing, mereka tidak memiliki beberapa kekurangan keamanan. Itu berarti:
 
-As jar mods are loaded directly through a URLClassLoader with no sandboxing, they do not have any security limitations. This means:
+- Semua API Java bisa diakses.
+- Refleksi dapat digunakan untuk akses properti yang pribadi/tersembunyi
+- Mod dapat akses penuh ke komputer milik klien, membuka pintu untuk berpotensi aksi kejahatan.
+- Mod dapat mengubah file game atau menulis ulang kodebita inti
 
-- All Java APIs can be accessed.
-- Reflection can be used to access private/hidden properties.
-- Mods have full access to the client's computer, opening the door to potentially malicious actions.
-- Mods can change game files or core rewrite bytecode.
+Jadi, kamu seharusnya *jangan pernah mengimpor mod jar dari sumbet tidak dipercaya.* Sekarang, kamu akan berpikir: Kenapa mod jar tidak disandbox? Itu bukan ancaman keamanan yang masif?
 
-Thus, you should *never import jar mods from untrusted sources.* Now, you may be wondering: Why aren't jar mods sandboxed? Isn't that a massive security risk? 
+Jawabannya: *Ya*, tentu. Tetapi, tidak ada alternatif yang bagus. sampai jika saya mengimplementasi `SecurityManager` untuk membatasi kapabilitas mod, itu sia-sia - Java itu sebenarnya tidak aman, dan beberapa alasan-implementasi sandbox yang "aman" (*jika satupun ada*) harus membutuhkan mematikan refleksi dalam mod, itu yang tidak dapat diterima.
 
-The answer is: *Yes*, it is. However, there are no good alternatives. Even if I implemented a `SecurityManager` to limit mod capabilities, it wouldn't help - Java is inherently insecure, and any reasonably-"secure" sandbox implementation (*if one even exists*) would require disabling reflection in mods, which is unacceptable.
-
-As a point of comparison, Forge (*a popular Java mod loader for Minecraft*) doesn't sandbox mods either.
+Sebagai poin dari perbandingan, Forge (*sebuah memuat mod java yang populer untuk Minecraft*) tidak ada mod sandbox pula.

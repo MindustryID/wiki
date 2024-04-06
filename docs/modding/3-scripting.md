@@ -1,9 +1,9 @@
 # Scripting
+Mindustry menggunakan Javascript untuk *mod scripting*. Skrip gunakan ekstensi `js` dan diletakan kedalam subdirektori `scripts/`.
 
-Mindustry uses JavaScript for mod scripting. Scripts use the `js` extension and are placed in the `scripts/` subdirectory.
+Eksekusi dimulai dengan file bernama `main.js`. file skrip yang lain dapat diimpor dengan file utama dengan `require("script_name")`. 
 
-Execution starts with the file named `main.js`. Any other script files can be imported by the main file with `require("script_name")`. 
-A typical setup looks like this:
+setup secara tipikal terliat seperti ini:
 
 *scripts/main.js*:
 ```js
@@ -32,17 +32,17 @@ terribleium.color = Color.valueOf("ff0000");
 
 ```
 
-# Examples
+# Contoh
 
-## Listening to events
+## Mendengarkan suatu Event(Acara)
 
 <img src="/wiki/images/misc/modding-pathetic.gif">
 
 ```js
 
-// listen for the event where a unit is destroyed
+// Mendengarkan acara tentang unit telah hancur
 Events.on(UnitDestroyEvent, event => {
-  // display toast on top of screen when the unit was a player
+  // Menampilakn toast diatas layar yang bertulisan "Pathetic."
   if(event.unit.isPlayer()){
     Vars.ui.hudfrag.showToast("Pathetic.");
   }
@@ -50,9 +50,9 @@ Events.on(UnitDestroyEvent, event => {
 
 ```
 
-The easiest way to find events you can listen to is to look at source file: [Mindustry/blob/master/core/src/mindustry/game/EventType.java](https://github.com/Anuken/Mindustry/blob/master/core/src/mindustry/game/EventType.java)
+Cara yang gampang untuk mencari event yang kau dapat didengar untuk itu dengan lihat file sumber: [Mindustry/blob/master/core/src/mindustry/game/EventType.java](https://github.com/Anuken/Mindustry/blob/master/core/src/mindustry/game/EventType.java)
 
-## Displaying a dialog box
+## Menampilkan kotak Dialog
 
 ```js
 const myDialog = new BaseDialog("Dialog Title");
@@ -64,13 +64,14 @@ myDialog.cont.add("Goodbye.");
 myDialog.show();
 ```
 
-## Play some custom sounds
+## Memainkan suatu musik kustom
 
-Playing custom audio is easy, provided you store your sound clip as a `.mp3` or `.ogg` file in your `/sounds` directory.
+Memainkan audio kuston itu mudah, menyediakan kamu untuk menyimpan klip suaramu sebagai file `.mp3` atau `.ogg` dalam direktori `/sounds` mu.
 
+Untuk contoh, kita telah menyimpan `example.mp3` di `/sounds/example.mp3`.
 For this example, we have stored `example.mp3` at `/sounds/example.mp3`.
 
-### Using a lib to load the sound
+### Gunakan sebuah pustaka untuk memuat suara
 
 *scripts/alib.js*:
 ```js
