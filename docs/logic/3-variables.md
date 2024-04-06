@@ -1,6 +1,6 @@
 # Variabel dan Konstan
 
-Variabel dan konstan pada dasarnya "kontainer" dari value(isi). Setiap satu memiliki nama dan value. Mindustry memiliki variabel yang mana bisa diatur oleh user dan kode mereka, dan konstan yang mana bisa diubah hanya oleh prosessor dan tidak dapat diubah oleh user
+Variabel dan konstan pada dasarnya "kontainer" dari value(isi). Setiap satu memiliki nama dan value. Mindustry memiliki variabel yang mana bisa diatur oleh user dan kode mereka, dan konstan yang mana bisa diubah hanya oleh prosesor dan tidak dapat diubah oleh user
 
 *Untuk mencari tahu data yang mungkin atau tipe parameter dari variabel dan konstan, lihat Glosarium*
 
@@ -47,37 +47,37 @@ Intruksi `print` adalah hanya intruksi yang membutuhkan `String`sebagai input, j
 
 ### Penamaan Variabel
 
-Naming variables properly is an important skill to have when programming in general. It helps to make code easier to read and understand. Thus, that can make it easier for people to learn from or fix your code.
+Penamaan Variabel disesuaikan sebuah keahlian penting yang dimiliki jika pemograman pada dasarnya. itu membantu dalam membuat kode lebih mudah dibaca dan dimengerti. Demikian, itu dapat membuai it lebih mudah untuk seseorang untuk belajar darinya atay memperbaiki kodemu.
 
-Variable names can contain any typeable character. However, they cannot be purely numbers, since it will instead use the actual number.
+Nama Variabel dapat berisi karakter yang mana bisa diketik. Walaupun, mereka tidak bisa sepenuhnya angka, sejak itu akan seharusnya gunakan angka yang sebenarnya.
 
-The usual naming convention among the majority of mlog code is camelCase, an example of which is itself. Examples of variables named using camelCase are: `playerX`, `coreFound`, `vertexAngle`. 
+Penamaan konvensi yang biasa antara mayoritas dari kode mlog adalah camelCase, sebuah contoh yang mana itu sendiri. contoh variabel yang menggunakan camelCase adalah: `playerX`, `coreFound`, `vertexAngle`. 
 
-**When naming variables, make sure they are descriptive yet short.** They must describe the value they hold or their purpose. At the same time, they shouldn't be complete sentences or span the entire page, or be too short that they get confusing. You can use abbreviations, acronyms, or shorter terms to make them more concise.
+**Kapan penamaan variabel, seharunya mereka adalah deskriptif tapi pendek** Mereka harus menjelaskan value yang mereka pegang atau tujuan mereka. Pada waktu yang sama, mereka seharusnya tidak sebagai kalimat yang selesai atau pindah semua lembar, atau jadi lebih pendek itu yang bikin membingungkan, kamu bisa gunakan singkatan, akronim, atau istilah pendek untuk membuat itu lebih singkat.
 
-Everybody has their own specific styles and preferences, but try to learn from good examples of code in mlog and other languages, while at the same time staying close to the common style.
+Setiap orang memiliki gaya dan preferensi mereka sendiri, tetapi mencoba untuk belajar dari contoh yang baik dalam memogram di mlog atau bahasa lain, walaupun pada waktu yang sama tetap menutup ke gaya umum.
 
-## Processor Variables and Constants
+## Variabel dan Konstan prosesor
 
-Constants also hold values, but cannot be changed. Each processor has these constants and variables built-in:
+Konstan juga memiliki value, tapi tidak bisa diubah. setiap prosesor memiliki konstan dan variabel bawaan:
 
-### Processor
+### prosesor
 
 #### @this `constant` `Building`
 
-A `Building` Object that represents the processor itself. You can use this with `sensor` to find various properties about the processor.
+Sebuah Objek `Building` itu merepresentasikan prosesor itu sendiri. kamu bisa gunakan itu dengan `sensor` untuk mencari beberapa properti tentang prosesor.
 
 #### @thisx `constant` `number`
 
-The x coordinate of the processor.
+Koordinat x dari prosesor.
 
 #### @thisy `constant` `number`
 
-The y coordinate of the processor.
+Koordinat y dari prosesor.
 
 #### @ipt `constant` `number`
 
-The number of instructions executed per tick (60 ticks/second).
+Angka dari eksekusi intruksi per tick (60 tick/detik).
 
 * Micro Processor -> 2
 * Logic Processor -> 8
@@ -85,9 +85,9 @@ The number of instructions executed per tick (60 ticks/second).
 
 #### @counter `variable` `number`
 
-A variable that represents the next line the processor will read code from, equivalent to `%IP` in x86. It can be changed like any other variable as another way to perform jumps.
+Sebuah variabel itu merepresentasikan baris selanjutnya akan dibaca code darinya, setara pada `%IP` di x86. itu bisa diubah seperti variabel yang lain sebagai jalan lain untuk mekakukan loncatan.
 
-An (advanced) example of setting `@counter` to jump to a function, then jump back to the caller:
+Contoh (lanjutan) dari pengaturan `@counter` untuk meloncat ke sebuah fungsi, lalu loncat lagi ke pemanggil:
 
 ```
 op add retAddr @counter 1 # Save where we will continue after the function returns by adding 1 to the counter
@@ -95,13 +95,13 @@ set @counter myFunc       # Jump to the line representing myFunc
 ...
 set @counter retAddr      # Return to the line set earlier after the function is called
 ```
-### Links
+### Tautan
 
 #### @links `constant` `number`
 
-A constant that equals the number of buildings linked to the processor. It is changed by the processor when blocks are linked or unlinked.
+Sebuah konstan itu sama dengan angka dari bangunan yang ditaut ke prosesor. itu bisa diubah dengan prosesor yang blok ditaut atau dilepas.
 
-You can use this along with `getlink` to loop through all linked buildings, like so:
+Kamu bisa menggunakan bersama dengan `getlink` untuk memutar semua bangunan yang ditaut, jadi seperti:
 
 ```
 set linkIter 0                  # Create iterator variable
@@ -112,43 +112,43 @@ jump 1 lessThan linkIter @links # Loop
 
 #### <buidingName><n> `constant` `Building`
 
-This is really multiple constants, one for each building linked to the processor. They are removed or added whenever a building is unlinked or linked to the processor.
+Ini adalah sebenarnya beberapa konstan, satu dari setiap bangunan ditautkan ke prosesor. Mereka adalah dihapus atau ditambah kapan itu sebuah bangunan itu dilepaskan atau ditautkan ke prosesor. 
 
-`buildingName` represents the building's **internal name**, which you can find in the rest of the Wiki. 
+`buildingName` merepresentasikan **nama internal** suatu bangunan, yang mana kamu bisa cari di sisa dari Wiki.
 
-`n` starts at 1 and increases with each building of that type that are linked. It's sort of like the `n`th building of a type.
+`n` dimulai pada satu dan menambah jika suatu bangunan dari tipe itu yang ditautkan. itu semacam seperti bangunan dari tipe ke-`n`
 
-This can be a little hard to understand, so here are some examples:
+Ini bisa jadi agak susah untuk dimengerti, jadi ini beberapa contoh:
 
-* The first Scatter linked to a processor: `scatter1`
-* The third Ripple linked: `ripple3`
-* The second Laser Drill linked: `drill2`
-* The eleventh Spore Press linked: `press11`
+* Scatter pertama yang ditautkan: `scatter1`
+* Ripple ketiga yang ditautkan: `ripple3`
+* Bor Laser kedua ditautkan: `drill2`
+* Penekan Spora kesebelas ditautkan: `press11`
 
-You can also view each linked building's "constant name" over them when the processor is selected.
+Kamu juga bisa lihat "nama konstan" setiap bangunan yang ditautkan diatas mereka jika prosesor yang dipilih.
 
 <img src="/wiki/images/misc/logic-variables-constants-links-linkedBuilding.png">
 
-### Misc
+### Lainnya
 
 #### @unit `constant` `Unit`
 
-A constant that represents the current bound unit. It only changes when the processor unbinds a unit, or binds another one. It can be accessed using Unit instructions such as `ucontrol`, `ulocate`, and `uradar`. Since it's a Unit Object, you can also use it with `sensor`.
+Sebuah konstan yang merepresentasikan unit yang terikat saat ini. itu hanya diubah jika prosesor melepaskan sebuah unit atau mengikat yang lain. itu bisa diakses dengan intruksi unit seperti `ucontrol`, `ulocate`, dan `uradar`. Sejak itu sebuah Objek Unit, kamu juga bisa gunakan itu dengan `sensor`.
 
-This presents a core part of unit control in mlog; **only one unit can be bound at a time.** However, you can reference this in a variable, like `set unitReference @unit`. That variable, though, can not be used to control the referenced unit. It can only be used to check against other units or to get information about it. Therefore, you can think of it as a "unit identity".
+Ini memberikan sebuah bagian inti dari kendali unit di mlog; **hanya satu unit bisa diikat pada waktunya.** Namun, kamu bisa mereferensikan ini dalam variabel, seperti `set unitReference @unit`. Itu variabel, walau, bisa tidak dapat digunakan untuk kendali unit yang direferensikan. itu hanya bisa digunakan untuk cek betentangan unit lain atau mendapatkan informasi tentang itu. Oleh karena itu, kamu bisa berpikir itu sebagai "indentitas unit".
 
 #### @time `constant` `number`
 
-Represents the current UNIX timestamp *in milliseconds*.
+Merepresentasikan sebagai catatan waktu UNIX saat ini *in milliseconds*.
 
 #### @tick `constant` `float`
 
-Represents the amount of ticks (60 ticks/second) since the map began. 
+Merepresentasikan jumlah tick (60 tick/detik) sejak peta berlangsung.
 
 #### @mapw `constant` `number`
 
-Width of the map, in tiles.
+Lebar peta, dalam petak.
 
 #### @maph `constant` `number`
 
-Height of the map, in tiles.
+Tinggi peta, dalam petak.
