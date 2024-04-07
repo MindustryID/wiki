@@ -14439,18 +14439,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#bangunan" class="md-nav__link">
+  <a href="#building" class="md-nav__link">
     <span class="md-ellipsis">
-      Bangunan
+      Building
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#variabel" class="md-nav__link">
+  <a href="#unit" class="md-nav__link">
     <span class="md-ellipsis">
-      Variabel
+      Unit
     </span>
   </a>
   
@@ -14490,9 +14490,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sense" class="md-nav__link">
+  <a href="#senseable" class="md-nav__link">
     <span class="md-ellipsis">
-      Sense
+      Senseable
     </span>
   </a>
   
@@ -16575,18 +16575,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#bangunan" class="md-nav__link">
+  <a href="#building" class="md-nav__link">
     <span class="md-ellipsis">
-      Bangunan
+      Building
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#variabel" class="md-nav__link">
+  <a href="#unit" class="md-nav__link">
     <span class="md-ellipsis">
-      Variabel
+      Unit
     </span>
   </a>
   
@@ -16626,9 +16626,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sense" class="md-nav__link">
+  <a href="#senseable" class="md-nav__link">
     <span class="md-ellipsis">
-      Sense
+      Senseable
     </span>
   </a>
   
@@ -16689,17 +16689,17 @@
 <h2 id="jenis-data">Jenis Data</h2>
 <p>Ada dua tipe data utama di Mindustry; angka dan Objek.</p>
 <h3 id="number">number</h3>
-<p>Angka desimal. Bisa negatif atau positif, dan dapat mewakili nilai benar (apa pun yang tidak sama dengan 0) atau salah (0). Null juga direpresentasikan sebagai 0.</p>
+<p>Angka desimal. Bisa negatif atau positif, dan dapat mewakili value benar (apa pun yang tidak sama dengan 0) atau salah (0). Null juga direpresentasikan sebagai 0.</p>
 <p>Beberapa instruksi hanya dapat menerima bilangan bulat, jadi itu ditunjukkan sesuai dengan manual ini.</p>
-<p>Secara internal, angka disimpan sebagai nilai floating point 64-bit (<code>double</code>), dan dioperasikan sebagai integer bertanda 64-bit (<code>long</code>) saat bitshifting terlibat.</p>
+<p>Secara internal, angka disimpan sebagai value floating point 64-bit (<code>double</code>), dan dioperasikan sebagai integer bertanda 64-bit (<code>long</code>) saat bitshifting terlibat.</p>
 <h3 id="string">String</h3>
 <p>Objek yang mewakili teks yang diapit tanda kutip, mis. <code>"halo mindustry"</code></p>
-<h3 id="bangunan">Bangunan</h3>
+<h3 id="building">Building</h3>
 <p>Objek yang merepresentasikan Bangunan fisik di dunia.</p>
 <p><strong>Ini berbeda dari Block</strong>; Blok hanyalah sejenis Bangunan, tetapi Bangunan adalah Blok berwujud - seperti dalam, ia memiliki kesehatan, berinteraksi dengan kekuatan dan barang, dll.</p>
 <p>Intinya, <strong>Bangunan adalah Blok yang secara fisik ada di dunia.</strong></p>
 <p>Misalnya, instruksi <code>getlink</code> akan mengembalikan Objek * Membangun *, di mana Anda bisa mendapatkan informasi tentang menggunakan<code>sensor</code>.</p>
-<h3 id="variabel">Variabel</h3>
+<h3 id="unit">Unit</h3>
 <p>Objek yang mewakili Unit di dunia, termasuk pemain.</p>
 <p>Misalnya, instruksi <code>ubind</code> akan menyetel variabel prosesor<code>@unit</code> ke Objek Unit yang mewakili unit terikat.</p>
 <h2 id="jenis-parameter">Jenis Parameter</h2>
@@ -16714,7 +16714,7 @@
 <p>Contoh: <code>@toxopid</code></p>
 <p><em>Daftar lengkap ditampilkan di bawah tombol pensil di blok instruksi "Unit Bind".</em></p>
 <p><img src="/wiki/images/misc/logic-glossary-unitType-unitBind.png"></p>
-<h3 id="sense">Sense</h3>
+<h3 id="senseable">Senseable</h3>
 <p>Properti Item, Cairan, atau Bangunan atau Unit yang dapat "dideteksi" oleh <code>sensor</code>. Dimulai dengan <code>@</code>.</p>
 <p>Contoh: <code>@scrap</code>,<code>@slag</code>, <code>@totalAmmo</code></p>
 <p><em>Daftar lengkap ditampilkan di bawah tombol pensil di blok instruksi "Sensor".</em></p>
@@ -16729,7 +16729,7 @@
 <p><img src="/wiki/images/misc/logic-glossary-op-operation.png"></p>
 <p>Untuk yang lebih kompleks, Anda dapat menggunakan Google "&lt;operation name&gt; matematika Java".</p>
 <h3 id="comp">Comp</h3>
-<p>Sebuah perbandingan. Terutama digunakan dalam instruksi <code>jump</code> saat membandingkan dua nilai. <code>always</code> akan kembali menjadi true apa pun yang terjadi, jadi itu akan selalu menyebabkan lompatan.</p>
+<p>Sebuah perbandingan. Terutama digunakan dalam instruksi <code>jump</code> saat membandingkan dua value. <code>always</code> akan kembali menjadi true apa pun yang terjadi, jadi itu akan selalu menyebabkan lompatan.</p>
 <p><em>Daftar lengkap ditampilkan di bawah tombol perbandingan di blok instruksi "Lompat".</em></p>
 <p><img src="/wiki/images/misc/logic-glossary-comp-jump.png"></p>
 
