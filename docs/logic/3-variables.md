@@ -25,13 +25,13 @@ Menganggap itu posisi player adalah `141, 20`, sebuah variabel dengan nama `play
 
 Meskipun, kita memiliki variabel dalam contoh yang disebut `playerUnit`. Variabel itu adalah **parameter**. Sebuah parameter sebuah masukan value kedalam intruksi. Dalam kasus ini, kita mungkin dapat `playerUnit` dari intruksi `radar`. jika parameter tidak ditunjukan tau salah, intruksi tidak bakal dijalankan.
 
-### Tipe Data dan Pengubahan Implisit
+### Tipe Data dan Konvensi Implisit
 
 
 Value dalam variabel, tentu saja, ada tipe yang berbeda itu adalah spesifik ke sumber yang berbeda
 dan tujuannya, seperti `Unit` untuk Units, `number` untuk angka yang manapun, dll. Kamu bisa cari sebuah daftar dari semua itu di Glosarium.
 
-Mindustry Logic juga memiliki hal ini dengan variabel disebut **Pengubahan Implisit**. Itu bermaksud itu, jika dibutuhkan, itu akan mengubah sebuah value milik variabel dari satu tipe ke lain.
+Mindustry Logic juga memiliki hal ini dengan variabel disebut **Konvensi Implisit**. Itu bermaksud itu, jika dibutuhkan, itu akan mengubah sebuah value milik variabel dari satu tipe ke lain.
 
 Jika sebuah intruksi dimasukan sebuah `number`, tetapi itu membutuhkan `Object`, itu akan diubah menjadi `null`. 
 Jika sebuah intruksi membutuhkan sebuah `number`, tetapi itu dimasukan `Object`, itu akan diubah menjadi 1 jika objek bukan `null`, lain kali 0. 
