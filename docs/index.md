@@ -4,9 +4,9 @@
 
 ## Berkontribusi
 
-Wiki ini dihosting di [GitHub](https://github.com/MindustryGame/wiki). Jika Anda ingin mengedit sesuatu, cukup klik tombol edit di bagian atas halaman, dan Anda akan diarahkan ke formulir *pull request*, di mana Anda dapat membuat perubahan dan mengirimkannya untuk persetujuan.
+Wiki ini dihosting di [GitHub](https://github.com/MindustryID/wiki). Jika Anda ingin mengedit sesuatu, cukup klik tombol edit di bagian atas halaman, dan Anda akan diarahkan ke formulir *pull request*, di mana Anda dapat membuat perubahan dan mengirimkannya untuk persetujuan.
 
-Perhatikan bahwa sebagian besar wiki *dibuat secara otomatis*, artinya Anda harus membuka Permintaan Tarik di [gudang WikiGen](https://github.com/MindustryID/Mindustry-Wiki-Generator) jika masalahnya menyangkut halaman tersebut.
+Perhatikan bahwa sebagian besar wiki *dibuat secara otomatis*, artinya Anda harus membuka Permintaan Tarik di [gudang WikiGen](https://github.com/WilloIzCitron/Mindustry-Wiki-Generator) jika masalahnya menyangkut halaman tersebut.
 
 ## Tautan
 
