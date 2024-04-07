@@ -26,7 +26,7 @@ Hal yang baik untuk dimiliki sebelumnya adalah beberapa pengalaman pemrograman, 
 
 Anda mungkin juga ingin memiliki Google jika Anda tidak memahami istilah pemrograman khusus yang digunakan di sini.
 
-## Mengapa semua orang tidak sopan dalam #logic on the Discord?
+## Mengapa semua orang tidak sopan dalam #logic di Discord?
 
 Sebagian besar waktu itu hanya karena jawaban atas pertanyaan Anda sangat dekat, dan yang Anda butuhkan hanyalah menginstal manual ini atau membacanya dengan lebih baik. Semua jika tidak sebagian besar waktu, yang perlu Anda lakukan hanyalah RTFM (baca manual yang luar biasa ini) secara menyeluruh, dan Anda akan menemukan jawabannya. Jika Anda benar-benar yakin itu tidak dibahas di sini, Anda dapat mengajukan pertanyaan di #logic.
 
@@ -45,8 +45,3 @@ Contoh struktur dan semangat pertanyaan yang dapat diterima:
 * "Mengapa saya tidak dapat mencetak string dan variabel dengan benar dalam instruksi cetak yang sama?"
 
 Tidak dapat dipungkiri bahwa tidak semua orang dapat melakukan itu sepanjang waktu, jadi cobalah yang terbaik untuk membuat pertanyaan Anda terlihat rapi, dan ikuti setidaknya satu dari panduan ini.
-
-# Bagaimana cara mendapatkan manual dalam game?
-
-Ada mod manual dalam game yang lebih komprehensif yang menjelaskan detail untuk instruksi dan variabel yang tersedia di [DeltaNedas/rtfm](https://github.com/DeltaNedas/rtfm).
-Setelah terinstal, Anda dapat mengakses halaman manual instruksi dengan mengklik tombol buku baru di UI prosesor, halaman lain tersedia dalam dialog RTFM lengkap.
