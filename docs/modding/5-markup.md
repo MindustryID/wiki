@@ -69,7 +69,7 @@ Contoh:
 Ikon (lebih tepatnya emoji) adalah penyaji suatu gambar kecil pada teks, biasanya menggunakan **unicode** untuk menggunakan ikon in-game (karena mereka menggunakan font ikon untuk aset game)
 
 ini adalah icon dari aset game `icon.ttf` dengan **Character Map**:
-![alt text](wiki/images/modding/markup/image.png)
+![alt text](/wiki/images/modding/markup/image.png)
 *Catatan: kamu harus ke [sini](https://github.com/Anuken/Mindustry/tree/master/core/assets/fonts) lalu Unduh dan Pasang `icon.ttf` ke komputermu*
 
 *Untuk Icon Item, Cairan, Blok sama Unit, menggunakan cara yang berbeda.*
