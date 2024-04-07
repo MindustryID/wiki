@@ -8,17 +8,17 @@ Ada dua tipe data utama di Mindustry; angka dan Objek.
 
 ### number
 
-Angka desimal. Bisa negatif atau positif, dan dapat mewakili nilai benar (apa pun yang tidak sama dengan 0) atau salah (0). Null juga direpresentasikan sebagai 0.
+Angka desimal. Bisa negatif atau positif, dan dapat mewakili value benar (apa pun yang tidak sama dengan 0) atau salah (0). Null juga direpresentasikan sebagai 0.
 
 Beberapa instruksi hanya dapat menerima bilangan bulat, jadi itu ditunjukkan sesuai dengan manual ini.
 
-Secara internal, angka disimpan sebagai nilai floating point 64-bit (`double`), dan dioperasikan sebagai integer bertanda 64-bit (` long`) saat bitshifting terlibat.
+Secara internal, angka disimpan sebagai value floating point 64-bit (`double`), dan dioperasikan sebagai integer bertanda 64-bit (` long`) saat bitshifting terlibat.
 
 ### String
 
 Objek yang mewakili teks yang diapit tanda kutip, mis. `"halo mindustry"`
 
-### Bangunan
+### Building
 
 Objek yang merepresentasikan Bangunan fisik di dunia.
 
@@ -28,7 +28,7 @@ Intinya, **Bangunan adalah Blok yang secara fisik ada di dunia.**
 
 Misalnya, instruksi `getlink` akan mengembalikan Objek * Membangun *, di mana Anda bisa mendapatkan informasi tentang menggunakan`sensor`.
 
-### Variabel
+### Unit
 
 Objek yang mewakili Unit di dunia, termasuk pemain.
 
@@ -58,7 +58,7 @@ Contoh: `@toxopid`
 
 <img src="/wiki/images/misc/logic-glossary-unitType-unitBind.png">
 
-### Sense
+### Senseable
 
 Properti Item, Cairan, atau Bangunan atau Unit yang dapat "dideteksi" oleh `sensor`. Dimulai dengan `@`.
 
@@ -88,7 +88,7 @@ Untuk yang lebih kompleks, Anda dapat menggunakan Google "<operation name\> mate
 
 ### Comp
 
-Sebuah perbandingan. Terutama digunakan dalam instruksi `jump` saat membandingkan dua nilai. `always` akan kembali menjadi true apa pun yang terjadi, jadi itu akan selalu menyebabkan lompatan.
+Sebuah perbandingan. Terutama digunakan dalam instruksi `jump` saat membandingkan dua value. `always` akan kembali menjadi true apa pun yang terjadi, jadi itu akan selalu menyebabkan lompatan.
 
 *Daftar lengkap ditampilkan di bawah tombol perbandingan di blok instruksi "Lompat".*
 
