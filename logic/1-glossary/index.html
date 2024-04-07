@@ -14421,9 +14421,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#nomor" class="md-nav__link">
+  <a href="#number" class="md-nav__link">
     <span class="md-ellipsis">
-      nomor
+      number
     </span>
   </a>
   
@@ -14448,9 +14448,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#satuan" class="md-nav__link">
+  <a href="#variabel" class="md-nav__link">
     <span class="md-ellipsis">
-      Satuan
+      Variabel
     </span>
   </a>
   
@@ -14490,9 +14490,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#masuk-akal" class="md-nav__link">
+  <a href="#sense" class="md-nav__link">
     <span class="md-ellipsis">
-      Masuk akal
+      Sense
     </span>
   </a>
   
@@ -14517,9 +14517,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#komp" class="md-nav__link">
+  <a href="#comp" class="md-nav__link">
     <span class="md-ellipsis">
-      Komp
+      Comp
     </span>
   </a>
   
@@ -16557,9 +16557,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#nomor" class="md-nav__link">
+  <a href="#number" class="md-nav__link">
     <span class="md-ellipsis">
-      nomor
+      number
     </span>
   </a>
   
@@ -16584,9 +16584,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#satuan" class="md-nav__link">
+  <a href="#variabel" class="md-nav__link">
     <span class="md-ellipsis">
-      Satuan
+      Variabel
     </span>
   </a>
   
@@ -16626,9 +16626,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#masuk-akal" class="md-nav__link">
+  <a href="#sense" class="md-nav__link">
     <span class="md-ellipsis">
-      Masuk akal
+      Sense
     </span>
   </a>
   
@@ -16653,9 +16653,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#komp" class="md-nav__link">
+  <a href="#comp" class="md-nav__link">
     <span class="md-ellipsis">
-      Komp
+      Comp
     </span>
   </a>
   
@@ -16688,7 +16688,7 @@
 <p>Glosarium ini memberikan penjelasan yang lebih rinci tentang banyak istilah yang digunakan dalam manual ini.</p>
 <h2 id="jenis-data">Jenis Data</h2>
 <p>Ada dua tipe data utama di Mindustry; angka dan Objek.</p>
-<h3 id="nomor">nomor</h3>
+<h3 id="number">number</h3>
 <p>Angka desimal. Bisa negatif atau positif, dan dapat mewakili nilai benar (apa pun yang tidak sama dengan 0) atau salah (0). Null juga direpresentasikan sebagai 0.</p>
 <p>Beberapa instruksi hanya dapat menerima bilangan bulat, jadi itu ditunjukkan sesuai dengan manual ini.</p>
 <p>Secara internal, angka disimpan sebagai nilai floating point 64-bit (<code>double</code>), dan dioperasikan sebagai integer bertanda 64-bit (<code>long</code>) saat bitshifting terlibat.</p>
@@ -16699,7 +16699,7 @@
 <p><strong>Ini berbeda dari Block</strong>; Blok hanyalah sejenis Bangunan, tetapi Bangunan adalah Blok berwujud - seperti dalam, ia memiliki kesehatan, berinteraksi dengan kekuatan dan barang, dll.</p>
 <p>Intinya, <strong>Bangunan adalah Blok yang secara fisik ada di dunia.</strong></p>
 <p>Misalnya, instruksi <code>getlink</code> akan mengembalikan Objek * Membangun *, di mana Anda bisa mendapatkan informasi tentang menggunakan<code>sensor</code>.</p>
-<h3 id="satuan">Satuan</h3>
+<h3 id="variabel">Variabel</h3>
 <p>Objek yang mewakili Unit di dunia, termasuk pemain.</p>
 <p>Misalnya, instruksi <code>ubind</code> akan menyetel variabel prosesor<code>@unit</code> ke Objek Unit yang mewakili unit terikat.</p>
 <h2 id="jenis-parameter">Jenis Parameter</h2>
@@ -16714,7 +16714,7 @@
 <p>Contoh: <code>@toxopid</code></p>
 <p><em>Daftar lengkap ditampilkan di bawah tombol pensil di blok instruksi "Unit Bind".</em></p>
 <p><img src="/wiki/images/misc/logic-glossary-unitType-unitBind.png"></p>
-<h3 id="masuk-akal">Masuk akal</h3>
+<h3 id="sense">Sense</h3>
 <p>Properti Item, Cairan, atau Bangunan atau Unit yang dapat "dideteksi" oleh <code>sensor</code>. Dimulai dengan <code>@</code>.</p>
 <p>Contoh: <code>@scrap</code>,<code>@slag</code>, <code>@totalAmmo</code></p>
 <p><em>Daftar lengkap ditampilkan di bawah tombol pensil di blok instruksi "Sensor".</em></p>
@@ -16728,7 +16728,7 @@
 <p><em>Daftar lengkap ditampilkan di bawah tombol "+" di blok instruksi "Operasi".</em></p>
 <p><img src="/wiki/images/misc/logic-glossary-op-operation.png"></p>
 <p>Untuk yang lebih kompleks, Anda dapat menggunakan Google "&lt;operation name&gt; matematika Java".</p>
-<h3 id="komp">Komp</h3>
+<h3 id="comp">Comp</h3>
 <p>Sebuah perbandingan. Terutama digunakan dalam instruksi <code>jump</code> saat membandingkan dua nilai. <code>always</code> akan kembali menjadi true apa pun yang terjadi, jadi itu akan selalu menyebabkan lompatan.</p>
 <p><em>Daftar lengkap ditampilkan di bawah tombol perbandingan di blok instruksi "Lompat".</em></p>
 <p><img src="/wiki/images/misc/logic-glossary-comp-jump.png"></p>
