@@ -19,7 +19,7 @@ Anda juga dapat mengekspor dan mengimpor kode ke dan dari bentuk teks.
 
 ## Pengeditan Manual
 
-Pengeditan manual melibatkan penggunaan editor teks seperti Notepad ++, Vim, atau Visual Studio Code untuk mengedit kode Anda. ** Untuk pengguna yang lebih mahir dan kode yang lebih panjang, pengeditan manual adalah caranya **.
+Pengeditan manual melibatkan penggunaan editor teks seperti Notepad ++, Vim, Visual Studio Code, atau Sublime Text untuk mengedit kode Anda. **Untuk pengguna yang lebih mahir dan kode yang lebih panjang, pengeditan manual adalah caranya**.
 
 Keuntungan mengedit kode secara manual dibandingkan dengan Editor Visual adalah:
 

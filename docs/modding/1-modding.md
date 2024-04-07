@@ -29,12 +29,12 @@ Direktori projekmu seharusnya terlihat seperti ini:
     └── sprites
 
 -   `mod.hjson` (required) file metadata untuk modmu,
--   `content/*` direktori untuk [Konten](#content),
+-   `content/*` direktori untuk [Konten](#konten),
 -   `maps/` direktori untuk peta dalam-game,
 -   `bundles/` direktori untuk [Bundle](#bundles),
--   `sounds/` direktori untuk [Suara](#sound) files,
--   `schematics/` direktori untuk [Skematik](#schematic) files,
--   `scripts/` direktori untuk [Skrip](#scripts),
+-   `sounds/` direktori untuk [Suara](#suara) files,
+-   `schematics/` direktori untuk [Skematik](#skematik) files,
+-   `scripts/` direktori untuk [Skrip](#skrip),
 -   `sprites-override/` [Sprites](#sprites) Direktori untuk menimpa konten dalam-game,
 -   `sprites/` [Sprites](#sprites) Direktori untuk kontenmu,
 
@@ -83,7 +83,7 @@ Jika kamu gak tau beberapa kata itu. &#x2013; Sebuah bahasa serialisasi, adalah 
 
 ## `mod.hjson`
 
-At the root of your project directory, you must have a `mod.json` which defines the basic metadata for your project. This file can also be (optionally) named `mod.hjson` to potentially help your text editor pick better syntax highlighting.
+Pada akar dari direktori projekmu, kamu harus memiliki satu `mod.json` yang mana menjelaskan metadata dasar untuk projekmu. File ini dapat juga (secara opsional) dinamakan `mod.hjson` untuk berpotensi membantu kamu penyunting teks memilih penebalan sintaks yang baik.
 
     name: "mod-name"
     displayName: "This isn't a mod."
@@ -94,23 +94,22 @@ At the root of your project directory, you must have a `mod.json` which defines 
     dependencies: [ ]
     hidden: false
 
--   `name` will be used to reference to your mod, so name it carefully;
--   `displayName` this will be used as a display name for the UI, which you can use to add formatting to said name;
--   `description` of the mod will be rendered in the ingame mod manager, so keep it short and to the point;
--   `dependencies` is optional, if you want to know more about that, go to the [dependencies](#dependencies) section;
--   `minGameVersion` is the minimum build version of the game. This is **required** to be a number greater than 105.
--   `hidden` is whether or not this mod is essential for multiplayer, false by default. Texture packs, JS plugins, etc. should use this as to not cause conflicts with servers and clients respectively. As a rule of thumb, if your mod creates content it shouldn't be hidden.
+-   `name` akan digunakan untuk referensi pada modmu, jadi berhati-hati dalam penamaan;
+-   `displayName` adalah yang akan digunakan sebagai nama yang ditampilkan untuk UI, yang mana kamu bisa gunakan menambahkan *formating* untuk menyebutan nama;
+-   `description` pada mod akan disajikan di manajer mod dalam game, jadi tetap itu pendek dan ke intinya;
+-   `dependencies` adalah opsional, jika kamu ingin tahu lebih lanjut, pergi ke bagian[dependensi](#dependensi);
+-   `minGameVersion` adalah minimum versi build pada game, Ini **Diperlukan** kepada angka yang lebih besar daripada 105.
+-   `hidden` adalah apakah atau tidak mod ini essensial untuk multiplayer, false secara default. Texture packs, Plugin JS, dll. Seharusnya gunakan ini sebagai tidak terjadinya konflik dengan server dan klien secara respektif. sebagai aturan prakis, jika modmu membuat konten itu seharusnya tiak jadi tersembunyi
 
 
+## Konten
 
-## Content
+Pada akar dari direktori projekmu kamu bisa memiliki satu direktori `content/`, ini dimana semua data Json/Hjson berada. Didalam `content/` kamu memiliki subdirektori untuk macam-macam konten, mereka adalah yang satu-satunya umum saat ini:
 
-At the root of your project directory you can have a `content/` directory, this is where all the Json/Hjson data goes. Inside of `content/` you have subdirectories for the various kinds of content, these are the current common ones:
-
--   `content/items/` for [items](#item), like `copper` and `surge-alloy`;
--   `content/blocks/` for [blocks](#block), like turrets and floors;
--   `content/liquids/` for [liquids](#liquid), like `water` and `slag`;
--   `content/units/` for flying or ground [units](#unittype), like `eclipse` and `dagger`;
+-   `content/items/` untuk [items](#item), seperti `copper` dan `surge-alloy`;
+-   `content/blocks/` dan [blocks](#block), seperti turrets and floors;
+-   `content/liquids/` dan [liquids](#liquid), seperti `water` and `slag`;
+-   `content/units/` untuk [units](#unittype) udara atau darat, seperti `eclipse` dan `dagger`;
 
 Note that each one of these subdirectories needs a specific content type. The filenames of these files is important, because the stem name of your path *(filename without the extension)* is used to reference it.
 
