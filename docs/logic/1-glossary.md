@@ -6,7 +6,7 @@ Glosarium ini memberikan penjelasan yang lebih rinci tentang banyak istilah yang
 
 Ada dua tipe data utama di Mindustry; angka dan Objek.
 
-### nomor
+### number
 
 Angka desimal. Bisa negatif atau positif, dan dapat mewakili nilai benar (apa pun yang tidak sama dengan 0) atau salah (0). Null juga direpresentasikan sebagai 0.
 
@@ -28,7 +28,7 @@ Intinya, **Bangunan adalah Blok yang secara fisik ada di dunia.**
 
 Misalnya, instruksi `getlink` akan mengembalikan Objek * Membangun *, di mana Anda bisa mendapatkan informasi tentang menggunakan`sensor`.
 
-### Satuan
+### Variabel
 
 Objek yang mewakili Unit di dunia, termasuk pemain.
 
@@ -58,7 +58,7 @@ Contoh: `@toxopid`
 
 <img src="/wiki/images/misc/logic-glossary-unitType-unitBind.png">
 
-### Masuk akal
+### Sense
 
 Properti Item, Cairan, atau Bangunan atau Unit yang dapat "dideteksi" oleh `sensor`. Dimulai dengan `@`.
 
@@ -86,7 +86,7 @@ Operasi matematika. * Ini berbeda dari instruksi `op`.*
 
 Untuk yang lebih kompleks, Anda dapat menggunakan Google "<operation name\> matematika Java".
 
-### Komp
+### Comp
 
 Sebuah perbandingan. Terutama digunakan dalam instruksi `jump` saat membandingkan dua nilai. `always` akan kembali menjadi true apa pun yang terjadi, jadi itu akan selalu menyebabkan lompatan.
 
