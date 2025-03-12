@@ -111,13 +111,13 @@ Pada akar dari direktori projekmu kamu bisa memiliki satu direktori `content/`, 
 -   `content/liquids/` dan [liquids](#liquid), seperti `water` and `slag`;
 -   `content/units/` untuk [units](#unittype) udara atau darat, seperti `eclipse` dan `dagger`;
 
-Note that each one of these subdirectories needs a specific content type. The filenames of these files is important, because the stem name of your path *(filename without the extension)* is used to reference it.
+Catatan yang salah satu dari subdirektori dibutuhkan tipe konten yang spesifik. Nama file dari file tersebut itu penting, karena nama cabang dari jalur *(nama file tanpa ekstensi)* dibutuhkan untuk mereferensikan itu. 
 
-Furthermore the files within these `content/<content-type>/*` directories may be arbitrarly nested into other sub-directories of any name, to help you organize them further, for example:
+Lagipula file yang didalam direktori `content/<content-type>/*` itu mungkin menjadi *arbitrary nested* (bersarang yang semaunya) kedalam sub-direktory dengan nama apapun, itu dapat membantumu untuk menyusun mereka kedepannya, untuk contoh:
 
--   `content/items/metals/iron.hjson`, which would respectively create an item named `iron`.
+-   `content/items/metals/iron.hjson`, yang mana secara respektif itu dapat membuat item yang bernama `iron`.
 
-The content of these files will tend to look something like this:
+Konten dari file itu cenderung terlihat seperti ini::
 
     type: TypeOfThing
     name: Name Of Thing
@@ -126,19 +126,19 @@ The content of these files will tend to look something like this:
 
 |field|type|notes|
 |---|---|---|
-|type|String|Content type of this object.|
-|name|String|Displayed name of content.|
-|description|String|Displayed description of content.|
+|type|String|Tipe konten dari objek tesebut.|
+|name|String|Nama konten yang ditampilkan.|
+|description|String|Deskripsi konten yang ditampilkan.|
 
-Other fields included will be the fields of the type itself.
+*field* lain termasuk akan menjadi tipenya itu sendiri.
 
-A side note, `name` and `description` are not required to be in the json structure. You can define them for any language with (Bundles)[#bundles]. However, if they are not present in either then the name will be <type>.<modname>-<stemname>.name and an empty description respectively.
+untuk catatan, `nama` dan `decription` tidak diperlukan harus ada di struktur json. Kau bisa menerapkan kedua itu ke bahasa manapun dengan (Bundle)[#bundle]. Bagaimanapun, jika tidak ada walaupun namanya akan menjadi <tipe>.<namamod>-<namacabang>.name dan deskripsi kosong secara respektif.
 
 
 
-## Types
+## Tipe
 
-Types have numerous fields, but the important one is `type`; this is a special field used by the content parser, that changes which type your object is. *A `Router` type can't be a `Turret` type*, as they're just completely different.
+Tipe memiliki *field* yang banyak, tetapi yang paling penting itu adalah `type`; *field* special ini digunakan oleh parser konten, itu berubah tipe sesuai objekmu. *Sebuah tipe `Router` tidak bisa menjadi `Turret` karena mereka itu beda jauh.
 
 Types *extend* each other, so if `MissileBulletType` extends `BasicBulletType`, you'll have access to all the fields of `BasicBulletType` inside of `MissileBulletType` like `damage`, `lifetime` and `speed`. Fields are case sensitive: `hitSize =/= hitsize`.
 

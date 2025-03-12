@@ -1,7 +1,7 @@
 # Mindustry Wiki
 
-The majority of this wiki is automatically filled in by WikiGen. Before editing any of those pages, please check if they are automated, and if they are, please make edits on the [generator repo](https://github.com/MindustryGame/wiki-generator) instead. 
+Kebanyakan dari wiki itu diisi oleh WikiGen secara otomatis. Sebelum melakukan penyuntingan ke beberapa halaman, mohon memperhatikan apakah mereka itu dilakukan secara otomatis, dan jika iya, mohon menyunting di [repositori generator](https://github.com/MindustryGame/wiki-generator) saja. 
 
 Trello: https://trello.com/b/fuhG7OXq/mindustry-wiki
 
-this is a Indonesian version of https://github.com/MindustryGame/wiki
+Ini adalah versi bahasa indonesia dari https://github.com/MindustryGame/wiki
