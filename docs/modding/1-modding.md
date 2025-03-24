@@ -132,7 +132,7 @@ Konten dari file itu cenderung terlihat seperti ini::
 
 *field* lain termasuk akan menjadi tipenya itu sendiri.
 
-untuk catatan, `nama` dan `decription` tidak diperlukan harus ada di struktur json. Kau bisa menerapkan kedua itu ke bahasa manapun dengan (Bundle)[#bundle]. Bagaimanapun, jika tidak ada walaupun namanya akan menjadi <tipe>.<namamod>-<namacabang>.name dan deskripsi kosong secara respektif.
+untuk catatan lain, `nama` dan `decription` tidak diperlukan harus ada di struktur json. Kau bisa menerapkan kedua itu ke bahasa manapun dengan (Bundle)[#bundle]. Bagaimanapun, jika tidak ada walaupun namanya akan menjadi <tipe>.<namamod>-<namacabang>.name dan deskripsi kosong secara respektif.
 
 
 
@@ -140,13 +140,13 @@ untuk catatan, `nama` dan `decription` tidak diperlukan harus ada di struktur js
 
 Tipe memiliki *field* yang banyak, tetapi yang paling penting itu adalah `type`; *field* special ini digunakan oleh parser konten, itu berubah tipe sesuai objekmu. *Sebuah tipe `Router` tidak bisa menjadi `Turret` karena mereka itu beda jauh.
 
-Types *extend* each other, so if `MissileBulletType` extends `BasicBulletType`, you'll have access to all the fields of `BasicBulletType` inside of `MissileBulletType` like `damage`, `lifetime` and `speed`. Fields are case sensitive: `hitSize =/= hitsize`.
+Tipe itu *extend* dengan yang lain, jika `MissileBulletType` *extends* `BasicBulletType`, Kau bisa mengakses semua field `BasicBulletType` didalam `MissileBulletType` kayak `damage`, `lifetime` dan `speed`. Setiap field itu case-sensitive (harus ada huruf besar dan kecil): `hitSize =/= hitsize`.
 
-What you can expect a field to do is up to the specific type, some types do absolutely nothing with their fields, and work mostly as a base types will extend from. One such type is `Block`.
+Apa yang kau seharusnya sebuah field yang dilakukan ke tipe yang spesifik, beberapa tipe itu lakukan sebenarnya tidak ada dengan field itu sendiri. Salah satu tipenya itu `Block`.
 
-In this unit example, the type of the unit is `flying`. The type of the `bullet` is `BulletType`, so you can use `MissileBulletType`, because `MissileBulletType` extends `BulletType`.
+Pada contoh unit, tipe dari unit itu `flying`. tipe dari `bullet` itu `BulletType`, jadi kau bisa pake `MissileBulletType`, karena `MissileBulletType` extends(diwariskan dari) `BulletType`.
 
-One could also use `mech`, `legs`, `naval` or `payload` as the unit type here.
+Satupun bisa menggunakan `mech`, `legs`, `naval` atau `payload` sebagai tipe unit.
 
 ```hjson
 type: flying
@@ -160,14 +160,14 @@ weapons: [
 ]
 ```
 
-As of build `125.1`, types can also be the *fully-qualified class name* of a Java class. 
+Selama build `125.1`, tipe bisa juga menjadi *nama kelas yang sepenuhnya terdaftar* dari kelas Java. 
 
-For example, to specify a block as a `MendProjector`, you may write
-`type: mindustry.world.blocks.defense.MendProjector` instead of `type: MendProjector`.
+Untuk contoh, untuk menentukan sebuah blok sebagai `MendProjector`, kau bisa menuliskan menjadi
+`type: mindustry.world.blocks.defense.MendProjector` ketimbang `type: MendProjector`.
 
-While not particularly useful for vanilla types, this can be used to load block types *from other Java mods* as dependencies.
+Selama itu terutama tidak berguna dalam tipe vanilla, ini bisa digunakan untuk memuat tipe blok *dari mod Java yang lain* sebagai dependensi.
 
-## Tech Tree
+## Pohon Teknologi
 
 Much like `type` there exist another magical field known as `research` which can go at the root of any block object to put it in the techtree.
 
