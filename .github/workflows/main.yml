@@ -55,8 +55,8 @@ jobs:
       - name: Generate docs
         run: |
           cd ..
-          git clone https://github.com/Anuken/Mindustry-Wiki-Generator --depth 1
-          cd Mindustry-Wiki-Generator/
+          git clone https://github.com/MindustryID/wiki-generator --depth 1
+          cd wiki-generator/
           ./run.sh
           cd ../wiki
           mkdocs build
